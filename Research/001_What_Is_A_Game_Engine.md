@@ -6,7 +6,7 @@
 ### Why do fames use engine?
 *Game engine provide prebuild reuasable systems like rendering, Physics and AI which saves many years and also avoid developers to write core infrastructure from scratch.*
 
-### Hoe do Unity and Unreal work internally?
+### How do Unity and Unreal work internally?
 *Unity relies on a lightweight component based architecture driven by c#.*
 *Unreal engine use a heavier framework written in c++.*
 
