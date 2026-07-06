@@ -1,6 +1,6 @@
 # The modules iam gonna build:
 
-* Core
+- [x] Core
 * Window System
 * Renderer
 * Math Library
