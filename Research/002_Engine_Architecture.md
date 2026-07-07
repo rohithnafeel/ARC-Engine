@@ -98,15 +98,14 @@
 #### Core architecture:
 
 +-------------------------------------------------------+
-
 |                 Gameplay Script Layer                 |
-|       (Lua, GDScript, C#, Blueprints, GML)            |
+|        (Lua, GDScript, C#, Blueprints, GML)           |
 +-------------------------------------------------------+
-                           │  
-                           │ Glue Code / Bindings API 
-                           ▼  
+                           │
+                           │  Glue Code / Bindings API
+                           ▼
 +-------------------------------------------------------+
-
 |                  Core Engine Layer                    |
-|       (C / C++: Rendering, Physics, Memory)           |
+|      (C / C++: Rendering, Physics, Memory)           |
 +-------------------------------------------------------+
+```
