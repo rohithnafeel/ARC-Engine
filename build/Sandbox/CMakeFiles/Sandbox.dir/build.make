@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Rohith\OneDrive\Documents\Hello Engine"
+CMAKE_SOURCE_DIR = C:\Users\Rohith\OneDrive\Documents\Arc-Engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Rohith\OneDrive\Documents\Hello Engine\bulid"
+CMAKE_BINARY_DIR = C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build
 
 # Include any dependencies generated for this target.
 include Sandbox/CMakeFiles/Sandbox.dir/depend.make
@@ -73,18 +73,18 @@ Sandbox/CMakeFiles/Sandbox.dir/codegen:
 
 Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj: Sandbox/CMakeFiles/Sandbox.dir/flags.make
 Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj: Sandbox/CMakeFiles/Sandbox.dir/includes_CXX.rsp
-Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj: C:/Users/Rohith/OneDrive/Documents/Hello\ Engine/Sandbox/src/main.cpp
+Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj: C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Sandbox/src/main.cpp
 Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj: Sandbox/CMakeFiles/Sandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Rohith\OneDrive\Documents\Hello Engine\bulid\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj"
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid\Sandbox" && C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj -MF CMakeFiles\Sandbox.dir\src\main.cpp.obj.d -o CMakeFiles\Sandbox.dir\src\main.cpp.obj -c "C:\Users\Rohith\OneDrive\Documents\Hello Engine\Sandbox\src\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Sandbox && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj -MF CMakeFiles\Sandbox.dir\src\main.cpp.obj.d -o CMakeFiles\Sandbox.dir\src\main.cpp.obj -c C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Sandbox\src\main.cpp
 
 Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Sandbox.dir/src/main.cpp.i"
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid\Sandbox" && C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Rohith\OneDrive\Documents\Hello Engine\Sandbox\src\main.cpp" > CMakeFiles\Sandbox.dir\src\main.cpp.i
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Sandbox && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Sandbox\src\main.cpp > CMakeFiles\Sandbox.dir\src\main.cpp.i
 
 Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Sandbox.dir/src/main.cpp.s"
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid\Sandbox" && C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Rohith\OneDrive\Documents\Hello Engine\Sandbox\src\main.cpp" -o CMakeFiles\Sandbox.dir\src\main.cpp.s
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Sandbox && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Sandbox\src\main.cpp -o CMakeFiles\Sandbox.dir\src\main.cpp.s
 
 # Object files for target Sandbox
 Sandbox_OBJECTS = \
@@ -95,21 +95,22 @@ Sandbox_EXTERNAL_OBJECTS =
 
 Sandbox/Sandbox.exe: Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj
 Sandbox/Sandbox.exe: Sandbox/CMakeFiles/Sandbox.dir/build.make
+Sandbox/Sandbox.exe: Engine/libEngine.a
 Sandbox/Sandbox.exe: Sandbox/CMakeFiles/Sandbox.dir/linkLibs.rsp
 Sandbox/Sandbox.exe: Sandbox/CMakeFiles/Sandbox.dir/objects1.rsp
 Sandbox/Sandbox.exe: Sandbox/CMakeFiles/Sandbox.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Rohith\OneDrive\Documents\Hello Engine\bulid\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Sandbox.exe"
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid\Sandbox" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Sandbox.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Sandbox.exe"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Sandbox && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Sandbox.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Sandbox/CMakeFiles/Sandbox.dir/build: Sandbox/Sandbox.exe
 .PHONY : Sandbox/CMakeFiles/Sandbox.dir/build
 
 Sandbox/CMakeFiles/Sandbox.dir/clean:
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid\Sandbox" && $(CMAKE_COMMAND) -P CMakeFiles\Sandbox.dir\cmake_clean.cmake
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Sandbox && $(CMAKE_COMMAND) -P CMakeFiles\Sandbox.dir\cmake_clean.cmake
 .PHONY : Sandbox/CMakeFiles/Sandbox.dir/clean
 
 Sandbox/CMakeFiles/Sandbox.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Rohith\OneDrive\Documents\Hello Engine" "C:\Users\Rohith\OneDrive\Documents\Hello Engine\Sandbox" "C:\Users\Rohith\OneDrive\Documents\Hello Engine\bulid" "C:\Users\Rohith\OneDrive\Documents\Hello Engine\bulid\Sandbox" "C:\Users\Rohith\OneDrive\Documents\Hello Engine\bulid\Sandbox\CMakeFiles\Sandbox.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Rohith\OneDrive\Documents\Arc-Engine C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Sandbox C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Sandbox C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Sandbox\CMakeFiles\Sandbox.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : Sandbox/CMakeFiles/Sandbox.dir/depend
 

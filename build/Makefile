@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Rohith\OneDrive\Documents\Hello Engine"
+CMAKE_SOURCE_DIR = C:\Users\Rohith\OneDrive\Documents\Arc-Engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Rohith\OneDrive\Documents\Hello Engine\bulid"
+CMAKE_BINARY_DIR = C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Rohith\OneDrive\Documents\Hello Engine\bulid\CMakeFiles" "C:\Users\Rohith\OneDrive\Documents\Hello Engine\bulid\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Rohith\OneDrive\Documents\Hello Engine\bulid\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,6 +116,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Engine
+
+# Build rule for target.
+Engine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Engine
+.PHONY : Engine
+
+# fast build rule for target.
+Engine/fast:
+	$(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/build
+.PHONY : Engine/fast
+
+#=============================================================================
 # Target rules for targets named Sandbox
 
 # Build rule for target.
@@ -136,6 +149,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Engine
 	@echo ... Sandbox
 .PHONY : help
 

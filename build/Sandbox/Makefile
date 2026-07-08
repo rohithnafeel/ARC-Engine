@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Rohith\OneDrive\Documents\Hello Engine"
+CMAKE_SOURCE_DIR = C:\Users\Rohith\OneDrive\Documents\Arc-Engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Rohith\OneDrive\Documents\Hello Engine\bulid"
+CMAKE_BINARY_DIR = C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid" && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Rohith\OneDrive\Documents\Hello Engine\bulid\CMakeFiles" "C:\Users\Rohith\OneDrive\Documents\Hello Engine\bulid\Sandbox\\CMakeFiles\progress.marks"
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sandbox/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Rohith\OneDrive\Documents\Hello Engine\bulid\CMakeFiles" 0
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Sandbox\\CMakeFiles\progress.marks
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sandbox/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sandbox/clean
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sandbox/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sandbox/preinstall
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sandbox/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sandbox/preinstall
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sandbox/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Sandbox/CMakeFiles/Sandbox.dir/rule:
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sandbox/CMakeFiles/Sandbox.dir/rule
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sandbox/CMakeFiles/Sandbox.dir/rule
 .PHONY : Sandbox/CMakeFiles/Sandbox.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ Sandbox: Sandbox/CMakeFiles/Sandbox.dir/rule
 
 # fast build rule for target.
 Sandbox/fast:
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid" && $(MAKE) $(MAKESILENT) -f Sandbox\CMakeFiles\Sandbox.dir\build.make Sandbox/CMakeFiles/Sandbox.dir/build
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Sandbox\CMakeFiles\Sandbox.dir\build.make Sandbox/CMakeFiles/Sandbox.dir/build
 .PHONY : Sandbox/fast
 
 src/main.obj: src/main.cpp.obj
@@ -134,7 +134,7 @@ src/main.obj: src/main.cpp.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid" && $(MAKE) $(MAKESILENT) -f Sandbox\CMakeFiles\Sandbox.dir\build.make Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Sandbox\CMakeFiles\Sandbox.dir\build.make Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -142,7 +142,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid" && $(MAKE) $(MAKESILENT) -f Sandbox\CMakeFiles\Sandbox.dir\build.make Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.i
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Sandbox\CMakeFiles\Sandbox.dir\build.make Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -150,7 +150,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid" && $(MAKE) $(MAKESILENT) -f Sandbox\CMakeFiles\Sandbox.dir\build.make Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.s
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Sandbox\CMakeFiles\Sandbox.dir\build.make Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -176,6 +176,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d "C:\Users\Rohith\OneDrive\DOCUME~1\Hello Engine\bulid" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

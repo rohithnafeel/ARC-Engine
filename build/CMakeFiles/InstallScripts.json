@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/cmake_install.cmake",
+		"C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/Engine/cmake_install.cmake",
+		"C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/Sandbox/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

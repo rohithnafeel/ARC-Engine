@@ -42,13 +42,13 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/PuTTY/"
-      - "C:/MinGW/bin/"
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
       - "C:/Program Files (x86)/pcsuite/"
       - "C:/Program Files/Git LFS/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/"
@@ -92,8 +92,20 @@ events:
       - "C:/Program Files/Git/cmd/mingw32-make.exe"
       - "C:/Program Files/PuTTY/mingw32-make.exe.com"
       - "C:/Program Files/PuTTY/mingw32-make.exe"
-      - "C:/MinGW/bin/mingw32-make.exe.com"
-    found: "C:/MinGW/bin/mingw32-make.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/mingw32-make.exe.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/mingw32-make.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/mingw32-make.exe.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/mingw32-make.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mingw32-make.exe.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mingw32-make.exe"
+      - "C:/Program Files/nodejs/mingw32-make.exe.com"
+      - "C:/Program Files/nodejs/mingw32-make.exe"
+      - "C:/Program Files (x86)/pcsuite/mingw32-make.exe.com"
+      - "C:/Program Files (x86)/pcsuite/mingw32-make.exe"
+      - "C:/Program Files/Git LFS/mingw32-make.exe.com"
+      - "C:/Program Files/Git LFS/mingw32-make.exe"
+      - "C:/msys64/ucrt64/bin/mingw32-make.exe.com"
+    found: "C:/msys64/ucrt64/bin/mingw32-make.exe"
     search_context:
       ENV{PATH}:
         - "c:\\Users\\Rohith\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
@@ -111,13 +123,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -126,10 +138,6 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-...
-
----
-events:
   -
     kind: "find-v1"
     backtrace:
@@ -170,13 +178,13 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/PuTTY/"
-      - "C:/MinGW/bin/"
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
       - "C:/Program Files (x86)/pcsuite/"
       - "C:/Program Files/Git LFS/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/"
@@ -456,8 +464,116 @@ events:
       - "C:/Program Files/PuTTY/clang++.com"
       - "C:/Program Files/PuTTY/clang++.exe"
       - "C:/Program Files/PuTTY/clang++"
-      - "C:/MinGW/bin/c++.com"
-    found: "C:/MinGW/bin/c++.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/c++.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/c++.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/c++"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/g++.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/g++.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/g++"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/cl.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/cl.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/cl"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/bcc.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/bcc.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/bcc"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/icx.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/icx.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/icx"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/clang++.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/clang++.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/clang++"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/c++.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/c++.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/c++"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/g++.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/g++.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/g++"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/cl.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/cl.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/cl"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/bcc.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/bcc.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/bcc"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/icx.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/icx.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/icx"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/clang++.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/clang++.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/clang++"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/c++.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/c++.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/c++"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/g++.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/g++.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/g++"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/cl.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/cl.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/cl"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/bcc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/bcc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/bcc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/icx.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/icx.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/icx"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/clang++.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/clang++.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/clang++"
+      - "C:/Program Files/nodejs/c++.com"
+      - "C:/Program Files/nodejs/c++.exe"
+      - "C:/Program Files/nodejs/c++"
+      - "C:/Program Files/nodejs/g++.com"
+      - "C:/Program Files/nodejs/g++.exe"
+      - "C:/Program Files/nodejs/g++"
+      - "C:/Program Files/nodejs/cl.com"
+      - "C:/Program Files/nodejs/cl.exe"
+      - "C:/Program Files/nodejs/cl"
+      - "C:/Program Files/nodejs/bcc.com"
+      - "C:/Program Files/nodejs/bcc.exe"
+      - "C:/Program Files/nodejs/bcc"
+      - "C:/Program Files/nodejs/icx.com"
+      - "C:/Program Files/nodejs/icx.exe"
+      - "C:/Program Files/nodejs/icx"
+      - "C:/Program Files/nodejs/clang++.com"
+      - "C:/Program Files/nodejs/clang++.exe"
+      - "C:/Program Files/nodejs/clang++"
+      - "C:/Program Files (x86)/pcsuite/c++.com"
+      - "C:/Program Files (x86)/pcsuite/c++.exe"
+      - "C:/Program Files (x86)/pcsuite/c++"
+      - "C:/Program Files (x86)/pcsuite/g++.com"
+      - "C:/Program Files (x86)/pcsuite/g++.exe"
+      - "C:/Program Files (x86)/pcsuite/g++"
+      - "C:/Program Files (x86)/pcsuite/cl.com"
+      - "C:/Program Files (x86)/pcsuite/cl.exe"
+      - "C:/Program Files (x86)/pcsuite/cl"
+      - "C:/Program Files (x86)/pcsuite/bcc.com"
+      - "C:/Program Files (x86)/pcsuite/bcc.exe"
+      - "C:/Program Files (x86)/pcsuite/bcc"
+      - "C:/Program Files (x86)/pcsuite/icx.com"
+      - "C:/Program Files (x86)/pcsuite/icx.exe"
+      - "C:/Program Files (x86)/pcsuite/icx"
+      - "C:/Program Files (x86)/pcsuite/clang++.com"
+      - "C:/Program Files (x86)/pcsuite/clang++.exe"
+      - "C:/Program Files (x86)/pcsuite/clang++"
+      - "C:/Program Files/Git LFS/c++.com"
+      - "C:/Program Files/Git LFS/c++.exe"
+      - "C:/Program Files/Git LFS/c++"
+      - "C:/Program Files/Git LFS/g++.com"
+      - "C:/Program Files/Git LFS/g++.exe"
+      - "C:/Program Files/Git LFS/g++"
+      - "C:/Program Files/Git LFS/cl.com"
+      - "C:/Program Files/Git LFS/cl.exe"
+      - "C:/Program Files/Git LFS/cl"
+      - "C:/Program Files/Git LFS/bcc.com"
+      - "C:/Program Files/Git LFS/bcc.exe"
+      - "C:/Program Files/Git LFS/bcc"
+      - "C:/Program Files/Git LFS/icx.com"
+      - "C:/Program Files/Git LFS/icx.exe"
+      - "C:/Program Files/Git LFS/icx"
+      - "C:/Program Files/Git LFS/clang++.com"
+      - "C:/Program Files/Git LFS/clang++.exe"
+      - "C:/Program Files/Git LFS/clang++"
+      - "C:/msys64/ucrt64/bin/c++.com"
+    found: "C:/msys64/ucrt64/bin/c++.exe"
     search_context:
       ENV{PATH}:
         - "c:\\Users\\Rohith\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
@@ -475,13 +591,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -490,7 +606,6 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Hello"
   -
     kind: "find-v1"
     backtrace:
@@ -533,13 +648,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -548,7 +663,6 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Hello"
   -
     kind: "message-v1"
     backtrace:
@@ -558,7 +672,7 @@ events:
       - "CMakeLists.txt:3 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: C:/MinGW/bin/c++.exe 
+      Compiler: C:/msys64/ucrt64/bin/c++.exe 
       Build flags: 
       Id flags:  
       
@@ -569,7 +683,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
       
       The CXX compiler identification is GNU, found in:
-        C:/Users/Rohith/OneDrive/Documents/Hello Engine/bulid/CMakeFiles/4.1.0-rc4/CompilerIdCXX/a.exe
+        C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/CMakeFiles/4.1.0-rc4/CompilerIdCXX/a.exe
       
   -
     kind: "find-v1"
@@ -591,7 +705,7 @@ events:
     names:
       - "ar"
     candidate_directories:
-      - "C:/MinGW/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/"
@@ -622,8 +736,8 @@ events:
       - "C:/Users/Rohith/.dotnet/tools/"
       - "C:/Users/Rohith/AppData/Roaming/npm/"
     searched_directories:
-      - "C:/MinGW/bin/ar.com"
-    found: "C:/MinGW/bin/ar.exe"
+      - "C:/msys64/ucrt64/bin/ar.com"
+    found: "C:/msys64/ucrt64/bin/ar.exe"
     search_context:
       ENV{PATH}:
         - "c:\\Users\\Rohith\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
@@ -641,13 +755,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -656,7 +770,6 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Hello"
   -
     kind: "find-v1"
     backtrace:
@@ -677,7 +790,7 @@ events:
     names:
       - "ranlib"
     candidate_directories:
-      - "C:/MinGW/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/"
@@ -708,8 +821,8 @@ events:
       - "C:/Users/Rohith/.dotnet/tools/"
       - "C:/Users/Rohith/AppData/Roaming/npm/"
     searched_directories:
-      - "C:/MinGW/bin/ranlib.com"
-    found: "C:/MinGW/bin/ranlib.exe"
+      - "C:/msys64/ucrt64/bin/ranlib.com"
+    found: "C:/msys64/ucrt64/bin/ranlib.exe"
     search_context:
       ENV{PATH}:
         - "c:\\Users\\Rohith\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
@@ -727,13 +840,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -742,7 +855,6 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Hello"
   -
     kind: "find-v1"
     backtrace:
@@ -763,7 +875,7 @@ events:
     names:
       - "strip"
     candidate_directories:
-      - "C:/MinGW/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/"
@@ -794,8 +906,8 @@ events:
       - "C:/Users/Rohith/.dotnet/tools/"
       - "C:/Users/Rohith/AppData/Roaming/npm/"
     searched_directories:
-      - "C:/MinGW/bin/strip.com"
-    found: "C:/MinGW/bin/strip.exe"
+      - "C:/msys64/ucrt64/bin/strip.com"
+    found: "C:/msys64/ucrt64/bin/strip.exe"
     search_context:
       ENV{PATH}:
         - "c:\\Users\\Rohith\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
@@ -813,13 +925,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -828,7 +940,6 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Hello"
   -
     kind: "find-v1"
     backtrace:
@@ -849,7 +960,7 @@ events:
     names:
       - "ld"
     candidate_directories:
-      - "C:/MinGW/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/"
@@ -880,8 +991,8 @@ events:
       - "C:/Users/Rohith/.dotnet/tools/"
       - "C:/Users/Rohith/AppData/Roaming/npm/"
     searched_directories:
-      - "C:/MinGW/bin/ld.com"
-    found: "C:/MinGW/bin/ld.exe"
+      - "C:/msys64/ucrt64/bin/ld.com"
+    found: "C:/msys64/ucrt64/bin/ld.exe"
     search_context:
       ENV{PATH}:
         - "c:\\Users\\Rohith\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
@@ -899,13 +1010,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -914,7 +1025,6 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Hello"
   -
     kind: "find-v1"
     backtrace:
@@ -935,7 +1045,7 @@ events:
     names:
       - "nm"
     candidate_directories:
-      - "C:/MinGW/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/"
@@ -966,8 +1076,8 @@ events:
       - "C:/Users/Rohith/.dotnet/tools/"
       - "C:/Users/Rohith/AppData/Roaming/npm/"
     searched_directories:
-      - "C:/MinGW/bin/nm.com"
-    found: "C:/MinGW/bin/nm.exe"
+      - "C:/msys64/ucrt64/bin/nm.com"
+    found: "C:/msys64/ucrt64/bin/nm.exe"
     search_context:
       ENV{PATH}:
         - "c:\\Users\\Rohith\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
@@ -985,13 +1095,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1000,7 +1110,6 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Hello"
   -
     kind: "find-v1"
     backtrace:
@@ -1021,7 +1130,7 @@ events:
     names:
       - "objdump"
     candidate_directories:
-      - "C:/MinGW/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/"
@@ -1052,8 +1161,8 @@ events:
       - "C:/Users/Rohith/.dotnet/tools/"
       - "C:/Users/Rohith/AppData/Roaming/npm/"
     searched_directories:
-      - "C:/MinGW/bin/objdump.com"
-    found: "C:/MinGW/bin/objdump.exe"
+      - "C:/msys64/ucrt64/bin/objdump.com"
+    found: "C:/msys64/ucrt64/bin/objdump.exe"
     search_context:
       ENV{PATH}:
         - "c:\\Users\\Rohith\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
@@ -1071,13 +1180,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1086,7 +1195,6 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Hello"
   -
     kind: "find-v1"
     backtrace:
@@ -1107,7 +1215,7 @@ events:
     names:
       - "objcopy"
     candidate_directories:
-      - "C:/MinGW/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/"
@@ -1138,8 +1246,8 @@ events:
       - "C:/Users/Rohith/.dotnet/tools/"
       - "C:/Users/Rohith/AppData/Roaming/npm/"
     searched_directories:
-      - "C:/MinGW/bin/objcopy.com"
-    found: "C:/MinGW/bin/objcopy.exe"
+      - "C:/msys64/ucrt64/bin/objcopy.com"
+    found: "C:/msys64/ucrt64/bin/objcopy.exe"
     search_context:
       ENV{PATH}:
         - "c:\\Users\\Rohith\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
@@ -1157,13 +1265,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1172,7 +1280,6 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Hello"
   -
     kind: "find-v1"
     backtrace:
@@ -1193,7 +1300,7 @@ events:
     names:
       - "readelf"
     candidate_directories:
-      - "C:/MinGW/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/"
@@ -1224,8 +1331,8 @@ events:
       - "C:/Users/Rohith/.dotnet/tools/"
       - "C:/Users/Rohith/AppData/Roaming/npm/"
     searched_directories:
-      - "C:/MinGW/bin/readelf.com"
-    found: "C:/MinGW/bin/readelf.exe"
+      - "C:/msys64/ucrt64/bin/readelf.com"
+    found: "C:/msys64/ucrt64/bin/readelf.exe"
     search_context:
       ENV{PATH}:
         - "c:\\Users\\Rohith\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
@@ -1243,13 +1350,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1258,7 +1365,6 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Hello"
   -
     kind: "find-v1"
     backtrace:
@@ -1279,7 +1385,7 @@ events:
     names:
       - "dlltool"
     candidate_directories:
-      - "C:/MinGW/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/"
@@ -1310,8 +1416,8 @@ events:
       - "C:/Users/Rohith/.dotnet/tools/"
       - "C:/Users/Rohith/AppData/Roaming/npm/"
     searched_directories:
-      - "C:/MinGW/bin/dlltool.com"
-    found: "C:/MinGW/bin/dlltool.exe"
+      - "C:/msys64/ucrt64/bin/dlltool.com"
+    found: "C:/msys64/ucrt64/bin/dlltool.exe"
     search_context:
       ENV{PATH}:
         - "c:\\Users\\Rohith\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
@@ -1329,13 +1435,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1344,7 +1450,6 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Hello"
   -
     kind: "find-v1"
     backtrace:
@@ -1365,7 +1470,7 @@ events:
     names:
       - "addr2line"
     candidate_directories:
-      - "C:/MinGW/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/"
@@ -1396,8 +1501,8 @@ events:
       - "C:/Users/Rohith/.dotnet/tools/"
       - "C:/Users/Rohith/AppData/Roaming/npm/"
     searched_directories:
-      - "C:/MinGW/bin/addr2line.com"
-    found: "C:/MinGW/bin/addr2line.exe"
+      - "C:/msys64/ucrt64/bin/addr2line.com"
+    found: "C:/msys64/ucrt64/bin/addr2line.exe"
     search_context:
       ENV{PATH}:
         - "c:\\Users\\Rohith\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
@@ -1415,13 +1520,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1430,7 +1535,6 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Hello"
   -
     kind: "find-v1"
     backtrace:
@@ -1451,7 +1555,7 @@ events:
     names:
       - "tapi"
     candidate_directories:
-      - "C:/MinGW/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/"
@@ -1482,9 +1586,9 @@ events:
       - "C:/Users/Rohith/.dotnet/tools/"
       - "C:/Users/Rohith/AppData/Roaming/npm/"
     searched_directories:
-      - "C:/MinGW/bin/tapi.com"
-      - "C:/MinGW/bin/tapi.exe"
-      - "C:/MinGW/bin/tapi"
+      - "C:/msys64/ucrt64/bin/tapi.com"
+      - "C:/msys64/ucrt64/bin/tapi.exe"
+      - "C:/msys64/ucrt64/bin/tapi"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi.com"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi.exe"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
@@ -1590,13 +1694,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1605,7 +1709,6 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Hello"
   -
     kind: "find-v1"
     backtrace:
@@ -1624,12 +1727,12 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "gcc-ar-6.3"
-      - "gcc-ar-6"
-      - "gcc-ar6"
+      - "gcc-ar-16.1"
+      - "gcc-ar-16"
+      - "gcc-ar16"
       - "gcc-ar"
     candidate_directories:
-      - "C:/MinGW/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/"
@@ -1660,278 +1763,278 @@ events:
       - "C:/Users/Rohith/.dotnet/tools/"
       - "C:/Users/Rohith/AppData/Roaming/npm/"
     searched_directories:
-      - "C:/MinGW/bin/gcc-ar-6.3.com"
-      - "C:/MinGW/bin/gcc-ar-6.3.exe"
-      - "C:/MinGW/bin/gcc-ar-6.3"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-6.3.com"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-6.3.exe"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-6.3"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-6.3.com"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-6.3.exe"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-6.3"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar-6.3.com"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar-6.3.exe"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar-6.3"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-6.3.com"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-6.3.exe"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-6.3"
-      - "C:/Windows/System32/gcc-ar-6.3.com"
-      - "C:/Windows/System32/gcc-ar-6.3.exe"
-      - "C:/Windows/System32/gcc-ar-6.3"
-      - "C:/Windows/gcc-ar-6.3.com"
-      - "C:/Windows/gcc-ar-6.3.exe"
-      - "C:/Windows/gcc-ar-6.3"
-      - "C:/Windows/System32/wbem/gcc-ar-6.3.com"
-      - "C:/Windows/System32/wbem/gcc-ar-6.3.exe"
-      - "C:/Windows/System32/wbem/gcc-ar-6.3"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-6.3.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-6.3.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-6.3"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-6.3.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-6.3.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-6.3"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-6.3.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-6.3.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-6.3"
-      - "C:/Program Files/dotnet/gcc-ar-6.3.com"
-      - "C:/Program Files/dotnet/gcc-ar-6.3.exe"
-      - "C:/Program Files/dotnet/gcc-ar-6.3"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-6.3.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-6.3.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-6.3"
-      - "C:/Program Files/CMake/bin/gcc-ar-6.3.com"
-      - "C:/Program Files/CMake/bin/gcc-ar-6.3.exe"
-      - "C:/Program Files/CMake/bin/gcc-ar-6.3"
-      - "C:/Program Files/Git/cmd/gcc-ar-6.3.com"
-      - "C:/Program Files/Git/cmd/gcc-ar-6.3.exe"
-      - "C:/Program Files/Git/cmd/gcc-ar-6.3"
-      - "C:/Program Files/PuTTY/gcc-ar-6.3.com"
-      - "C:/Program Files/PuTTY/gcc-ar-6.3.exe"
-      - "C:/Program Files/PuTTY/gcc-ar-6.3"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar-6.3.com"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar-6.3.exe"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar-6.3"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar-6.3.com"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar-6.3.exe"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar-6.3"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-6.3.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-6.3.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-6.3"
-      - "C:/Program Files/nodejs/gcc-ar-6.3.com"
-      - "C:/Program Files/nodejs/gcc-ar-6.3.exe"
-      - "C:/Program Files/nodejs/gcc-ar-6.3"
-      - "C:/Program Files (x86)/pcsuite/gcc-ar-6.3.com"
-      - "C:/Program Files (x86)/pcsuite/gcc-ar-6.3.exe"
-      - "C:/Program Files (x86)/pcsuite/gcc-ar-6.3"
-      - "C:/Program Files/Git LFS/gcc-ar-6.3.com"
-      - "C:/Program Files/Git LFS/gcc-ar-6.3.exe"
-      - "C:/Program Files/Git LFS/gcc-ar-6.3"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-6.3.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-6.3.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-6.3"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar-6.3.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar-6.3.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar-6.3"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar-6.3.com"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar-6.3.exe"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar-6.3"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar-6.3.com"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar-6.3.exe"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar-6.3"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-6.3.com"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-6.3.exe"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-6.3"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-6.3.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-6.3.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-6.3"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ar-6.3.com"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ar-6.3.exe"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ar-6.3"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar-6.3.com"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar-6.3.exe"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar-6.3"
-      - "C:/MinGW/bin/gcc-ar-6.com"
-      - "C:/MinGW/bin/gcc-ar-6.exe"
-      - "C:/MinGW/bin/gcc-ar-6"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-6.com"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-6.exe"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-6"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-6.com"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-6.exe"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-6"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar-6.com"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar-6.exe"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar-6"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-6.com"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-6.exe"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-6"
-      - "C:/Windows/System32/gcc-ar-6.com"
-      - "C:/Windows/System32/gcc-ar-6.exe"
-      - "C:/Windows/System32/gcc-ar-6"
-      - "C:/Windows/gcc-ar-6.com"
-      - "C:/Windows/gcc-ar-6.exe"
-      - "C:/Windows/gcc-ar-6"
-      - "C:/Windows/System32/wbem/gcc-ar-6.com"
-      - "C:/Windows/System32/wbem/gcc-ar-6.exe"
-      - "C:/Windows/System32/wbem/gcc-ar-6"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-6.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-6.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-6"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-6.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-6.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-6"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-6.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-6.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-6"
-      - "C:/Program Files/dotnet/gcc-ar-6.com"
-      - "C:/Program Files/dotnet/gcc-ar-6.exe"
-      - "C:/Program Files/dotnet/gcc-ar-6"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-6.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-6.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-6"
-      - "C:/Program Files/CMake/bin/gcc-ar-6.com"
-      - "C:/Program Files/CMake/bin/gcc-ar-6.exe"
-      - "C:/Program Files/CMake/bin/gcc-ar-6"
-      - "C:/Program Files/Git/cmd/gcc-ar-6.com"
-      - "C:/Program Files/Git/cmd/gcc-ar-6.exe"
-      - "C:/Program Files/Git/cmd/gcc-ar-6"
-      - "C:/Program Files/PuTTY/gcc-ar-6.com"
-      - "C:/Program Files/PuTTY/gcc-ar-6.exe"
-      - "C:/Program Files/PuTTY/gcc-ar-6"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar-6.com"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar-6.exe"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar-6"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar-6.com"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar-6.exe"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar-6"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-6.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-6.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-6"
-      - "C:/Program Files/nodejs/gcc-ar-6.com"
-      - "C:/Program Files/nodejs/gcc-ar-6.exe"
-      - "C:/Program Files/nodejs/gcc-ar-6"
-      - "C:/Program Files (x86)/pcsuite/gcc-ar-6.com"
-      - "C:/Program Files (x86)/pcsuite/gcc-ar-6.exe"
-      - "C:/Program Files (x86)/pcsuite/gcc-ar-6"
-      - "C:/Program Files/Git LFS/gcc-ar-6.com"
-      - "C:/Program Files/Git LFS/gcc-ar-6.exe"
-      - "C:/Program Files/Git LFS/gcc-ar-6"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-6.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-6.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-6"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar-6.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar-6.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar-6"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar-6.com"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar-6.exe"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar-6"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar-6.com"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar-6.exe"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar-6"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-6.com"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-6.exe"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-6"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-6.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-6.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-6"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ar-6.com"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ar-6.exe"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ar-6"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar-6.com"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar-6.exe"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar-6"
-      - "C:/MinGW/bin/gcc-ar6.com"
-      - "C:/MinGW/bin/gcc-ar6.exe"
-      - "C:/MinGW/bin/gcc-ar6"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar6.com"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar6.exe"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar6"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar6.com"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar6.exe"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar6"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar6.com"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar6.exe"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar6"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar6.com"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar6.exe"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar6"
-      - "C:/Windows/System32/gcc-ar6.com"
-      - "C:/Windows/System32/gcc-ar6.exe"
-      - "C:/Windows/System32/gcc-ar6"
-      - "C:/Windows/gcc-ar6.com"
-      - "C:/Windows/gcc-ar6.exe"
-      - "C:/Windows/gcc-ar6"
-      - "C:/Windows/System32/wbem/gcc-ar6.com"
-      - "C:/Windows/System32/wbem/gcc-ar6.exe"
-      - "C:/Windows/System32/wbem/gcc-ar6"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar6.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar6.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar6"
-      - "C:/Windows/System32/OpenSSH/gcc-ar6.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ar6.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ar6"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar6.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar6.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar6"
-      - "C:/Program Files/dotnet/gcc-ar6.com"
-      - "C:/Program Files/dotnet/gcc-ar6.exe"
-      - "C:/Program Files/dotnet/gcc-ar6"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar6.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar6.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar6"
-      - "C:/Program Files/CMake/bin/gcc-ar6.com"
-      - "C:/Program Files/CMake/bin/gcc-ar6.exe"
-      - "C:/Program Files/CMake/bin/gcc-ar6"
-      - "C:/Program Files/Git/cmd/gcc-ar6.com"
-      - "C:/Program Files/Git/cmd/gcc-ar6.exe"
-      - "C:/Program Files/Git/cmd/gcc-ar6"
-      - "C:/Program Files/PuTTY/gcc-ar6.com"
-      - "C:/Program Files/PuTTY/gcc-ar6.exe"
-      - "C:/Program Files/PuTTY/gcc-ar6"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar6.com"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar6.exe"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar6"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar6.com"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar6.exe"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar6"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar6.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar6.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar6"
-      - "C:/Program Files/nodejs/gcc-ar6.com"
-      - "C:/Program Files/nodejs/gcc-ar6.exe"
-      - "C:/Program Files/nodejs/gcc-ar6"
-      - "C:/Program Files (x86)/pcsuite/gcc-ar6.com"
-      - "C:/Program Files (x86)/pcsuite/gcc-ar6.exe"
-      - "C:/Program Files (x86)/pcsuite/gcc-ar6"
-      - "C:/Program Files/Git LFS/gcc-ar6.com"
-      - "C:/Program Files/Git LFS/gcc-ar6.exe"
-      - "C:/Program Files/Git LFS/gcc-ar6"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar6.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar6.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar6"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar6.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar6.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar6"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar6.com"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar6.exe"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar6"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar6.com"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar6.exe"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar6"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar6.com"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar6.exe"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar6"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar6.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar6.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar6"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ar6.com"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ar6.exe"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ar6"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar6.com"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar6.exe"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar6"
-      - "C:/MinGW/bin/gcc-ar.com"
-    found: "C:/MinGW/bin/gcc-ar.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar-16.1.com"
+      - "C:/msys64/ucrt64/bin/gcc-ar-16.1.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar-16.1"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.1.com"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.1.exe"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.1"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-16.1.com"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-16.1.exe"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-16.1"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar-16.1.com"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar-16.1.exe"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar-16.1"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-16.1.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-16.1.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-16.1"
+      - "C:/Windows/System32/gcc-ar-16.1.com"
+      - "C:/Windows/System32/gcc-ar-16.1.exe"
+      - "C:/Windows/System32/gcc-ar-16.1"
+      - "C:/Windows/gcc-ar-16.1.com"
+      - "C:/Windows/gcc-ar-16.1.exe"
+      - "C:/Windows/gcc-ar-16.1"
+      - "C:/Windows/System32/wbem/gcc-ar-16.1.com"
+      - "C:/Windows/System32/wbem/gcc-ar-16.1.exe"
+      - "C:/Windows/System32/wbem/gcc-ar-16.1"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.1.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.1.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.1"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16.1.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16.1.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16.1"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-16.1.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-16.1.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-16.1"
+      - "C:/Program Files/dotnet/gcc-ar-16.1.com"
+      - "C:/Program Files/dotnet/gcc-ar-16.1.exe"
+      - "C:/Program Files/dotnet/gcc-ar-16.1"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-16.1.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-16.1.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-16.1"
+      - "C:/Program Files/CMake/bin/gcc-ar-16.1.com"
+      - "C:/Program Files/CMake/bin/gcc-ar-16.1.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar-16.1"
+      - "C:/Program Files/Git/cmd/gcc-ar-16.1.com"
+      - "C:/Program Files/Git/cmd/gcc-ar-16.1.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar-16.1"
+      - "C:/Program Files/PuTTY/gcc-ar-16.1.com"
+      - "C:/Program Files/PuTTY/gcc-ar-16.1.exe"
+      - "C:/Program Files/PuTTY/gcc-ar-16.1"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar-16.1.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar-16.1.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar-16.1"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar-16.1.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar-16.1.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar-16.1"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-16.1.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-16.1.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-16.1"
+      - "C:/Program Files/nodejs/gcc-ar-16.1.com"
+      - "C:/Program Files/nodejs/gcc-ar-16.1.exe"
+      - "C:/Program Files/nodejs/gcc-ar-16.1"
+      - "C:/Program Files (x86)/pcsuite/gcc-ar-16.1.com"
+      - "C:/Program Files (x86)/pcsuite/gcc-ar-16.1.exe"
+      - "C:/Program Files (x86)/pcsuite/gcc-ar-16.1"
+      - "C:/Program Files/Git LFS/gcc-ar-16.1.com"
+      - "C:/Program Files/Git LFS/gcc-ar-16.1.exe"
+      - "C:/Program Files/Git LFS/gcc-ar-16.1"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-16.1.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-16.1.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-16.1"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar-16.1.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar-16.1.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar-16.1"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar-16.1.com"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar-16.1.exe"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar-16.1"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar-16.1.com"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar-16.1.exe"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar-16.1"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-16.1.com"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-16.1.exe"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-16.1"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-16.1.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-16.1.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-16.1"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ar-16.1.com"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ar-16.1.exe"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ar-16.1"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar-16.1.com"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar-16.1.exe"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar-16.1"
+      - "C:/msys64/ucrt64/bin/gcc-ar-16.com"
+      - "C:/msys64/ucrt64/bin/gcc-ar-16.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar-16"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.com"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.exe"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-16.com"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-16.exe"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-16"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar-16.com"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar-16.exe"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar-16"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-16.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-16.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-16"
+      - "C:/Windows/System32/gcc-ar-16.com"
+      - "C:/Windows/System32/gcc-ar-16.exe"
+      - "C:/Windows/System32/gcc-ar-16"
+      - "C:/Windows/gcc-ar-16.com"
+      - "C:/Windows/gcc-ar-16.exe"
+      - "C:/Windows/gcc-ar-16"
+      - "C:/Windows/System32/wbem/gcc-ar-16.com"
+      - "C:/Windows/System32/wbem/gcc-ar-16.exe"
+      - "C:/Windows/System32/wbem/gcc-ar-16"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-16.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-16.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-16"
+      - "C:/Program Files/dotnet/gcc-ar-16.com"
+      - "C:/Program Files/dotnet/gcc-ar-16.exe"
+      - "C:/Program Files/dotnet/gcc-ar-16"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-16.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-16.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-16"
+      - "C:/Program Files/CMake/bin/gcc-ar-16.com"
+      - "C:/Program Files/CMake/bin/gcc-ar-16.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar-16"
+      - "C:/Program Files/Git/cmd/gcc-ar-16.com"
+      - "C:/Program Files/Git/cmd/gcc-ar-16.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar-16"
+      - "C:/Program Files/PuTTY/gcc-ar-16.com"
+      - "C:/Program Files/PuTTY/gcc-ar-16.exe"
+      - "C:/Program Files/PuTTY/gcc-ar-16"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar-16.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar-16.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar-16"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar-16.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar-16.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar-16"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-16.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-16.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-16"
+      - "C:/Program Files/nodejs/gcc-ar-16.com"
+      - "C:/Program Files/nodejs/gcc-ar-16.exe"
+      - "C:/Program Files/nodejs/gcc-ar-16"
+      - "C:/Program Files (x86)/pcsuite/gcc-ar-16.com"
+      - "C:/Program Files (x86)/pcsuite/gcc-ar-16.exe"
+      - "C:/Program Files (x86)/pcsuite/gcc-ar-16"
+      - "C:/Program Files/Git LFS/gcc-ar-16.com"
+      - "C:/Program Files/Git LFS/gcc-ar-16.exe"
+      - "C:/Program Files/Git LFS/gcc-ar-16"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-16.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-16.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-16"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar-16.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar-16.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar-16"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar-16.com"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar-16.exe"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar-16"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar-16.com"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar-16.exe"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar-16"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-16.com"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-16.exe"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-16"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-16.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-16.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-16"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ar-16.com"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ar-16.exe"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ar-16"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar-16.com"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar-16.exe"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar-16"
+      - "C:/msys64/ucrt64/bin/gcc-ar16.com"
+      - "C:/msys64/ucrt64/bin/gcc-ar16.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar16"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar16.com"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar16.exe"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar16"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar16.com"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar16.exe"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar16"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar16.com"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar16.exe"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ar16"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar16.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar16.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar16"
+      - "C:/Windows/System32/gcc-ar16.com"
+      - "C:/Windows/System32/gcc-ar16.exe"
+      - "C:/Windows/System32/gcc-ar16"
+      - "C:/Windows/gcc-ar16.com"
+      - "C:/Windows/gcc-ar16.exe"
+      - "C:/Windows/gcc-ar16"
+      - "C:/Windows/System32/wbem/gcc-ar16.com"
+      - "C:/Windows/System32/wbem/gcc-ar16.exe"
+      - "C:/Windows/System32/wbem/gcc-ar16"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar16.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar16.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar16"
+      - "C:/Windows/System32/OpenSSH/gcc-ar16.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar16.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar16"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar16.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar16.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar16"
+      - "C:/Program Files/dotnet/gcc-ar16.com"
+      - "C:/Program Files/dotnet/gcc-ar16.exe"
+      - "C:/Program Files/dotnet/gcc-ar16"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar16.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar16.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar16"
+      - "C:/Program Files/CMake/bin/gcc-ar16.com"
+      - "C:/Program Files/CMake/bin/gcc-ar16.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar16"
+      - "C:/Program Files/Git/cmd/gcc-ar16.com"
+      - "C:/Program Files/Git/cmd/gcc-ar16.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar16"
+      - "C:/Program Files/PuTTY/gcc-ar16.com"
+      - "C:/Program Files/PuTTY/gcc-ar16.exe"
+      - "C:/Program Files/PuTTY/gcc-ar16"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar16.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar16.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ar16"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar16.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar16.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ar16"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar16.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar16.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar16"
+      - "C:/Program Files/nodejs/gcc-ar16.com"
+      - "C:/Program Files/nodejs/gcc-ar16.exe"
+      - "C:/Program Files/nodejs/gcc-ar16"
+      - "C:/Program Files (x86)/pcsuite/gcc-ar16.com"
+      - "C:/Program Files (x86)/pcsuite/gcc-ar16.exe"
+      - "C:/Program Files (x86)/pcsuite/gcc-ar16"
+      - "C:/Program Files/Git LFS/gcc-ar16.com"
+      - "C:/Program Files/Git LFS/gcc-ar16.exe"
+      - "C:/Program Files/Git LFS/gcc-ar16"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar16.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar16.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar16"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar16.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar16.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ar16"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar16.com"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar16.exe"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ar16"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar16.com"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar16.exe"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ar16"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar16.com"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar16.exe"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar16"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar16.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar16.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar16"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ar16.com"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ar16.exe"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ar16"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar16.com"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar16.exe"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ar16"
+      - "C:/msys64/ucrt64/bin/gcc-ar.com"
+    found: "C:/msys64/ucrt64/bin/gcc-ar.exe"
     search_context:
       ENV{PATH}:
         - "c:\\Users\\Rohith\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
@@ -1949,13 +2052,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1964,7 +2067,6 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Hello"
   -
     kind: "find-v1"
     backtrace:
@@ -1983,12 +2085,12 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "gcc-ranlib-6.3"
-      - "gcc-ranlib-6"
-      - "gcc-ranlib6"
+      - "gcc-ranlib-16.1"
+      - "gcc-ranlib-16"
+      - "gcc-ranlib16"
       - "gcc-ranlib"
     candidate_directories:
-      - "C:/MinGW/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/"
@@ -2019,278 +2121,278 @@ events:
       - "C:/Users/Rohith/.dotnet/tools/"
       - "C:/Users/Rohith/AppData/Roaming/npm/"
     searched_directories:
-      - "C:/MinGW/bin/gcc-ranlib-6.3.com"
-      - "C:/MinGW/bin/gcc-ranlib-6.3.exe"
-      - "C:/MinGW/bin/gcc-ranlib-6.3"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-6.3.com"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-6.3.exe"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-6.3"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-6.3.com"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-6.3.exe"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-6.3"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib-6.3.com"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib-6.3.exe"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib-6.3"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-6.3.com"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-6.3.exe"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-6.3"
-      - "C:/Windows/System32/gcc-ranlib-6.3.com"
-      - "C:/Windows/System32/gcc-ranlib-6.3.exe"
-      - "C:/Windows/System32/gcc-ranlib-6.3"
-      - "C:/Windows/gcc-ranlib-6.3.com"
-      - "C:/Windows/gcc-ranlib-6.3.exe"
-      - "C:/Windows/gcc-ranlib-6.3"
-      - "C:/Windows/System32/wbem/gcc-ranlib-6.3.com"
-      - "C:/Windows/System32/wbem/gcc-ranlib-6.3.exe"
-      - "C:/Windows/System32/wbem/gcc-ranlib-6.3"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-6.3.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-6.3.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-6.3"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-6.3.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-6.3.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-6.3"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-6.3.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-6.3.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-6.3"
-      - "C:/Program Files/dotnet/gcc-ranlib-6.3.com"
-      - "C:/Program Files/dotnet/gcc-ranlib-6.3.exe"
-      - "C:/Program Files/dotnet/gcc-ranlib-6.3"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-6.3.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-6.3.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-6.3"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-6.3.com"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-6.3.exe"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-6.3"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-6.3.com"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-6.3.exe"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-6.3"
-      - "C:/Program Files/PuTTY/gcc-ranlib-6.3.com"
-      - "C:/Program Files/PuTTY/gcc-ranlib-6.3.exe"
-      - "C:/Program Files/PuTTY/gcc-ranlib-6.3"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib-6.3.com"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib-6.3.exe"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib-6.3"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib-6.3.com"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib-6.3.exe"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib-6.3"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-6.3.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-6.3.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-6.3"
-      - "C:/Program Files/nodejs/gcc-ranlib-6.3.com"
-      - "C:/Program Files/nodejs/gcc-ranlib-6.3.exe"
-      - "C:/Program Files/nodejs/gcc-ranlib-6.3"
-      - "C:/Program Files (x86)/pcsuite/gcc-ranlib-6.3.com"
-      - "C:/Program Files (x86)/pcsuite/gcc-ranlib-6.3.exe"
-      - "C:/Program Files (x86)/pcsuite/gcc-ranlib-6.3"
-      - "C:/Program Files/Git LFS/gcc-ranlib-6.3.com"
-      - "C:/Program Files/Git LFS/gcc-ranlib-6.3.exe"
-      - "C:/Program Files/Git LFS/gcc-ranlib-6.3"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-6.3.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-6.3.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-6.3"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib-6.3.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib-6.3.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib-6.3"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-6.3.com"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-6.3.exe"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-6.3"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib-6.3.com"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib-6.3.exe"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib-6.3"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-6.3.com"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-6.3.exe"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-6.3"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-6.3.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-6.3.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-6.3"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib-6.3.com"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib-6.3.exe"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib-6.3"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib-6.3.com"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib-6.3.exe"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib-6.3"
-      - "C:/MinGW/bin/gcc-ranlib-6.com"
-      - "C:/MinGW/bin/gcc-ranlib-6.exe"
-      - "C:/MinGW/bin/gcc-ranlib-6"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-6.com"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-6.exe"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-6"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-6.com"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-6.exe"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-6"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib-6.com"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib-6.exe"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib-6"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-6.com"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-6.exe"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-6"
-      - "C:/Windows/System32/gcc-ranlib-6.com"
-      - "C:/Windows/System32/gcc-ranlib-6.exe"
-      - "C:/Windows/System32/gcc-ranlib-6"
-      - "C:/Windows/gcc-ranlib-6.com"
-      - "C:/Windows/gcc-ranlib-6.exe"
-      - "C:/Windows/gcc-ranlib-6"
-      - "C:/Windows/System32/wbem/gcc-ranlib-6.com"
-      - "C:/Windows/System32/wbem/gcc-ranlib-6.exe"
-      - "C:/Windows/System32/wbem/gcc-ranlib-6"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-6.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-6.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-6"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-6.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-6.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-6"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-6.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-6.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-6"
-      - "C:/Program Files/dotnet/gcc-ranlib-6.com"
-      - "C:/Program Files/dotnet/gcc-ranlib-6.exe"
-      - "C:/Program Files/dotnet/gcc-ranlib-6"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-6.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-6.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-6"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-6.com"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-6.exe"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-6"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-6.com"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-6.exe"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-6"
-      - "C:/Program Files/PuTTY/gcc-ranlib-6.com"
-      - "C:/Program Files/PuTTY/gcc-ranlib-6.exe"
-      - "C:/Program Files/PuTTY/gcc-ranlib-6"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib-6.com"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib-6.exe"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib-6"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib-6.com"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib-6.exe"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib-6"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-6.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-6.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-6"
-      - "C:/Program Files/nodejs/gcc-ranlib-6.com"
-      - "C:/Program Files/nodejs/gcc-ranlib-6.exe"
-      - "C:/Program Files/nodejs/gcc-ranlib-6"
-      - "C:/Program Files (x86)/pcsuite/gcc-ranlib-6.com"
-      - "C:/Program Files (x86)/pcsuite/gcc-ranlib-6.exe"
-      - "C:/Program Files (x86)/pcsuite/gcc-ranlib-6"
-      - "C:/Program Files/Git LFS/gcc-ranlib-6.com"
-      - "C:/Program Files/Git LFS/gcc-ranlib-6.exe"
-      - "C:/Program Files/Git LFS/gcc-ranlib-6"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-6.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-6.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-6"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib-6.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib-6.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib-6"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-6.com"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-6.exe"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-6"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib-6.com"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib-6.exe"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib-6"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-6.com"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-6.exe"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-6"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-6.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-6.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-6"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib-6.com"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib-6.exe"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib-6"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib-6.com"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib-6.exe"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib-6"
-      - "C:/MinGW/bin/gcc-ranlib6.com"
-      - "C:/MinGW/bin/gcc-ranlib6.exe"
-      - "C:/MinGW/bin/gcc-ranlib6"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib6.com"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib6.exe"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib6"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib6.com"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib6.exe"
-      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib6"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib6.com"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib6.exe"
-      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib6"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib6.com"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib6.exe"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib6"
-      - "C:/Windows/System32/gcc-ranlib6.com"
-      - "C:/Windows/System32/gcc-ranlib6.exe"
-      - "C:/Windows/System32/gcc-ranlib6"
-      - "C:/Windows/gcc-ranlib6.com"
-      - "C:/Windows/gcc-ranlib6.exe"
-      - "C:/Windows/gcc-ranlib6"
-      - "C:/Windows/System32/wbem/gcc-ranlib6.com"
-      - "C:/Windows/System32/wbem/gcc-ranlib6.exe"
-      - "C:/Windows/System32/wbem/gcc-ranlib6"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib6.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib6.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib6"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib6.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib6.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib6"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib6.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib6.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib6"
-      - "C:/Program Files/dotnet/gcc-ranlib6.com"
-      - "C:/Program Files/dotnet/gcc-ranlib6.exe"
-      - "C:/Program Files/dotnet/gcc-ranlib6"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib6.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib6.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib6"
-      - "C:/Program Files/CMake/bin/gcc-ranlib6.com"
-      - "C:/Program Files/CMake/bin/gcc-ranlib6.exe"
-      - "C:/Program Files/CMake/bin/gcc-ranlib6"
-      - "C:/Program Files/Git/cmd/gcc-ranlib6.com"
-      - "C:/Program Files/Git/cmd/gcc-ranlib6.exe"
-      - "C:/Program Files/Git/cmd/gcc-ranlib6"
-      - "C:/Program Files/PuTTY/gcc-ranlib6.com"
-      - "C:/Program Files/PuTTY/gcc-ranlib6.exe"
-      - "C:/Program Files/PuTTY/gcc-ranlib6"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib6.com"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib6.exe"
-      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib6"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib6.com"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib6.exe"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib6"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib6.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib6.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib6"
-      - "C:/Program Files/nodejs/gcc-ranlib6.com"
-      - "C:/Program Files/nodejs/gcc-ranlib6.exe"
-      - "C:/Program Files/nodejs/gcc-ranlib6"
-      - "C:/Program Files (x86)/pcsuite/gcc-ranlib6.com"
-      - "C:/Program Files (x86)/pcsuite/gcc-ranlib6.exe"
-      - "C:/Program Files (x86)/pcsuite/gcc-ranlib6"
-      - "C:/Program Files/Git LFS/gcc-ranlib6.com"
-      - "C:/Program Files/Git LFS/gcc-ranlib6.exe"
-      - "C:/Program Files/Git LFS/gcc-ranlib6"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib6.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib6.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib6"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib6.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib6.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib6"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib6.com"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib6.exe"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib6"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib6.com"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib6.exe"
-      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib6"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib6.com"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib6.exe"
-      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib6"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib6.com"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib6.exe"
-      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib6"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib6.com"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib6.exe"
-      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib6"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib6.com"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib6.exe"
-      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib6"
-      - "C:/MinGW/bin/gcc-ranlib.com"
-    found: "C:/MinGW/bin/gcc-ranlib.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-16.1.com"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-16.1.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-16.1"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.1.com"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.1.exe"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.1"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-16.1.com"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-16.1.exe"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-16.1"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib-16.1.com"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib-16.1.exe"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib-16.1"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-16.1.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-16.1.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-16.1"
+      - "C:/Windows/System32/gcc-ranlib-16.1.com"
+      - "C:/Windows/System32/gcc-ranlib-16.1.exe"
+      - "C:/Windows/System32/gcc-ranlib-16.1"
+      - "C:/Windows/gcc-ranlib-16.1.com"
+      - "C:/Windows/gcc-ranlib-16.1.exe"
+      - "C:/Windows/gcc-ranlib-16.1"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16.1.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16.1.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16.1"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.1.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.1.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.1"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16.1.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16.1.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16.1"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-16.1.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-16.1.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-16.1"
+      - "C:/Program Files/dotnet/gcc-ranlib-16.1.com"
+      - "C:/Program Files/dotnet/gcc-ranlib-16.1.exe"
+      - "C:/Program Files/dotnet/gcc-ranlib-16.1"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-16.1.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-16.1.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-16.1"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-16.1.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-16.1.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-16.1"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-16.1.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-16.1.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-16.1"
+      - "C:/Program Files/PuTTY/gcc-ranlib-16.1.com"
+      - "C:/Program Files/PuTTY/gcc-ranlib-16.1.exe"
+      - "C:/Program Files/PuTTY/gcc-ranlib-16.1"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib-16.1.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib-16.1.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib-16.1"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib-16.1.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib-16.1.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib-16.1"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-16.1.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-16.1.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-16.1"
+      - "C:/Program Files/nodejs/gcc-ranlib-16.1.com"
+      - "C:/Program Files/nodejs/gcc-ranlib-16.1.exe"
+      - "C:/Program Files/nodejs/gcc-ranlib-16.1"
+      - "C:/Program Files (x86)/pcsuite/gcc-ranlib-16.1.com"
+      - "C:/Program Files (x86)/pcsuite/gcc-ranlib-16.1.exe"
+      - "C:/Program Files (x86)/pcsuite/gcc-ranlib-16.1"
+      - "C:/Program Files/Git LFS/gcc-ranlib-16.1.com"
+      - "C:/Program Files/Git LFS/gcc-ranlib-16.1.exe"
+      - "C:/Program Files/Git LFS/gcc-ranlib-16.1"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-16.1.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-16.1.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-16.1"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib-16.1.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib-16.1.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib-16.1"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16.1.com"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16.1.exe"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16.1"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib-16.1.com"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib-16.1.exe"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib-16.1"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-16.1.com"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-16.1.exe"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-16.1"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-16.1.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-16.1.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-16.1"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib-16.1.com"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib-16.1.exe"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib-16.1"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib-16.1.com"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib-16.1.exe"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib-16.1"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-16.com"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-16.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-16"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.com"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.exe"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-16.com"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-16.exe"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-16"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib-16.com"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib-16.exe"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib-16"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-16.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-16.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-16"
+      - "C:/Windows/System32/gcc-ranlib-16.com"
+      - "C:/Windows/System32/gcc-ranlib-16.exe"
+      - "C:/Windows/System32/gcc-ranlib-16"
+      - "C:/Windows/gcc-ranlib-16.com"
+      - "C:/Windows/gcc-ranlib-16.exe"
+      - "C:/Windows/gcc-ranlib-16"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-16.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-16.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-16"
+      - "C:/Program Files/dotnet/gcc-ranlib-16.com"
+      - "C:/Program Files/dotnet/gcc-ranlib-16.exe"
+      - "C:/Program Files/dotnet/gcc-ranlib-16"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-16.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-16.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-16"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-16.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-16.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-16"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-16.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-16.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-16"
+      - "C:/Program Files/PuTTY/gcc-ranlib-16.com"
+      - "C:/Program Files/PuTTY/gcc-ranlib-16.exe"
+      - "C:/Program Files/PuTTY/gcc-ranlib-16"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib-16.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib-16.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib-16"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib-16.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib-16.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib-16"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-16.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-16.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-16"
+      - "C:/Program Files/nodejs/gcc-ranlib-16.com"
+      - "C:/Program Files/nodejs/gcc-ranlib-16.exe"
+      - "C:/Program Files/nodejs/gcc-ranlib-16"
+      - "C:/Program Files (x86)/pcsuite/gcc-ranlib-16.com"
+      - "C:/Program Files (x86)/pcsuite/gcc-ranlib-16.exe"
+      - "C:/Program Files (x86)/pcsuite/gcc-ranlib-16"
+      - "C:/Program Files/Git LFS/gcc-ranlib-16.com"
+      - "C:/Program Files/Git LFS/gcc-ranlib-16.exe"
+      - "C:/Program Files/Git LFS/gcc-ranlib-16"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-16.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-16.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-16"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib-16.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib-16.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib-16"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16.com"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16.exe"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib-16.com"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib-16.exe"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib-16"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-16.com"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-16.exe"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-16"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-16.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-16.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-16"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib-16.com"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib-16.exe"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib-16"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib-16.com"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib-16.exe"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib-16"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib16.com"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib16.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib16"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib16.com"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib16.exe"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib16"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib16.com"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib16.exe"
+      - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib16"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib16.com"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib16.exe"
+      - "C:/Users/Rohith/.vscode/extensions/vadimcn.vscode-lldb-1.12.2/bin/gcc-ranlib16"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib16.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib16.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib16"
+      - "C:/Windows/System32/gcc-ranlib16.com"
+      - "C:/Windows/System32/gcc-ranlib16.exe"
+      - "C:/Windows/System32/gcc-ranlib16"
+      - "C:/Windows/gcc-ranlib16.com"
+      - "C:/Windows/gcc-ranlib16.exe"
+      - "C:/Windows/gcc-ranlib16"
+      - "C:/Windows/System32/wbem/gcc-ranlib16.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib16.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib16"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib16.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib16.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib16"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib16.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib16.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib16"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib16.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib16.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib16"
+      - "C:/Program Files/dotnet/gcc-ranlib16.com"
+      - "C:/Program Files/dotnet/gcc-ranlib16.exe"
+      - "C:/Program Files/dotnet/gcc-ranlib16"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib16.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib16.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib16"
+      - "C:/Program Files/CMake/bin/gcc-ranlib16.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib16.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib16"
+      - "C:/Program Files/Git/cmd/gcc-ranlib16.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib16.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib16"
+      - "C:/Program Files/PuTTY/gcc-ranlib16.com"
+      - "C:/Program Files/PuTTY/gcc-ranlib16.exe"
+      - "C:/Program Files/PuTTY/gcc-ranlib16"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib16.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib16.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/gcc-ranlib16"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib16.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib16.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/gcc-ranlib16"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib16.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib16.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib16"
+      - "C:/Program Files/nodejs/gcc-ranlib16.com"
+      - "C:/Program Files/nodejs/gcc-ranlib16.exe"
+      - "C:/Program Files/nodejs/gcc-ranlib16"
+      - "C:/Program Files (x86)/pcsuite/gcc-ranlib16.com"
+      - "C:/Program Files (x86)/pcsuite/gcc-ranlib16.exe"
+      - "C:/Program Files (x86)/pcsuite/gcc-ranlib16"
+      - "C:/Program Files/Git LFS/gcc-ranlib16.com"
+      - "C:/Program Files/Git LFS/gcc-ranlib16.exe"
+      - "C:/Program Files/Git LFS/gcc-ranlib16"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib16.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib16.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib16"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib16.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib16.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/gcc-ranlib16"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib16.com"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib16.exe"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/gcc-ranlib16"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib16.com"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib16.exe"
+      - "C:/Users/Rohith/AppData/Local/GitHubDesktop/bin/gcc-ranlib16"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib16.com"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib16.exe"
+      - "C:/Users/Rohith/AppData/Local/Microsoft/WinGet/Packages/Fastfetch-cli.Fastfetch_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib16"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib16.com"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib16.exe"
+      - "C:/Users/Rohith/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib16"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib16.com"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib16.exe"
+      - "C:/Users/Rohith/.dotnet/tools/gcc-ranlib16"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib16.com"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib16.exe"
+      - "C:/Users/Rohith/AppData/Roaming/npm/gcc-ranlib16"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib.com"
+    found: "C:/msys64/ucrt64/bin/gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
         - "c:\\Users\\Rohith\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
@@ -2308,13 +2410,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -2323,7 +2425,6 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Hello"
   -
     kind: "find-v1"
     backtrace:
@@ -2362,13 +2463,13 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/PuTTY/"
-      - "C:/MinGW/bin/"
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
       - "C:/Program Files (x86)/pcsuite/"
       - "C:/Program Files/Git LFS/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/Rohith/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/Rohith/AppData/Local/Microsoft/WindowsApps/"
@@ -2386,9 +2487,9 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/Hello/bin/"
-      - "C:/Program Files (x86)/Hello/sbin/"
-      - "C:/Program Files (x86)/Hello/"
+      - "C:/Program Files (x86)/ArcEngine/bin/"
+      - "C:/Program Files (x86)/ArcEngine/sbin/"
+      - "C:/Program Files (x86)/ArcEngine/"
     searched_directories:
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/windres.com"
       - "C:/Users/Rohith/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/windres.exe"
@@ -2435,8 +2536,26 @@ events:
       - "C:/Program Files/PuTTY/windres.com"
       - "C:/Program Files/PuTTY/windres.exe"
       - "C:/Program Files/PuTTY/windres"
-      - "C:/MinGW/bin/windres.com"
-    found: "C:/MinGW/bin/windres.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/windres.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/windres.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/windres"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/windres.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/windres.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/windres"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/windres.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/windres.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/windres"
+      - "C:/Program Files/nodejs/windres.com"
+      - "C:/Program Files/nodejs/windres.exe"
+      - "C:/Program Files/nodejs/windres"
+      - "C:/Program Files (x86)/pcsuite/windres.com"
+      - "C:/Program Files (x86)/pcsuite/windres.exe"
+      - "C:/Program Files (x86)/pcsuite/windres"
+      - "C:/Program Files/Git LFS/windres.com"
+      - "C:/Program Files/Git LFS/windres.exe"
+      - "C:/Program Files/Git LFS/windres"
+      - "C:/msys64/ucrt64/bin/windres.com"
+    found: "C:/msys64/ucrt64/bin/windres.exe"
     search_context:
       ENV{PATH}:
         - "c:\\Users\\Rohith\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
@@ -2454,13 +2573,13 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PuTTY\\"
-        - "C:\\MinGW\\bin"
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files (x86)\\pcsuite\\"
         - "C:\\Program Files\\Git LFS"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\Rohith\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -2469,12 +2588,12 @@ events:
         - "C:\\Users\\Rohith\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Rohith\\.dotnet\\tools"
         - "C:\\Users\\Rohith\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Hello"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ArcEngine"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/Hello"
+        - "C:/Program Files (x86)/ArcEngine"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -2484,8 +2603,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Rohith/OneDrive/Documents/Hello Engine/bulid/CMakeFiles/CMakeScratch/TryCompile-bp25rb"
-      binary: "C:/Users/Rohith/OneDrive/Documents/Hello Engine/bulid/CMakeFiles/CMakeScratch/TryCompile-bp25rb"
+      source: "C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/CMakeFiles/CMakeScratch/TryCompile-cxyf1g"
+      binary: "C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/CMakeFiles/CMakeScratch/TryCompile-cxyf1g"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2495,76 +2614,73 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Rohith/OneDrive/Documents/Hello Engine/bulid/CMakeFiles/CMakeScratch/TryCompile-bp25rb'
+        Change Dir: 'C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/CMakeFiles/CMakeScratch/TryCompile-cxyf1g'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c7a8c/fast
-        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c7a8c.dir\\build.make CMakeFiles/cmTC_c7a8c.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/Rohith/OneDrive/Documents/Hello Engine/bulid/CMakeFiles/CMakeScratch/TryCompile-bp25rb'
-        Building CXX object CMakeFiles/cmTC_c7a8c.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\MinGW\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_c7a8c.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_1dd74/fast
+        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1dd74.dir\\build.make CMakeFiles/cmTC_1dd74.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/CMakeFiles/CMakeScratch/TryCompile-cxyf1g'
+        Building CXX object CMakeFiles/cmTC_1dd74.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\msys64\\ucrt64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_1dd74.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
-        COLLECT_GCC=C:\\MinGW\\bin\\c++.exe
-        Target: mingw32
-        Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls
-        Thread model: win32
-        gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c7a8c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
-         c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1plus.exe -quiet -v -iprefix c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/ C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i586 -auxbase-strip CMakeFiles\\cmTC_c7a8c.dir\\CMakeCXXCompilerABI.cpp.obj -version -o C:\\Users\\Rohith\\AppData\\Local\\Temp\\cc3MLNcl.s
-        GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
-        	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.2, isl version 0.15
-        warning: MPC header version 1.0.2 differs from library version 1.0.3.
+        COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-16.1.0/configure --prefix=/ucrt64 --with-local-prefix=/ucrt64/local --libexecdir=/ucrt64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,c++,ada,fortran,lto,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-tls --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/ucrt64 --with-mpfr=/ucrt64 --with-mpc=/ucrt64 --with-isl=/ucrt64 --with-pkgversion='Rev5, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-lto --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.1.0 (Rev5, Built by MSYS2 project) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1dd74.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1dd74.dir\\'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_1dd74.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Rohith\\AppData\\Local\\Temp\\cc9jeyab.s
+        GNU C++20 (Rev5, Built by MSYS2 project) version 16.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 16.1.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.27-GMP
+        
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++"
-        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++/mingw32"
-        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++/backward"
-        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include"
-        ignoring duplicate directory "/mingw/lib/gcc/mingw32/6.3.0/../../../../include"
-        ignoring duplicate directory "c:/mingw/lib/gcc/../../include"
-        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include-fixed"
-        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"
-        ignoring duplicate directory "/mingw/include"
+        ignoring nonexistent directory "C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0/x86_64-w64-mingw32"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0/backward"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.1.0/include"
+        ignoring nonexistent directory "D:/M/msys64/ucrt64/include"
+        ignoring nonexistent directory "/ucrt64/include"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed"
+        ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++
-         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++/mingw32
-         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++/backward
-         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include
-         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../include
-         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include-fixed
-         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0/x86_64-w64-mingw32
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0/backward
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/include
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed
         End of search list.
-        GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
-        	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.2, isl version 0.15
-        warning: MPC header version 1.0.2 differs from library version 1.0.3.
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        Compiler executable checksum: af09a87986453bf79da3565f33c7648f
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c7a8c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
-         c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_c7a8c.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Rohith\\AppData\\Local\\Temp\\cc3MLNcl.s
-        GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28
-        COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
-        LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c7a8c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
-        Linking CXX executable cmTC_c7a8c.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_c7a8c.dir\\link.txt --verbose=1
+        Compiler executable checksum: c17fb94a142b10fdb3ae88ea0e837cbf
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1dd74.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1dd74.dir\\'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_1dd74.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Rohith\\AppData\\Local\\Temp\\cc9jeyab.s
+        GNU assembler version 2.46.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.46.1
+        COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1dd74.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1dd74.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_1dd74.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_1dd74.dir\\link.txt --verbose=1
         Using built-in specs.
-        COLLECT_GCC=C:\\MinGW\\bin\\c++.exe
-        COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe
-        Target: mingw32
-        Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls
-        Thread model: win32
-        gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
-        COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
-        LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c7a8c.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
-         c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Rohith\\AppData\\Local\\Temp\\ccpEW7qM.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_c7a8c.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_c7a8c.dir/objects.a --no-whole-archive --out-implib libcmTC_c7a8c.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
-        collect2 version 6.3.0
-        c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Rohith\\AppData\\Local\\Temp\\ccpEW7qM.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_c7a8c.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_c7a8c.dir/objects.a --no-whole-archive --out-implib libcmTC_c7a8c.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
-        GNU ld (GNU Binutils) 2.28
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c7a8c.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_c7a8c.dir/objects.a
-        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_c7a8c.dir/objects.a @CMakeFiles\\cmTC_c7a8c.dir\\objects1.rsp
-        C:\\MinGW\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_c7a8c.dir/objects.a -Wl,--no-whole-archive -o cmTC_c7a8c.exe -Wl,--out-implib,libcmTC_c7a8c.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/Rohith/OneDrive/Documents/Hello Engine/bulid/CMakeFiles/CMakeScratch/TryCompile-bp25rb'
+        COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe
+        COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-16.1.0/configure --prefix=/ucrt64 --with-local-prefix=/ucrt64/local --libexecdir=/ucrt64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,c++,ada,fortran,lto,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-tls --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/ucrt64 --with-mpfr=/ucrt64 --with-mpc=/ucrt64 --with-isl=/ucrt64 --with-pkgversion='Rev5, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-lto --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.1.0 (Rev5, Built by MSYS2 project) 
+        COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1dd74.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_1dd74.'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Rohith\\AppData\\Local\\Temp\\ccOCB04b.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_1dd74.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_1dd74.dir/objects.a --no-whole-archive --out-implib libcmTC_1dd74.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+        collect2 version 16.1.0
+        C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Rohith\\AppData\\Local\\Temp\\ccOCB04b.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_1dd74.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_1dd74.dir/objects.a --no-whole-archive --out-implib libcmTC_1dd74.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+        GNU ld (GNU Binutils) 2.46.1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1dd74.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_1dd74.'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_1dd74.dir/objects.a
+        C:\\msys64\\ucrt64\\bin\\ar.exe qc CMakeFiles\\cmTC_1dd74.dir/objects.a @CMakeFiles\\cmTC_1dd74.dir\\objects1.rsp
+        C:\\msys64\\ucrt64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_1dd74.dir/objects.a -Wl,--no-whole-archive -o cmTC_1dd74.exe -Wl,--out-implib,libcmTC_1dd74.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/CMakeFiles/CMakeScratch/TryCompile-cxyf1g'
         
       exitCode: 0
   -
@@ -2577,22 +2693,20 @@ events:
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++]
-          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++/mingw32]
-          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++/backward]
-          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include]
-          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../include]
-          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include-fixed]
-          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/include]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0/x86_64-w64-mingw32]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0/backward]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/include]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed]
         end of search list found
-        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++]
-        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++/mingw32] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32]
-        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++/backward] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward]
-        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include]
-        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../include] ==> [C:/MinGW/include]
-        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include-fixed] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed]
-        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/include] ==> [C:/MinGW/mingw32/include]
-        implicit include dirs: [C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++;C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32;C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward;C:/MinGW/lib/gcc/mingw32/6.3.0/include;C:/MinGW/include;C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed;C:/MinGW/mingw32/include]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0] ==> [C:/msys64/ucrt64/include/c++/16.1.0]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0/x86_64-w64-mingw32] ==> [C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0/backward] ==> [C:/msys64/ucrt64/include/c++/16.1.0/backward]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/include] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include] ==> [C:/msys64/ucrt64/include]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed]
+        implicit include dirs: [C:/msys64/ucrt64/include/c++/16.1.0;C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32;C:/msys64/ucrt64/include/c++/16.1.0/backward;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include;C:/msys64/ucrt64/include;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed]
       
       
   -
@@ -2605,89 +2719,91 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/Rohith/OneDrive/Documents/Hello Engine/bulid/CMakeFiles/CMakeScratch/TryCompile-bp25rb']
+        ignore line: [Change Dir: 'C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/CMakeFiles/CMakeScratch/TryCompile-cxyf1g']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c7a8c/fast]
-        ignore line: [C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c7a8c.dir\\build.make CMakeFiles/cmTC_c7a8c.dir/build]
-        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Rohith/OneDrive/Documents/Hello Engine/bulid/CMakeFiles/CMakeScratch/TryCompile-bp25rb']
-        ignore line: [Building CXX object CMakeFiles/cmTC_c7a8c.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\MinGW\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_c7a8c.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_1dd74/fast]
+        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1dd74.dir\\build.make CMakeFiles/cmTC_1dd74.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/CMakeFiles/CMakeScratch/TryCompile-cxyf1g']
+        ignore line: [Building CXX object CMakeFiles/cmTC_1dd74.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\msys64\\ucrt64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_1dd74.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\MinGW\\bin\\c++.exe]
-        ignore line: [Target: mingw32]
-        ignore line: [Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c c++ objc obj-c++ fortran ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls]
-        ignore line: [Thread model: win32]
-        ignore line: [gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c7a8c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
-        ignore line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1plus.exe -quiet -v -iprefix c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/ C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i586 -auxbase-strip CMakeFiles\\cmTC_c7a8c.dir\\CMakeCXXCompilerABI.cpp.obj -version -o C:\\Users\\Rohith\\AppData\\Local\\Temp\\cc3MLNcl.s]
-        ignore line: [GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)]
-        ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.2  isl version 0.15]
-        ignore line: [warning: MPC header version 1.0.2 differs from library version 1.0.3.]
+        ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-16.1.0/configure --prefix=/ucrt64 --with-local-prefix=/ucrt64/local --libexecdir=/ucrt64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,c++,ada,fortran,lto,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-tls --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/ucrt64 --with-mpfr=/ucrt64 --with-mpc=/ucrt64 --with-isl=/ucrt64 --with-pkgversion='Rev5, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-lto --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.1.0 (Rev5  Built by MSYS2 project) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1dd74.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1dd74.dir\\']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_1dd74.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Rohith\\AppData\\Local\\Temp\\cc9jeyab.s]
+        ignore line: [GNU C++20 (Rev5  Built by MSYS2 project) version 16.1.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 16.1.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.27-GMP]
+        ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++"]
-        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++/mingw32"]
-        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++/backward"]
-        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include"]
-        ignore line: [ignoring duplicate directory "/mingw/lib/gcc/mingw32/6.3.0/../../../../include"]
-        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../include"]
-        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include-fixed"]
-        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"]
-        ignore line: [ignoring duplicate directory "/mingw/include"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0/x86_64-w64-mingw32"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0/backward"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.1.0/include"]
+        ignore line: [ignoring nonexistent directory "D:/M/msys64/ucrt64/include"]
+        ignore line: [ignoring nonexistent directory "/ucrt64/include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++]
-        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++/mingw32]
-        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++/backward]
-        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include]
-        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../include]
-        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include-fixed]
-        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0/x86_64-w64-mingw32]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include/c++/16.1.0/backward]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/include]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../include]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed]
         ignore line: [End of search list.]
-        ignore line: [GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)]
-        ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.2  isl version 0.15]
-        ignore line: [warning: MPC header version 1.0.2 differs from library version 1.0.3.]
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [Compiler executable checksum: af09a87986453bf79da3565f33c7648f]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c7a8c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
-        ignore line: [ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_c7a8c.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Rohith\\AppData\\Local\\Temp\\cc3MLNcl.s]
-        ignore line: [GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28]
-        ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/]
-        ignore line: [c:/mingw/bin/../libexec/gcc/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/]
-        ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/]
-        ignore line: [c:/mingw/bin/../lib/gcc/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c7a8c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
-        ignore line: [Linking CXX executable cmTC_c7a8c.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_c7a8c.dir\\link.txt --verbose=1]
+        ignore line: [Compiler executable checksum: c17fb94a142b10fdb3ae88ea0e837cbf]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1dd74.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1dd74.dir\\']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_1dd74.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Rohith\\AppData\\Local\\Temp\\cc9jeyab.s]
+        ignore line: [GNU assembler version 2.46.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.46.1]
+        ignore line: [COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1dd74.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1dd74.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_1dd74.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_1dd74.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\MinGW\\bin\\c++.exe]
-        ignore line: [COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe]
-        ignore line: [Target: mingw32]
-        ignore line: [Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c c++ objc obj-c++ fortran ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls]
-        ignore line: [Thread model: win32]
-        ignore line: [gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) ]
-        ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/]
-        ignore line: [c:/mingw/bin/../libexec/gcc/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/]
-        ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/]
-        ignore line: [c:/mingw/bin/../lib/gcc/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c7a8c.exe' '-shared-libgcc' '-mtune=generic' '-march=i586']
-        link line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Rohith\\AppData\\Local\\Temp\\ccpEW7qM.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_c7a8c.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_c7a8c.dir/objects.a --no-whole-archive --out-implib libcmTC_c7a8c.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
-          arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe] ==> ignore
+        ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-16.1.0/configure --prefix=/ucrt64 --with-local-prefix=/ucrt64/local --libexecdir=/ucrt64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,c++,ada,fortran,lto,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-tls --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/ucrt64 --with-mpfr=/ucrt64 --with-mpc=/ucrt64 --with-isl=/ucrt64 --with-pkgversion='Rev5, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-lto --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.1.0 (Rev5  Built by MSYS2 project) ]
+        ignore line: [COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1dd74.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_1dd74.']
+        link line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Rohith\\AppData\\Local\\Temp\\ccOCB04b.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_1dd74.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_1dd74.dir/objects.a --no-whole-archive --out-implib libcmTC_1dd74.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
-          arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll] ==> ignore
-          arg [-plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\Rohith\\AppData\\Local\\Temp\\ccpEW7qM.res] ==> ignore
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll] ==> ignore
+          arg [-plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\Rohith\\AppData\\Local\\Temp\\ccOCB04b.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
           arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
           arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
           arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
           arg [-plugin-opt=-pass-through=-luser32] ==> ignore
@@ -2695,28 +2811,28 @@ events:
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
           arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
-          arg [-u] ==> ignore
-          arg [___register_frame_info] ==> ignore
-          arg [-u] ==> ignore
-          arg [___deregister_frame_info] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_c7a8c.exe] ==> ignore
-          arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o]
-          arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o]
-          arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0]
-          arg [-Lc:/mingw/bin/../lib/gcc] ==> dir [c:/mingw/bin/../lib/gcc]
-          arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib]
-          arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..]
+          arg [cmTC_1dd74.exe] ==> ignore
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o]
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../..] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_c7a8c.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_1dd74.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_c7a8c.dll.a] ==> ignore
+          arg [libcmTC_1dd74.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2725,9 +2841,10 @@ events:
           arg [-lmingw32] ==> lib [mingw32]
           arg [-lgcc_s] ==> lib [gcc_s]
           arg [-lgcc] ==> lib [gcc]
-          arg [-lmoldname] ==> lib [moldname]
           arg [-lmingwex] ==> lib [mingwex]
           arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lpthread] ==> lib [pthread]
           arg [-ladvapi32] ==> lib [advapi32]
           arg [-lshell32] ==> lib [shell32]
           arg [-luser32] ==> lib [user32]
@@ -2735,25 +2852,29 @@ events:
           arg [-lmingw32] ==> lib [mingw32]
           arg [-lgcc_s] ==> lib [gcc_s]
           arg [-lgcc] ==> lib [gcc]
-          arg [-lmoldname] ==> lib [moldname]
           arg [-lmingwex] ==> lib [mingwex]
           arg [-lmsvcrt] ==> lib [msvcrt]
-          arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
-        ignore line: [collect2 version 6.3.0]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Rohith\\AppData\\Local\\Temp\\ccpEW7qM.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_c7a8c.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_c7a8c.dir/objects.a --no-whole-archive --out-implib libcmTC_c7a8c.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
-        linker tool for 'CXX': c:/mingw/mingw32/bin/ld.exe
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o]
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
+        ignore line: [collect2 version 16.1.0]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Rohith\\AppData\\Local\\Temp\\ccOCB04b.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_1dd74.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_1dd74.dir/objects.a --no-whole-archive --out-implib libcmTC_1dd74.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
+        linker tool for 'CXX': C:/msys64/ucrt64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [msvcrt]
         remove lib [msvcrt]
-        collapse obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o] ==> [C:/MinGW/lib/crt2.o]
-        collapse obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/crtbegin.o]
-        collapse obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/crtend.o]
-        collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0]
-        collapse library dir [c:/mingw/bin/../lib/gcc] ==> [C:/MinGW/lib/gcc]
-        collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib] ==> [C:/MinGW/mingw32/lib]
-        collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..] ==> [C:/MinGW/lib]
-        implicit libs: [stdc++;mingw32;gcc_s;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;moldname;mingwex]
-        implicit objs: [C:/MinGW/lib/crt2.o;C:/MinGW/lib/gcc/mingw32/6.3.0/crtbegin.o;C:/MinGW/lib/gcc/mingw32/6.3.0/crtend.o]
-        implicit dirs: [C:/MinGW/lib/gcc/mingw32/6.3.0;C:/MinGW/lib/gcc;C:/MinGW/mingw32/lib;C:/MinGW/lib]
+        collapse obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o] ==> [C:/msys64/ucrt64/lib/crt2.o]
+        collapse obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o]
+        collapse obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o] ==> [C:/msys64/ucrt64/lib/default-manifest.o]
+        collapse obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc] ==> [C:/msys64/ucrt64/lib/gcc]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib] ==> [C:/msys64/ucrt64/lib]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../..] ==> [C:/msys64/ucrt64/lib]
+        implicit libs: [stdc++;mingw32;gcc_s;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;mingwex;kernel32]
+        implicit objs: [C:/msys64/ucrt64/lib/crt2.o;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o;C:/msys64/ucrt64/lib/default-manifest.o;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
+        implicit dirs: [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0;C:/msys64/ucrt64/lib/gcc;C:/msys64/ucrt64/x86_64-w64-mingw32/lib;C:/msys64/ucrt64/lib]
         implicit fwks: []
       
       
@@ -2765,6 +2886,6 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
-      Running the CXX compiler's linker: "c:/mingw/mingw32/bin/ld.exe" "-v"
-      GNU ld (GNU Binutils) 2.28
+      Running the CXX compiler's linker: "C:/msys64/ucrt64/x86_64-w64-mingw32/bin/ld.exe" "-v"
+      GNU ld (GNU Binutils) 2.46.1
 ...

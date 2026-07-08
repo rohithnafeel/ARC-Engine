@@ -37,10 +37,11 @@ int main()
         return -1;
     }
 
-    std::cout << "OpenGL Version: " << glGetString(GL_VERSION) << "\n";
+    std::cout << "OpenGL Version: " << glGetString(GL_VERSION) << std::endl;
 
     while (!glfwWindowShouldClose(window))
     {
+        glClearColor(0.1f, 0.2f, 0.4f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
         glfwSwapBuffers(window);
