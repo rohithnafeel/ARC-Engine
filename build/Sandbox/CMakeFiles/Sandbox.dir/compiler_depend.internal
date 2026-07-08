@@ -296,6 +296,7 @@ Sandbox/CMakeFiles/Sandbox.dir/__/ThirdParty/GLAD/src/glad.c.obj
 
 Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj
  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Sandbox/src/main.cpp
+ C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/include/Arc/Editor/EditorLayer.h
  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/GLAD/include/KHR/khrplatform.h
  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/GLAD/include/glad/glad.h
  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/GLFW/include/GLFW/glfw3.h

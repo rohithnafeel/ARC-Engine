@@ -294,6 +294,7 @@ Sandbox/CMakeFiles/Sandbox.dir/__/ThirdParty/GLAD/src/glad.c.obj: C:/Users/Rohit
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/xtestintrin.h
 
 Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj: C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Sandbox/src/main.cpp \
+  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/include/Arc/Editor/EditorLayer.h \
   C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/GLAD/include/KHR/khrplatform.h \
   C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/GLAD/include/glad/glad.h \
   C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/GLFW/include/GLFW/glfw3.h \
@@ -1191,6 +1192,8 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/xsaveoptintrin.h:
 C:/msys64/ucrt64/include/c++/16.1.0/bits/nested_exception.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/xtestintrin.h:
+
+C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/include/Arc/Editor/EditorLayer.h:
 
 C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/GLFW/include/GLFW/glfw3.h:
 

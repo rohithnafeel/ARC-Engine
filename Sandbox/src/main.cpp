@@ -61,9 +61,11 @@ int main()
     ImGui::CreateContext();
 
     ImGuiIO& io = ImGui::GetIO();
-    (void)io;
+(void)io;
 
-    ImGui::StyleColorsDark();
+io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
+
+ImGui::StyleColorsDark();
 
     if (!ImGui_ImplGlfw_InitForOpenGL(window, true))
     {
