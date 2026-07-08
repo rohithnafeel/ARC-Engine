@@ -1,2 +1,2 @@
-C:\msys64\ucrt64\bin\ar.exe qc libEngine.a CMakeFiles/Engine.dir/src/Engine.cpp.obj CMakeFiles/Engine.dir/__/ThirdParty/GLAD/src/glad.c.obj
+C:\msys64\ucrt64\bin\ar.exe qc libEngine.a CMakeFiles/Engine.dir/src/Engine.cpp.obj
 C:\msys64\ucrt64\bin\ranlib.exe libEngine.a

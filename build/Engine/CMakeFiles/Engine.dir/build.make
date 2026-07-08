@@ -86,34 +86,17 @@ Engine/CMakeFiles/Engine.dir/src/Engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/Engine.cpp.s"
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\src\Engine.cpp -o CMakeFiles\Engine.dir\src\Engine.cpp.s
 
-Engine/CMakeFiles/Engine.dir/__/ThirdParty/GLAD/src/glad.c.obj: Engine/CMakeFiles/Engine.dir/flags.make
-Engine/CMakeFiles/Engine.dir/__/ThirdParty/GLAD/src/glad.c.obj: Engine/CMakeFiles/Engine.dir/includes_C.rsp
-Engine/CMakeFiles/Engine.dir/__/ThirdParty/GLAD/src/glad.c.obj: C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/GLAD/src/glad.c
-Engine/CMakeFiles/Engine.dir/__/ThirdParty/GLAD/src/glad.c.obj: Engine/CMakeFiles/Engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Engine/CMakeFiles/Engine.dir/__/ThirdParty/GLAD/src/glad.c.obj"
-	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Engine/CMakeFiles/Engine.dir/__/ThirdParty/GLAD/src/glad.c.obj -MF CMakeFiles\Engine.dir\__\ThirdParty\GLAD\src\glad.c.obj.d -o CMakeFiles\Engine.dir\__\ThirdParty\GLAD\src\glad.c.obj -c C:\Users\Rohith\OneDrive\Documents\Arc-Engine\ThirdParty\GLAD\src\glad.c
-
-Engine/CMakeFiles/Engine.dir/__/ThirdParty/GLAD/src/glad.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Engine.dir/__/ThirdParty/GLAD/src/glad.c.i"
-	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Rohith\OneDrive\Documents\Arc-Engine\ThirdParty\GLAD\src\glad.c > CMakeFiles\Engine.dir\__\ThirdParty\GLAD\src\glad.c.i
-
-Engine/CMakeFiles/Engine.dir/__/ThirdParty/GLAD/src/glad.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Engine.dir/__/ThirdParty/GLAD/src/glad.c.s"
-	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Rohith\OneDrive\Documents\Arc-Engine\ThirdParty\GLAD\src\glad.c -o CMakeFiles\Engine.dir\__\ThirdParty\GLAD\src\glad.c.s
-
 # Object files for target Engine
 Engine_OBJECTS = \
-"CMakeFiles/Engine.dir/src/Engine.cpp.obj" \
-"CMakeFiles/Engine.dir/__/ThirdParty/GLAD/src/glad.c.obj"
+"CMakeFiles/Engine.dir/src/Engine.cpp.obj"
 
 # External object files for target Engine
 Engine_EXTERNAL_OBJECTS =
 
 Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/src/Engine.cpp.obj
-Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/__/ThirdParty/GLAD/src/glad.c.obj
 Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/build.make
 Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libEngine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libEngine.a"
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && $(CMAKE_COMMAND) -P CMakeFiles\Engine.dir\cmake_clean_target.cmake
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Engine.dir\link.txt --verbose=$(VERBOSE)
 

@@ -129,30 +129,6 @@ Engine/fast:
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/build
 .PHONY : Engine/fast
 
-__/ThirdParty/GLAD/src/glad.obj: __/ThirdParty/GLAD/src/glad.c.obj
-.PHONY : __/ThirdParty/GLAD/src/glad.obj
-
-# target to build an object file
-__/ThirdParty/GLAD/src/glad.c.obj:
-	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/__/ThirdParty/GLAD/src/glad.c.obj
-.PHONY : __/ThirdParty/GLAD/src/glad.c.obj
-
-__/ThirdParty/GLAD/src/glad.i: __/ThirdParty/GLAD/src/glad.c.i
-.PHONY : __/ThirdParty/GLAD/src/glad.i
-
-# target to preprocess a source file
-__/ThirdParty/GLAD/src/glad.c.i:
-	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/__/ThirdParty/GLAD/src/glad.c.i
-.PHONY : __/ThirdParty/GLAD/src/glad.c.i
-
-__/ThirdParty/GLAD/src/glad.s: __/ThirdParty/GLAD/src/glad.c.s
-.PHONY : __/ThirdParty/GLAD/src/glad.s
-
-# target to generate assembly for a file
-__/ThirdParty/GLAD/src/glad.c.s:
-	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/__/ThirdParty/GLAD/src/glad.c.s
-.PHONY : __/ThirdParty/GLAD/src/glad.c.s
-
 src/Engine.obj: src/Engine.cpp.obj
 .PHONY : src/Engine.obj
 
@@ -186,9 +162,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Engine
-	@echo ... __/ThirdParty/GLAD/src/glad.obj
-	@echo ... __/ThirdParty/GLAD/src/glad.i
-	@echo ... __/ThirdParty/GLAD/src/glad.s
 	@echo ... src/Engine.obj
 	@echo ... src/Engine.i
 	@echo ... src/Engine.s
