@@ -86,17 +86,34 @@ Engine/CMakeFiles/Engine.dir/src/Engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/Engine.cpp.s"
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\src\Engine.cpp -o CMakeFiles\Engine.dir\src\Engine.cpp.s
 
+Engine/CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.obj: Engine/CMakeFiles/Engine.dir/flags.make
+Engine/CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.obj: Engine/CMakeFiles/Engine.dir/includes_CXX.rsp
+Engine/CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.obj: C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/src/Editor/EditorLayer.cpp
+Engine/CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.obj: Engine/CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Engine/CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.obj"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Engine/CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.obj -MF CMakeFiles\Engine.dir\src\Editor\EditorLayer.cpp.obj.d -o CMakeFiles\Engine.dir\src\Editor\EditorLayer.cpp.obj -c C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\src\Editor\EditorLayer.cpp
+
+Engine/CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.i"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\src\Editor\EditorLayer.cpp > CMakeFiles\Engine.dir\src\Editor\EditorLayer.cpp.i
+
+Engine/CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.s"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\src\Editor\EditorLayer.cpp -o CMakeFiles\Engine.dir\src\Editor\EditorLayer.cpp.s
+
 # Object files for target Engine
 Engine_OBJECTS = \
-"CMakeFiles/Engine.dir/src/Engine.cpp.obj"
+"CMakeFiles/Engine.dir/src/Engine.cpp.obj" \
+"CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.obj"
 
 # External object files for target Engine
 Engine_EXTERNAL_OBJECTS =
 
 Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/src/Engine.cpp.obj
+Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.obj
 Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/build.make
 Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libEngine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libEngine.a"
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && $(CMAKE_COMMAND) -P CMakeFiles\Engine.dir\cmake_clean_target.cmake
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Engine.dir\link.txt --verbose=$(VERBOSE)
 

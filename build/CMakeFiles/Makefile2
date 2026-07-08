@@ -149,12 +149,12 @@ ThirdParty/ImGui/clean: ThirdParty/ImGui/CMakeFiles/ImGui.dir/clean
 Engine/CMakeFiles/Engine.dir/all:
 	$(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/depend
 	$(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=1,2 "Built target Engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=1,2,3 "Built target Engine"
 .PHONY : Engine/CMakeFiles/Engine.dir/all
 
 # Build rule for subdir invocation for target.
 Engine/CMakeFiles/Engine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Engine/CMakeFiles/Engine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles 0
 .PHONY : Engine/CMakeFiles/Engine.dir/rule
@@ -166,7 +166,7 @@ Engine: Engine/CMakeFiles/Engine.dir/rule
 # codegen rule for target.
 Engine/CMakeFiles/Engine.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=1,2 "Finished codegen for target Engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target Engine"
 .PHONY : Engine/CMakeFiles/Engine.dir/codegen
 
 # clean rule for target.
@@ -182,12 +182,12 @@ Sandbox/CMakeFiles/Sandbox.dir/all: Engine/CMakeFiles/Engine.dir/all
 Sandbox/CMakeFiles/Sandbox.dir/all: ThirdParty/ImGui/CMakeFiles/ImGui.dir/all
 	$(MAKE) $(MAKESILENT) -f Sandbox\CMakeFiles\Sandbox.dir\build.make Sandbox/CMakeFiles/Sandbox.dir/depend
 	$(MAKE) $(MAKESILENT) -f Sandbox\CMakeFiles\Sandbox.dir\build.make Sandbox/CMakeFiles/Sandbox.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=11,12,13 "Built target Sandbox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=12,13,14 "Built target Sandbox"
 .PHONY : Sandbox/CMakeFiles/Sandbox.dir/all
 
 # Build rule for subdir invocation for target.
 Sandbox/CMakeFiles/Sandbox.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sandbox/CMakeFiles/Sandbox.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles 0
 .PHONY : Sandbox/CMakeFiles/Sandbox.dir/rule
@@ -199,7 +199,7 @@ Sandbox: Sandbox/CMakeFiles/Sandbox.dir/rule
 # codegen rule for target.
 Sandbox/CMakeFiles/Sandbox.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f Sandbox\CMakeFiles\Sandbox.dir\build.make Sandbox/CMakeFiles/Sandbox.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=11,12,13 "Finished codegen for target Sandbox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=12,13,14 "Finished codegen for target Sandbox"
 .PHONY : Sandbox/CMakeFiles/Sandbox.dir/codegen
 
 # clean rule for target.
@@ -214,7 +214,7 @@ Sandbox/CMakeFiles/Sandbox.dir/clean:
 ThirdParty/ImGui/CMakeFiles/ImGui.dir/all:
 	$(MAKE) $(MAKESILENT) -f ThirdParty\ImGui\CMakeFiles\ImGui.dir\build.make ThirdParty/ImGui/CMakeFiles/ImGui.dir/depend
 	$(MAKE) $(MAKESILENT) -f ThirdParty\ImGui\CMakeFiles\ImGui.dir\build.make ThirdParty/ImGui/CMakeFiles/ImGui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10 "Built target ImGui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=4,5,6,7,8,9,10,11 "Built target ImGui"
 .PHONY : ThirdParty/ImGui/CMakeFiles/ImGui.dir/all
 
 # Build rule for subdir invocation for target.
@@ -231,7 +231,7 @@ ImGui: ThirdParty/ImGui/CMakeFiles/ImGui.dir/rule
 # codegen rule for target.
 ThirdParty/ImGui/CMakeFiles/ImGui.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f ThirdParty\ImGui\CMakeFiles\ImGui.dir\build.make ThirdParty/ImGui/CMakeFiles/ImGui.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10 "Finished codegen for target ImGui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=4,5,6,7,8,9,10,11 "Finished codegen for target ImGui"
 .PHONY : ThirdParty/ImGui/CMakeFiles/ImGui.dir/codegen
 
 # clean rule for target.

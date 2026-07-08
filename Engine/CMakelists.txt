@@ -1,11 +1,13 @@
 add_library(Engine STATIC
     src/Engine.cpp
+    src/Editor/EditorLayer.cpp
 )
 
 target_include_directories(Engine PUBLIC
     include
     ../ThirdParty/GLAD/include
     ../ThirdParty/GLFW/include
+    ../ThirdParty/ImGui
 )
 
 target_link_directories(Engine PUBLIC

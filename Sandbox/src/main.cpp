@@ -4,6 +4,7 @@
 #include <imgui.h>
 #include <backends/imgui_impl_glfw.h>
 #include <backends/imgui_impl_opengl3.h>
+#include "Arc/Editor/EditorLayer.h"
 
 #include <iostream>
 
@@ -75,6 +76,7 @@ int main()
         std::cout << "Failed to initialize ImGui OpenGL Backend\n";
         return -1;
     }
+    Arc::EditorLayer editor;
 
     std::cout << "ImGui Version: " << ImGui::GetVersion() << std::endl;
 
@@ -131,7 +133,7 @@ int main()
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
-        ImGui::ShowDemoWindow();
+        editor.Render();
 
         glClearColor(0.1f, 0.2f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);

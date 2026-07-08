@@ -129,6 +129,30 @@ Engine/fast:
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/build
 .PHONY : Engine/fast
 
+src/Editor/EditorLayer.obj: src/Editor/EditorLayer.cpp.obj
+.PHONY : src/Editor/EditorLayer.obj
+
+# target to build an object file
+src/Editor/EditorLayer.cpp.obj:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.obj
+.PHONY : src/Editor/EditorLayer.cpp.obj
+
+src/Editor/EditorLayer.i: src/Editor/EditorLayer.cpp.i
+.PHONY : src/Editor/EditorLayer.i
+
+# target to preprocess a source file
+src/Editor/EditorLayer.cpp.i:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.i
+.PHONY : src/Editor/EditorLayer.cpp.i
+
+src/Editor/EditorLayer.s: src/Editor/EditorLayer.cpp.s
+.PHONY : src/Editor/EditorLayer.s
+
+# target to generate assembly for a file
+src/Editor/EditorLayer.cpp.s:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.s
+.PHONY : src/Editor/EditorLayer.cpp.s
+
 src/Engine.obj: src/Engine.cpp.obj
 .PHONY : src/Engine.obj
 
@@ -162,6 +186,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Engine
+	@echo ... src/Editor/EditorLayer.obj
+	@echo ... src/Editor/EditorLayer.i
+	@echo ... src/Editor/EditorLayer.s
 	@echo ... src/Engine.obj
 	@echo ... src/Engine.i
 	@echo ... src/Engine.s

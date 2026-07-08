@@ -40,6 +40,7 @@ Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/std_abs.h \
  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/ImGui/backends/imgui_impl_glfw.h \
  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/ImGui/backends/imgui_impl_opengl3.h \
+ C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/include/Arc/Editor/EditorLayer.h \
  C:/msys64/ucrt64/include/c++/16.1.0/iostream \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/16.1.0/ostream \

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.obj"
+  "CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.obj.d"
   "CMakeFiles/Engine.dir/src/Engine.cpp.obj"
   "CMakeFiles/Engine.dir/src/Engine.cpp.obj.d"
   "libEngine.a"
