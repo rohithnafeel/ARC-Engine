@@ -1,5 +1,19 @@
-add_library(Engine INTERFACE)
+add_library(Engine STATIC
+    src/Engine.cpp
+    ../ThirdParty/GLAD/src/glad.c
+)
 
-target_include_directories(Engine INTERFACE
+target_include_directories(Engine PUBLIC
     include
+    ../ThirdParty/GLAD/include
+    ../ThirdParty/GLFW/include
+)
+
+target_link_directories(Engine PUBLIC
+    ../ThirdParty/GLFW/lib-mingw-w64
+)
+
+target_link_libraries(Engine PUBLIC
+    glfw3
+    opengl32
 )
