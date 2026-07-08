@@ -113,6 +113,7 @@ Sandbox/Sandbox.exe: Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj
 Sandbox/Sandbox.exe: Sandbox/CMakeFiles/Sandbox.dir/__/ThirdParty/GLAD/src/glad.c.obj
 Sandbox/Sandbox.exe: Sandbox/CMakeFiles/Sandbox.dir/build.make
 Sandbox/Sandbox.exe: Engine/libEngine.a
+Sandbox/Sandbox.exe: ThirdParty/ImGui/libImGui.a
 Sandbox/Sandbox.exe: Sandbox/CMakeFiles/Sandbox.dir/linkLibs.rsp
 Sandbox/Sandbox.exe: Sandbox/CMakeFiles/Sandbox.dir/objects1.rsp
 Sandbox/Sandbox.exe: Sandbox/CMakeFiles/Sandbox.dir/link.txt

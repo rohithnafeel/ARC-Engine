@@ -141,6 +141,19 @@ Sandbox/fast:
 	$(MAKE) $(MAKESILENT) -f Sandbox\CMakeFiles\Sandbox.dir\build.make Sandbox/CMakeFiles/Sandbox.dir/build
 .PHONY : Sandbox/fast
 
+#=============================================================================
+# Target rules for targets named ImGui
+
+# Build rule for target.
+ImGui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ImGui
+.PHONY : ImGui
+
+# fast build rule for target.
+ImGui/fast:
+	$(MAKE) $(MAKESILENT) -f ThirdParty\ImGui\CMakeFiles\ImGui.dir\build.make ThirdParty/ImGui/CMakeFiles/ImGui.dir/build
+.PHONY : ImGui/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -150,6 +163,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Engine
+	@echo ... ImGui
 	@echo ... Sandbox
 .PHONY : help
 

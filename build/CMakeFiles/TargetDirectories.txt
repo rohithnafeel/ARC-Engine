@@ -6,3 +6,6 @@ C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/Engine/CMakeFiles/rebuild_ca
 C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/Sandbox/CMakeFiles/Sandbox.dir
 C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/Sandbox/CMakeFiles/edit_cache.dir
 C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/Sandbox/CMakeFiles/rebuild_cache.dir
+C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/ThirdParty/ImGui/CMakeFiles/ImGui.dir
+C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/ThirdParty/ImGui/CMakeFiles/edit_cache.dir
+C:/Users/Rohith/OneDrive/Documents/Arc-Engine/build/ThirdParty/ImGui/CMakeFiles/rebuild_cache.dir

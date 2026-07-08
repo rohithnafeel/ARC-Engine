@@ -3,4 +3,7 @@ add_executable(Sandbox
     ../ThirdParty/GLAD/src/glad.c
 )
 
-target_link_libraries(Sandbox PRIVATE Engine)
+target_link_libraries(Sandbox PRIVATE
+    Engine
+    ImGui
+)
