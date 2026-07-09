@@ -1,6 +1,7 @@
 add_library(Engine STATIC
     src/Engine.cpp
-    src/Editor/EditorLayer.cpp
+    Editor/EditorLayer.cpp
+    src/Renderer/Framebuffer.cpp
 )
 
 target_include_directories(Engine PUBLIC

@@ -5,6 +5,7 @@
 #include <backends/imgui_impl_glfw.h>
 #include <backends/imgui_impl_opengl3.h>
 #include "Arc/Editor/EditorLayer.h"
+#include "Arc/Renderer/Framebuffer.h"
 
 #include <iostream>
 
@@ -74,13 +75,22 @@ ImGui::StyleColorsDark();
     }
 
     if (!ImGui_ImplOpenGL3_Init("#version 460 core"))
-    {
-        std::cout << "Failed to initialize ImGui OpenGL Backend\n";
-        return -1;
-    }
-    Arc::EditorLayer editor;
+{
+    std::cout << "Failed to initialize ImGui OpenGL Backend\n";
+    return -1;
+}
 
-    std::cout << "ImGui Version: " << ImGui::GetVersion() << std::endl;
+std::cout << "Creating Framebuffer..." << std::endl;
+
+Arc::Framebuffer framebuffer(1280, 720);
+
+std::cout << "Framebuffer Created Successfully!" << std::endl;
+
+Arc::EditorLayer editor;
+
+std::cout << "ImGui Version: " << ImGui::GetVersion() << std::endl;
+
+   
 
     float vertices[] =
     {

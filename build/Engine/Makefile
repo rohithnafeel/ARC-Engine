@@ -129,29 +129,29 @@ Engine/fast:
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/build
 .PHONY : Engine/fast
 
-src/Editor/EditorLayer.obj: src/Editor/EditorLayer.cpp.obj
-.PHONY : src/Editor/EditorLayer.obj
+Editor/EditorLayer.obj: Editor/EditorLayer.cpp.obj
+.PHONY : Editor/EditorLayer.obj
 
 # target to build an object file
-src/Editor/EditorLayer.cpp.obj:
-	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.obj
-.PHONY : src/Editor/EditorLayer.cpp.obj
+Editor/EditorLayer.cpp.obj:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj
+.PHONY : Editor/EditorLayer.cpp.obj
 
-src/Editor/EditorLayer.i: src/Editor/EditorLayer.cpp.i
-.PHONY : src/Editor/EditorLayer.i
+Editor/EditorLayer.i: Editor/EditorLayer.cpp.i
+.PHONY : Editor/EditorLayer.i
 
 # target to preprocess a source file
-src/Editor/EditorLayer.cpp.i:
-	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.i
-.PHONY : src/Editor/EditorLayer.cpp.i
+Editor/EditorLayer.cpp.i:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.i
+.PHONY : Editor/EditorLayer.cpp.i
 
-src/Editor/EditorLayer.s: src/Editor/EditorLayer.cpp.s
-.PHONY : src/Editor/EditorLayer.s
+Editor/EditorLayer.s: Editor/EditorLayer.cpp.s
+.PHONY : Editor/EditorLayer.s
 
 # target to generate assembly for a file
-src/Editor/EditorLayer.cpp.s:
-	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/src/Editor/EditorLayer.cpp.s
-.PHONY : src/Editor/EditorLayer.cpp.s
+Editor/EditorLayer.cpp.s:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.s
+.PHONY : Editor/EditorLayer.cpp.s
 
 src/Engine.obj: src/Engine.cpp.obj
 .PHONY : src/Engine.obj
@@ -177,6 +177,30 @@ src/Engine.cpp.s:
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/src/Engine.cpp.s
 .PHONY : src/Engine.cpp.s
 
+src/Renderer/Framebuffer.obj: src/Renderer/Framebuffer.cpp.obj
+.PHONY : src/Renderer/Framebuffer.obj
+
+# target to build an object file
+src/Renderer/Framebuffer.cpp.obj:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.obj
+.PHONY : src/Renderer/Framebuffer.cpp.obj
+
+src/Renderer/Framebuffer.i: src/Renderer/Framebuffer.cpp.i
+.PHONY : src/Renderer/Framebuffer.i
+
+# target to preprocess a source file
+src/Renderer/Framebuffer.cpp.i:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.i
+.PHONY : src/Renderer/Framebuffer.cpp.i
+
+src/Renderer/Framebuffer.s: src/Renderer/Framebuffer.cpp.s
+.PHONY : src/Renderer/Framebuffer.s
+
+# target to generate assembly for a file
+src/Renderer/Framebuffer.cpp.s:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.s
+.PHONY : src/Renderer/Framebuffer.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -186,12 +210,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Engine
-	@echo ... src/Editor/EditorLayer.obj
-	@echo ... src/Editor/EditorLayer.i
-	@echo ... src/Editor/EditorLayer.s
+	@echo ... Editor/EditorLayer.obj
+	@echo ... Editor/EditorLayer.i
+	@echo ... Editor/EditorLayer.s
 	@echo ... src/Engine.obj
 	@echo ... src/Engine.i
 	@echo ... src/Engine.s
+	@echo ... src/Renderer/Framebuffer.obj
+	@echo ... src/Renderer/Framebuffer.i
+	@echo ... src/Renderer/Framebuffer.s
 .PHONY : help
 
 
