@@ -129,6 +129,30 @@ Engine/fast:
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/build
 .PHONY : Engine/fast
 
+Editor/Dockspace.obj: Editor/Dockspace.cpp.obj
+.PHONY : Editor/Dockspace.obj
+
+# target to build an object file
+Editor/Dockspace.cpp.obj:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/Dockspace.cpp.obj
+.PHONY : Editor/Dockspace.cpp.obj
+
+Editor/Dockspace.i: Editor/Dockspace.cpp.i
+.PHONY : Editor/Dockspace.i
+
+# target to preprocess a source file
+Editor/Dockspace.cpp.i:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/Dockspace.cpp.i
+.PHONY : Editor/Dockspace.cpp.i
+
+Editor/Dockspace.s: Editor/Dockspace.cpp.s
+.PHONY : Editor/Dockspace.s
+
+# target to generate assembly for a file
+Editor/Dockspace.cpp.s:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/Dockspace.cpp.s
+.PHONY : Editor/Dockspace.cpp.s
+
 Editor/EditorLayer.obj: Editor/EditorLayer.cpp.obj
 .PHONY : Editor/EditorLayer.obj
 
@@ -152,6 +176,102 @@ Editor/EditorLayer.s: Editor/EditorLayer.cpp.s
 Editor/EditorLayer.cpp.s:
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.s
 .PHONY : Editor/EditorLayer.cpp.s
+
+Editor/Panels/ConsolePanel.obj: Editor/Panels/ConsolePanel.cpp.obj
+.PHONY : Editor/Panels/ConsolePanel.obj
+
+# target to build an object file
+Editor/Panels/ConsolePanel.cpp.obj:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.obj
+.PHONY : Editor/Panels/ConsolePanel.cpp.obj
+
+Editor/Panels/ConsolePanel.i: Editor/Panels/ConsolePanel.cpp.i
+.PHONY : Editor/Panels/ConsolePanel.i
+
+# target to preprocess a source file
+Editor/Panels/ConsolePanel.cpp.i:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.i
+.PHONY : Editor/Panels/ConsolePanel.cpp.i
+
+Editor/Panels/ConsolePanel.s: Editor/Panels/ConsolePanel.cpp.s
+.PHONY : Editor/Panels/ConsolePanel.s
+
+# target to generate assembly for a file
+Editor/Panels/ConsolePanel.cpp.s:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.s
+.PHONY : Editor/Panels/ConsolePanel.cpp.s
+
+Editor/Panels/HierarchyPanel.obj: Editor/Panels/HierarchyPanel.cpp.obj
+.PHONY : Editor/Panels/HierarchyPanel.obj
+
+# target to build an object file
+Editor/Panels/HierarchyPanel.cpp.obj:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.obj
+.PHONY : Editor/Panels/HierarchyPanel.cpp.obj
+
+Editor/Panels/HierarchyPanel.i: Editor/Panels/HierarchyPanel.cpp.i
+.PHONY : Editor/Panels/HierarchyPanel.i
+
+# target to preprocess a source file
+Editor/Panels/HierarchyPanel.cpp.i:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.i
+.PHONY : Editor/Panels/HierarchyPanel.cpp.i
+
+Editor/Panels/HierarchyPanel.s: Editor/Panels/HierarchyPanel.cpp.s
+.PHONY : Editor/Panels/HierarchyPanel.s
+
+# target to generate assembly for a file
+Editor/Panels/HierarchyPanel.cpp.s:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.s
+.PHONY : Editor/Panels/HierarchyPanel.cpp.s
+
+Editor/Panels/InspectorPanel.obj: Editor/Panels/InspectorPanel.cpp.obj
+.PHONY : Editor/Panels/InspectorPanel.obj
+
+# target to build an object file
+Editor/Panels/InspectorPanel.cpp.obj:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.obj
+.PHONY : Editor/Panels/InspectorPanel.cpp.obj
+
+Editor/Panels/InspectorPanel.i: Editor/Panels/InspectorPanel.cpp.i
+.PHONY : Editor/Panels/InspectorPanel.i
+
+# target to preprocess a source file
+Editor/Panels/InspectorPanel.cpp.i:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.i
+.PHONY : Editor/Panels/InspectorPanel.cpp.i
+
+Editor/Panels/InspectorPanel.s: Editor/Panels/InspectorPanel.cpp.s
+.PHONY : Editor/Panels/InspectorPanel.s
+
+# target to generate assembly for a file
+Editor/Panels/InspectorPanel.cpp.s:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.s
+.PHONY : Editor/Panels/InspectorPanel.cpp.s
+
+Editor/Panels/ViewportPanel.obj: Editor/Panels/ViewportPanel.cpp.obj
+.PHONY : Editor/Panels/ViewportPanel.obj
+
+# target to build an object file
+Editor/Panels/ViewportPanel.cpp.obj:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.obj
+.PHONY : Editor/Panels/ViewportPanel.cpp.obj
+
+Editor/Panels/ViewportPanel.i: Editor/Panels/ViewportPanel.cpp.i
+.PHONY : Editor/Panels/ViewportPanel.i
+
+# target to preprocess a source file
+Editor/Panels/ViewportPanel.cpp.i:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.i
+.PHONY : Editor/Panels/ViewportPanel.cpp.i
+
+Editor/Panels/ViewportPanel.s: Editor/Panels/ViewportPanel.cpp.s
+.PHONY : Editor/Panels/ViewportPanel.s
+
+# target to generate assembly for a file
+Editor/Panels/ViewportPanel.cpp.s:
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build && $(MAKE) $(MAKESILENT) -f Engine\CMakeFiles\Engine.dir\build.make Engine/CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.s
+.PHONY : Editor/Panels/ViewportPanel.cpp.s
 
 src/Engine.obj: src/Engine.cpp.obj
 .PHONY : src/Engine.obj
@@ -210,9 +330,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Engine
+	@echo ... Editor/Dockspace.obj
+	@echo ... Editor/Dockspace.i
+	@echo ... Editor/Dockspace.s
 	@echo ... Editor/EditorLayer.obj
 	@echo ... Editor/EditorLayer.i
 	@echo ... Editor/EditorLayer.s
+	@echo ... Editor/Panels/ConsolePanel.obj
+	@echo ... Editor/Panels/ConsolePanel.i
+	@echo ... Editor/Panels/ConsolePanel.s
+	@echo ... Editor/Panels/HierarchyPanel.obj
+	@echo ... Editor/Panels/HierarchyPanel.i
+	@echo ... Editor/Panels/HierarchyPanel.s
+	@echo ... Editor/Panels/InspectorPanel.obj
+	@echo ... Editor/Panels/InspectorPanel.i
+	@echo ... Editor/Panels/InspectorPanel.s
+	@echo ... Editor/Panels/ViewportPanel.obj
+	@echo ... Editor/Panels/ViewportPanel.i
+	@echo ... Editor/Panels/ViewportPanel.s
 	@echo ... src/Engine.obj
 	@echo ... src/Engine.i
 	@echo ... src/Engine.s

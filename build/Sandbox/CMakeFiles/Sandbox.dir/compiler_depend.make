@@ -294,6 +294,11 @@ Sandbox/CMakeFiles/Sandbox.dir/__/ThirdParty/GLAD/src/glad.c.obj: C:/Users/Rohit
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/xtestintrin.h
 
 Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj: C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Sandbox/src/main.cpp \
+  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Dockspace.h \
+  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/ConsolePanel.h \
+  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/HierarchyPanel.h \
+  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/InspectorPanel.h \
+  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/ViewportPanel.h \
   C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/include/Arc/Editor/EditorLayer.h \
   C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/include/Arc/Renderer/Framebuffer.h \
   C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/GLAD/include/KHR/khrplatform.h \
@@ -706,6 +711,8 @@ C:/msys64/ucrt64/include/nb30.h:
 
 C:/msys64/ucrt64/include/namedpipeapi.h:
 
+C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Dockspace.h:
+
 C:/msys64/ucrt64/include/sec_api/stdlib_s.h:
 
 C:/msys64/ucrt64/include/namespaceapi.h:
@@ -853,6 +860,8 @@ C:/msys64/ucrt64/include/virtdisk.h:
 C:/msys64/ucrt64/include/shellapi.h:
 
 C:/msys64/ucrt64/include/specstrings.h:
+
+C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/InspectorPanel.h:
 
 C:/msys64/ucrt64/include/stdarg.h:
 
@@ -1196,6 +1205,16 @@ C:/msys64/ucrt64/include/c++/16.1.0/bits/nested_exception.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/xtestintrin.h:
 
+C:/msys64/ucrt64/include/sched.h:
+
+C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/ConsolePanel.h:
+
+C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/HierarchyPanel.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h:
+
+C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/ViewportPanel.h:
+
 C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/include/Arc/Editor/EditorLayer.h:
 
 C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/GLFW/include/GLFW/glfw3.h:
@@ -1239,8 +1258,6 @@ C:/msys64/ucrt64/include/c++/16.1.0/bits/exception_defines.h:
 C:/msys64/ucrt64/include/c++/16.1.0/bits/exception_ptr.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/functional_hash.h:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/ios_base.h:
 
@@ -1341,8 +1358,6 @@ C:/msys64/ucrt64/include/pthread_compat.h:
 C:/msys64/ucrt64/include/pthread_time.h:
 
 C:/msys64/ucrt64/include/pthread_unistd.h:
-
-C:/msys64/ucrt64/include/sched.h:
 
 C:/msys64/ucrt64/include/wctype.h:
 

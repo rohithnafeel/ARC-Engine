@@ -11,6 +11,11 @@ namespace Arc
         void Bind();
         void Unbind();
 
+        void Resize(unsigned int width, unsigned int height);
+
+unsigned int GetWidth() const;
+unsigned int GetHeight() const;
+
         unsigned int GetColorAttachment() const;
 
     private:

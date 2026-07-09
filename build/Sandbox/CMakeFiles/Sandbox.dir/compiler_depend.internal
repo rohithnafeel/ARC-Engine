@@ -296,6 +296,11 @@ Sandbox/CMakeFiles/Sandbox.dir/__/ThirdParty/GLAD/src/glad.c.obj
 
 Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj
  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Sandbox/src/main.cpp
+ C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Dockspace.h
+ C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/ConsolePanel.h
+ C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/HierarchyPanel.h
+ C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/InspectorPanel.h
+ C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/ViewportPanel.h
  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/include/Arc/Editor/EditorLayer.h
  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/include/Arc/Renderer/Framebuffer.h
  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/GLAD/include/KHR/khrplatform.h

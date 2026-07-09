@@ -161,12 +161,17 @@ std::cout << "ImGui Version: " << ImGui::GetVersion() << std::endl;
     glClear(GL_COLOR_BUFFER_BIT);
 
     ImGui_ImplOpenGL3_NewFrame();
-    ImGui_ImplGlfw_NewFrame();
-    ImGui::NewFrame();
+ImGui_ImplGlfw_NewFrame();
+ImGui::NewFrame();
 
-    editor.Render(framebuffer.GetColorAttachment());
+editor.Begin();
 
-    ImGui::Render();
+editor.Render(framebuffer.GetColorAttachment());
+
+editor.End();
+
+ImGui::Render();
+ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
     glfwSwapBuffers(window);

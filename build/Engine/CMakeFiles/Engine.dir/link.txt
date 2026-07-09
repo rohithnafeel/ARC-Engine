@@ -1,2 +1,2 @@
-C:\msys64\ucrt64\bin\ar.exe qc libEngine.a CMakeFiles/Engine.dir/src/Engine.cpp.obj CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.obj
+C:\msys64\ucrt64\bin\ar.exe qc libEngine.a CMakeFiles/Engine.dir/src/Engine.cpp.obj CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.obj CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj CMakeFiles/Engine.dir/Editor/Dockspace.cpp.obj CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.obj CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.obj CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.obj CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.obj
 C:\msys64\ucrt64\bin\ranlib.exe libEngine.a

@@ -1,9 +1,9 @@
 #pragma once
 
-#include "Panels/ViewportPanel.h"
-#include "Panels/HierarchyPanel.h"
-#include "Panels/InspectorPanel.h"
-#include "Panels/ConsolePanel.h"
+#include "ViewportPanel.h"
+#include "HierarchyPanel.h"
+#include "InspectorPanel.h"
+#include "ConsolePanel.h"
 #include "Dockspace.h"
 
 namespace Arc
@@ -16,7 +16,7 @@ namespace Arc
         void End();
 
     private:
-        Dockspace m_Dockspace;
+    Dockspace m_Dockspace;
         ViewportPanel m_ViewportPanel;
         HierarchyPanel m_HierarchyPanel;
         InspectorPanel m_InspectorPanel;

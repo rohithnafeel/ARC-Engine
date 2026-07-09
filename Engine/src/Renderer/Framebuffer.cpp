@@ -95,4 +95,13 @@ else
     {
         return m_ColorAttachment;
     }
+    unsigned int Framebuffer::GetWidth() const
+{
+    return m_Width;
+}
+
+unsigned int Framebuffer::GetHeight() const
+{
+    return m_Height;
+}
 }

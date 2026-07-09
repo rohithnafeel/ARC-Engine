@@ -1,11 +1,6 @@
-Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj: \
- C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\EditorLayer.cpp \
- C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/include/Arc/Editor/EditorLayer.h \
- C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/ViewportPanel.h \
- C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/HierarchyPanel.h \
- C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/InspectorPanel.h \
- C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/ConsolePanel.h \
- C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Dockspace.h \
+Engine/CMakeFiles/Engine.dir/Editor/Dockspace.cpp.obj: \
+ C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Dockspace.cpp \
+ C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Dockspace.h \
  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/ImGui/imgui.h \
  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/ImGui/imconfig.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/float.h \

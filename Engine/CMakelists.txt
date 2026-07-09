@@ -1,11 +1,23 @@
 add_library(Engine STATIC
-    src/Engine.cpp
-    Editor/EditorLayer.cpp
-    src/Renderer/Framebuffer.cpp
-)
 
+    src/Engine.cpp
+
+    src/Renderer/Framebuffer.cpp
+
+    Editor/EditorLayer.cpp
+    Editor/Dockspace.cpp
+
+    Editor/Panels/ViewportPanel.cpp
+    Editor/Panels/HierarchyPanel.cpp
+    Editor/Panels/InspectorPanel.cpp
+    Editor/Panels/ConsolePanel.cpp
+)
 target_include_directories(Engine PUBLIC
     include
+    .
+    Editor
+    Editor/Panels
+
     ../ThirdParty/GLAD/include
     ../ThirdParty/GLFW/include
     ../ThirdParty/ImGui

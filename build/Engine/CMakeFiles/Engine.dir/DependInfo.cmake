@@ -8,7 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Dockspace.cpp" "Engine/CMakeFiles/Engine.dir/Editor/Dockspace.cpp.obj" "gcc" "Engine/CMakeFiles/Engine.dir/Editor/Dockspace.cpp.obj.d"
   "C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/EditorLayer.cpp" "Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj" "gcc" "Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj.d"
+  "C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/ConsolePanel.cpp" "Engine/CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.obj" "gcc" "Engine/CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.obj.d"
+  "C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/HierarchyPanel.cpp" "Engine/CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.obj" "gcc" "Engine/CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.obj.d"
+  "C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/InspectorPanel.cpp" "Engine/CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.obj" "gcc" "Engine/CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.obj.d"
+  "C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/ViewportPanel.cpp" "Engine/CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.obj" "gcc" "Engine/CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.obj.d"
   "C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/src/Engine.cpp" "Engine/CMakeFiles/Engine.dir/src/Engine.cpp.obj" "gcc" "Engine/CMakeFiles/Engine.dir/src/Engine.cpp.obj.d"
   "C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/src/Renderer/Framebuffer.cpp" "Engine/CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.obj" "gcc" "Engine/CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.obj.d"
   )

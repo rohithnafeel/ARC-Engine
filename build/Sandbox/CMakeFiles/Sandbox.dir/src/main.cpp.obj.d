@@ -41,6 +41,11 @@ Sandbox/CMakeFiles/Sandbox.dir/src/main.cpp.obj: \
  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/ImGui/backends/imgui_impl_glfw.h \
  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/ThirdParty/ImGui/backends/imgui_impl_opengl3.h \
  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/include/Arc/Editor/EditorLayer.h \
+ C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/ViewportPanel.h \
+ C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/HierarchyPanel.h \
+ C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/InspectorPanel.h \
+ C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/ConsolePanel.h \
+ C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Dockspace.h \
  C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/include/Arc/Renderer/Framebuffer.h \
  C:/msys64/ucrt64/include/c++/16.1.0/iostream \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/requires_hosted.h \

@@ -86,26 +86,11 @@ Engine/CMakeFiles/Engine.dir/src/Engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/Engine.cpp.s"
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\src\Engine.cpp -o CMakeFiles\Engine.dir\src\Engine.cpp.s
 
-Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj: Engine/CMakeFiles/Engine.dir/flags.make
-Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj: Engine/CMakeFiles/Engine.dir/includes_CXX.rsp
-Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj: C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/EditorLayer.cpp
-Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj: Engine/CMakeFiles/Engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj"
-	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj -MF CMakeFiles\Engine.dir\Editor\EditorLayer.cpp.obj.d -o CMakeFiles\Engine.dir\Editor\EditorLayer.cpp.obj -c C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\EditorLayer.cpp
-
-Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.i"
-	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\EditorLayer.cpp > CMakeFiles\Engine.dir\Editor\EditorLayer.cpp.i
-
-Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.s"
-	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\EditorLayer.cpp -o CMakeFiles\Engine.dir\Editor\EditorLayer.cpp.s
-
 Engine/CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.obj: Engine/CMakeFiles/Engine.dir/flags.make
 Engine/CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.obj: Engine/CMakeFiles/Engine.dir/includes_CXX.rsp
 Engine/CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.obj: C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/src/Renderer/Framebuffer.cpp
 Engine/CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.obj: Engine/CMakeFiles/Engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Engine/CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Engine/CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.obj"
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Engine/CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.obj -MF CMakeFiles\Engine.dir\src\Renderer\Framebuffer.cpp.obj.d -o CMakeFiles\Engine.dir\src\Renderer\Framebuffer.cpp.obj -c C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\src\Renderer\Framebuffer.cpp
 
 Engine/CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.i: cmake_force
@@ -116,21 +101,121 @@ Engine/CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.s"
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\src\Renderer\Framebuffer.cpp -o CMakeFiles\Engine.dir\src\Renderer\Framebuffer.cpp.s
 
+Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj: Engine/CMakeFiles/Engine.dir/flags.make
+Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj: Engine/CMakeFiles/Engine.dir/includes_CXX.rsp
+Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj: C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/EditorLayer.cpp
+Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj: Engine/CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj -MF CMakeFiles\Engine.dir\Editor\EditorLayer.cpp.obj.d -o CMakeFiles\Engine.dir\Editor\EditorLayer.cpp.obj -c C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\EditorLayer.cpp
+
+Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.i"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\EditorLayer.cpp > CMakeFiles\Engine.dir\Editor\EditorLayer.cpp.i
+
+Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.s"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\EditorLayer.cpp -o CMakeFiles\Engine.dir\Editor\EditorLayer.cpp.s
+
+Engine/CMakeFiles/Engine.dir/Editor/Dockspace.cpp.obj: Engine/CMakeFiles/Engine.dir/flags.make
+Engine/CMakeFiles/Engine.dir/Editor/Dockspace.cpp.obj: Engine/CMakeFiles/Engine.dir/includes_CXX.rsp
+Engine/CMakeFiles/Engine.dir/Editor/Dockspace.cpp.obj: C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Dockspace.cpp
+Engine/CMakeFiles/Engine.dir/Editor/Dockspace.cpp.obj: Engine/CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Engine/CMakeFiles/Engine.dir/Editor/Dockspace.cpp.obj"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Engine/CMakeFiles/Engine.dir/Editor/Dockspace.cpp.obj -MF CMakeFiles\Engine.dir\Editor\Dockspace.cpp.obj.d -o CMakeFiles\Engine.dir\Editor\Dockspace.cpp.obj -c C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Dockspace.cpp
+
+Engine/CMakeFiles/Engine.dir/Editor/Dockspace.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/Editor/Dockspace.cpp.i"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Dockspace.cpp > CMakeFiles\Engine.dir\Editor\Dockspace.cpp.i
+
+Engine/CMakeFiles/Engine.dir/Editor/Dockspace.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/Editor/Dockspace.cpp.s"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Dockspace.cpp -o CMakeFiles\Engine.dir\Editor\Dockspace.cpp.s
+
+Engine/CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.obj: Engine/CMakeFiles/Engine.dir/flags.make
+Engine/CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.obj: Engine/CMakeFiles/Engine.dir/includes_CXX.rsp
+Engine/CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.obj: C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/ViewportPanel.cpp
+Engine/CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.obj: Engine/CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Engine/CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.obj"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Engine/CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.obj -MF CMakeFiles\Engine.dir\Editor\Panels\ViewportPanel.cpp.obj.d -o CMakeFiles\Engine.dir\Editor\Panels\ViewportPanel.cpp.obj -c C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Panels\ViewportPanel.cpp
+
+Engine/CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.i"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Panels\ViewportPanel.cpp > CMakeFiles\Engine.dir\Editor\Panels\ViewportPanel.cpp.i
+
+Engine/CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.s"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Panels\ViewportPanel.cpp -o CMakeFiles\Engine.dir\Editor\Panels\ViewportPanel.cpp.s
+
+Engine/CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.obj: Engine/CMakeFiles/Engine.dir/flags.make
+Engine/CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.obj: Engine/CMakeFiles/Engine.dir/includes_CXX.rsp
+Engine/CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.obj: C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/HierarchyPanel.cpp
+Engine/CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.obj: Engine/CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Engine/CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.obj"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Engine/CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.obj -MF CMakeFiles\Engine.dir\Editor\Panels\HierarchyPanel.cpp.obj.d -o CMakeFiles\Engine.dir\Editor\Panels\HierarchyPanel.cpp.obj -c C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Panels\HierarchyPanel.cpp
+
+Engine/CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.i"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Panels\HierarchyPanel.cpp > CMakeFiles\Engine.dir\Editor\Panels\HierarchyPanel.cpp.i
+
+Engine/CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.s"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Panels\HierarchyPanel.cpp -o CMakeFiles\Engine.dir\Editor\Panels\HierarchyPanel.cpp.s
+
+Engine/CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.obj: Engine/CMakeFiles/Engine.dir/flags.make
+Engine/CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.obj: Engine/CMakeFiles/Engine.dir/includes_CXX.rsp
+Engine/CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.obj: C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/InspectorPanel.cpp
+Engine/CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.obj: Engine/CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object Engine/CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.obj"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Engine/CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.obj -MF CMakeFiles\Engine.dir\Editor\Panels\InspectorPanel.cpp.obj.d -o CMakeFiles\Engine.dir\Editor\Panels\InspectorPanel.cpp.obj -c C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Panels\InspectorPanel.cpp
+
+Engine/CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.i"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Panels\InspectorPanel.cpp > CMakeFiles\Engine.dir\Editor\Panels\InspectorPanel.cpp.i
+
+Engine/CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.s"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Panels\InspectorPanel.cpp -o CMakeFiles\Engine.dir\Editor\Panels\InspectorPanel.cpp.s
+
+Engine/CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.obj: Engine/CMakeFiles/Engine.dir/flags.make
+Engine/CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.obj: Engine/CMakeFiles/Engine.dir/includes_CXX.rsp
+Engine/CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.obj: C:/Users/Rohith/OneDrive/Documents/Arc-Engine/Engine/Editor/Panels/ConsolePanel.cpp
+Engine/CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.obj: Engine/CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object Engine/CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.obj"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Engine/CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.obj -MF CMakeFiles\Engine.dir\Editor\Panels\ConsolePanel.cpp.obj.d -o CMakeFiles\Engine.dir\Editor\Panels\ConsolePanel.cpp.obj -c C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Panels\ConsolePanel.cpp
+
+Engine/CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.i"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Panels\ConsolePanel.cpp > CMakeFiles\Engine.dir\Editor\Panels\ConsolePanel.cpp.i
+
+Engine/CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.s"
+	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rohith\OneDrive\Documents\Arc-Engine\Engine\Editor\Panels\ConsolePanel.cpp -o CMakeFiles\Engine.dir\Editor\Panels\ConsolePanel.cpp.s
+
 # Object files for target Engine
 Engine_OBJECTS = \
 "CMakeFiles/Engine.dir/src/Engine.cpp.obj" \
+"CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.obj" \
 "CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj" \
-"CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.obj"
+"CMakeFiles/Engine.dir/Editor/Dockspace.cpp.obj" \
+"CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.obj" \
+"CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.obj" \
+"CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.obj" \
+"CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.obj"
 
 # External object files for target Engine
 Engine_EXTERNAL_OBJECTS =
 
 Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/src/Engine.cpp.obj
-Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj
 Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/src/Renderer/Framebuffer.cpp.obj
+Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/Editor/EditorLayer.cpp.obj
+Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/Editor/Dockspace.cpp.obj
+Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/Editor/Panels/ViewportPanel.cpp.obj
+Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/Editor/Panels/HierarchyPanel.cpp.obj
+Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/Editor/Panels/InspectorPanel.cpp.obj
+Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/Editor/Panels/ConsolePanel.cpp.obj
 Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/build.make
 Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libEngine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libEngine.a"
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && $(CMAKE_COMMAND) -P CMakeFiles\Engine.dir\cmake_clean_target.cmake
 	cd /d C:\Users\Rohith\OneDrive\Documents\Arc-Engine\build\Engine && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Engine.dir\link.txt --verbose=$(VERBOSE)
 
