@@ -107,31 +107,10 @@ if (firstTime)
             ImGui::EndMainMenuBar();
         }
 
-        ImGui::Begin("Viewport");
-
-        ImVec2 viewportSize = ImGui::GetContentRegionAvail();
-
-        ImGui::Image(
-            (ImTextureID)(intptr_t)framebufferTexture,
-            viewportSize,
-            ImVec2(0, 1),
-            ImVec2(1, 0)
-        );
-
-        ImGui::End();
-
-        ImGui::Begin("Hierarchy");
-        ImGui::BulletText("Camera");
-        ImGui::BulletText("Triangle");
-        ImGui::End();
-
-        ImGui::Begin("Inspector");
-        ImGui::Text("No object selected.");
-        ImGui::End();
-
-        ImGui::Begin("Console");
-        ImGui::Text("Arc Engine started successfully.");
-        ImGui::End();
+        m_ViewportPanel.Render(framebufferTexture);
+m_HierarchyPanel.Render();
+m_InspectorPanel.Render();
+m_ConsolePanel.Render();
 
         // Close DockSpace
         ImGui::End();
