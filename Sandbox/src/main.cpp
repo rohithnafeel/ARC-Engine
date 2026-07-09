@@ -58,6 +58,8 @@ int main()
         return -1;
     }
 
+    glEnable(GL_DEPTH_TEST);
+
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
 
@@ -138,33 +140,37 @@ std::cout << "ImGui Version: " << ImGui::GetVersion() << std::endl;
     glDeleteShader(fragmentShader);
 
     while (!glfwWindowShouldClose(window))
-    {
-        glfwPollEvents();
+{
+    glfwPollEvents();
 
-        ImGui_ImplOpenGL3_NewFrame();
-        ImGui_ImplGlfw_NewFrame();
-        ImGui::NewFrame();
+    framebuffer.Bind();
 
-        editor.Render();
+    glViewport(0, 0, 1280, 720);
 
-        framebuffer.Bind();
+    glClearColor(0.1f, 0.2f, 0.3f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-glViewport(0, 0, 1280, 720);
+    glUseProgram(shaderProgram);
+    glBindVertexArray(VAO);
+    glDrawArrays(GL_TRIANGLES, 0, 3);
 
-glClearColor(0.1f, 0.2f, 0.3f, 1.0f);
-glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    framebuffer.Unbind();
 
-glUseProgram(shaderProgram);
-glBindVertexArray(VAO);
-glDrawArrays(GL_TRIANGLES, 0, 3);
+    glViewport(0, 0, 1280, 720);
+    glClearColor(0.15f, 0.15f, 0.15f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
 
-framebuffer.Unbind();
+    ImGui_ImplOpenGL3_NewFrame();
+    ImGui_ImplGlfw_NewFrame();
+    ImGui::NewFrame();
 
-        ImGui::Render();
-        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+    editor.Render(framebuffer.GetColorAttachment());
 
-        glfwSwapBuffers(window);
-    }
+    ImGui::Render();
+    ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+
+    glfwSwapBuffers(window);
+}
 
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);

@@ -9,67 +9,70 @@ namespace Arc
     {
     }
 
-    void EditorLayer::Render()
+    void EditorLayer::Render(unsigned int framebufferTexture)
+{
+    if (ImGui::BeginMainMenuBar())
     {
-        if (ImGui::BeginMainMenuBar())
+        if (ImGui::BeginMenu("File"))
         {
-            if (ImGui::BeginMenu("File"))
-            {
-                ImGui::MenuItem("New");
-                ImGui::MenuItem("Open");
-                ImGui::MenuItem("Save");
-                ImGui::Separator();
-                ImGui::MenuItem("Exit");
-                ImGui::EndMenu();
-            }
-
-            if (ImGui::BeginMenu("Edit"))
-            {
-                ImGui::MenuItem("Undo");
-                ImGui::MenuItem("Redo");
-                ImGui::EndMenu();
-            }
-
-            if (ImGui::BeginMenu("View"))
-            {
-                ImGui::MenuItem("Viewport");
-                ImGui::MenuItem("Hierarchy");
-                ImGui::MenuItem("Inspector");
-                ImGui::EndMenu();
-            }
-
-            if (ImGui::BeginMenu("Help"))
-            {
-                ImGui::MenuItem("About");
-                ImGui::EndMenu();
-            }
-
-            ImGui::EndMainMenuBar();
+            ImGui::MenuItem("New");
+            ImGui::MenuItem("Open");
+            ImGui::MenuItem("Save");
+            ImGui::Separator();
+            ImGui::MenuItem("Exit");
+            ImGui::EndMenu();
         }
 
-        ImGui::Begin("Viewport");
+        if (ImGui::BeginMenu("Edit"))
+        {
+            ImGui::MenuItem("Undo");
+            ImGui::MenuItem("Redo");
+            ImGui::EndMenu();
+        }
 
-        ImGui::Text("Arc Engine");
-        ImGui::Separator();
-        ImGui::Text("OpenGL Renderer Running");
-        ImGui::Text("FPS: %.1f", ImGui::GetIO().Framerate);
+        if (ImGui::BeginMenu("View"))
+        {
+            ImGui::MenuItem("Viewport");
+            ImGui::MenuItem("Hierarchy");
+            ImGui::MenuItem("Inspector");
+            ImGui::EndMenu();
+        }
 
-        ImGui::End();
+        if (ImGui::BeginMenu("Help"))
+        {
+            ImGui::MenuItem("About");
+            ImGui::EndMenu();
+        }
 
-        ImGui::Begin("Hierarchy");
-        ImGui::BulletText("Camera");
-        ImGui::BulletText("Triangle");
-        ImGui::End();
-
-        ImGui::Begin("Inspector");
-        ImGui::Text("No object selected.");
-        ImGui::End();
-
-        ImGui::Begin("Console");
-        ImGui::Text("Arc Engine started successfully.");
-        ImGui::End();
+        ImGui::EndMainMenuBar();
     }
 
+    ImGui::Begin("Viewport");
+
+    ImVec2 viewportSize = ImGui::GetContentRegionAvail();
+
+    ImGui::Image(
+        (ImTextureID)(intptr_t)framebufferTexture,
+        viewportSize,
+        ImVec2(0, 1),
+        ImVec2(1, 0)
+    );
+
+    ImGui::End();
+
+    ImGui::Begin("Hierarchy");
+    ImGui::BulletText("Camera");
+    ImGui::BulletText("Triangle");
+    ImGui::End();
+
+    ImGui::Begin("Inspector");
+    ImGui::Text("No object selected.");
+    ImGui::End();
+
+    ImGui::Begin("Console");
+    ImGui::Text("Arc Engine started successfully.");
+    ImGui::End();
+}
     void EditorLayer::End()
     {
     }

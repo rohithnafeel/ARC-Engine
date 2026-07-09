@@ -6,7 +6,7 @@ namespace Arc
     {
     public:
         void Begin();
-        void Render();
+        void Render(unsigned int framebufferTexture);
         void End();
     };
 }
