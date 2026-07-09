@@ -196,9 +196,14 @@ ThirdParty/ImGui/CMakeFiles/ImGui.dir/imgui.cpp.obj: \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/avx512bmmintrin.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/avx512bmmvlintrin.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdint.h \
- C:/msys64/ucrt64/include/stdint.h C:/msys64/ucrt64/include/windows.h \
- C:/msys64/ucrt64/include/sdkddkver.h C:/msys64/ucrt64/include/excpt.h \
- C:/msys64/ucrt64/include/windef.h \
+ C:/msys64/ucrt64/include/stdint.h C:/msys64/ucrt64/include/time.h \
+ C:/msys64/ucrt64/include/sys/timeb.h \
+ C:/msys64/ucrt64/include/sec_api/sys/timeb_s.h \
+ C:/msys64/ucrt64/include/_timeval.h \
+ C:/msys64/ucrt64/include/pthread_time.h \
+ C:/msys64/ucrt64/include/pthread_compat.h \
+ C:/msys64/ucrt64/include/windows.h C:/msys64/ucrt64/include/sdkddkver.h \
+ C:/msys64/ucrt64/include/excpt.h C:/msys64/ucrt64/include/windef.h \
  C:/msys64/ucrt64/include/winapifamily.h \
  C:/msys64/ucrt64/include/minwindef.h \
  C:/msys64/ucrt64/include/specstrings.h C:/msys64/ucrt64/include/sal.h \

@@ -1,6 +1,7 @@
 #include "Arc/Editor/EditorLayer.h"
 
 #include <imgui.h>
+#pragma message("Using ImGui version: " IMGUI_VERSION)
 
 namespace Arc
 {

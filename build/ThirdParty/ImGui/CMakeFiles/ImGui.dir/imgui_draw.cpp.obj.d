@@ -195,5 +195,7 @@ ThirdParty/ImGui/CMakeFiles/ImGui.dir/imgui_draw.cpp.obj: \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/amxmovrsintrin.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/avx512bmmintrin.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/avx512bmmvlintrin.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h \
  C:\Users\Rohith\OneDrive\Documents\Arc-Engine\ThirdParty\ImGui\imstb_rectpack.h \
  C:\Users\Rohith\OneDrive\Documents\Arc-Engine\ThirdParty\ImGui\imstb_truetype.h
