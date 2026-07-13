@@ -39,7 +39,7 @@ namespace Arc
             ImGuiDockNodeFlags_None
         );
 
-        // We'll build the automatic layout here next.
+
     }
 
     void Dockspace::End()
