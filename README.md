@@ -78,6 +78,6 @@ Topics include:
 
 ## Project Status
 
-🚧 Currently in active development.
+Currently in active development.
 
 This project is part of my journey to become a game engine and graphics programmer, with the long-term goal of building high-performance game technology from the ground up.
