@@ -1,7 +1,7 @@
 # The modules iam gonna build:
 
-- [*] Core
-- [*] Window System
+- [x] Core
+- [x] Window System
 - [ ] Renderer
 - [ ] Math Library
 - [ ] ECS
