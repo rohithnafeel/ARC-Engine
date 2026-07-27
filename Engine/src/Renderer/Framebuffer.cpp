@@ -9,8 +9,6 @@ namespace Arc
     Framebuffer::Framebuffer(unsigned int width, unsigned int height)
         : m_Width(width), m_Height(height)
     {
-        std::cout << "===== Framebuffer Constructor =====" << std::endl;
-
         glGenFramebuffers(1, &m_FBO);
         glBindFramebuffer(GL_FRAMEBUFFER, m_FBO);
 
