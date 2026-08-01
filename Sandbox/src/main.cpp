@@ -96,9 +96,9 @@ std::cout << "ImGui Version: " << ImGui::GetVersion() << std::endl;
 
     float vertices[] =
     {
-         0.0f, 0.5f,
+         0.0f,  0.5f,
          0.5f, -0.5f,
-        -0.5f, -0.5f
+         -0.5f, 0.5f
     };
 
     unsigned int VAO, VBO;
