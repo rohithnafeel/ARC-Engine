@@ -47,6 +47,8 @@ The goal is to gain a deep understanding of graphics programming, game engine ar
 * CMake
 * Git & GitHub
 
+![Arc Engine Version 2 Interface](Screenshots/ArcEngine_v2.png)
+
 ## Learning Focus
 
 This repository serves as both a development project and a research journal. Every major system is accompanied by documentation explaining the mathematical concepts, implementation details, and design decisions.
