@@ -47,7 +47,7 @@ The goal is to gain a deep understanding of graphics programming, game engine ar
 * CMake
 * Git & GitHub
 
-![Arc Engine Version 2 Interface](Screenshots/ArcEngine_v2.png)
+![Arc Engine renderer demo](Screenshots/ArcEngine_v2.png)
 
 ## Learning Focus
 
