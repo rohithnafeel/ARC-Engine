@@ -53,7 +53,7 @@ The goal is to gain a deep understanding of graphics programming, game engine ar
   <img src="Screenshots/ArcEngine_v2.png" alt="Arc Engine renderer demo" width="700">
 </p>
 
-<p align="center"><i>Renderer output — v2</i></p>
+<p align="center"><i>Arc Engine — v2</i></p>
 
 ## Learning Focus
 
