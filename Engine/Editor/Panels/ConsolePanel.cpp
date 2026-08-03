@@ -8,7 +8,7 @@ namespace Arc
     {
         ImGui::Begin("Console");
 
-        ImGui::Text("Arc Engine started successfully.");
+        ImGui::Text("HI  THERE >_<");
 
         ImGui::End();
     }

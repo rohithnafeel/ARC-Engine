@@ -82,11 +82,7 @@ ImGui::StyleColorsDark();
     return -1;
 }
 
-std::cout << "Creating Framebuffer..." << std::endl;
-
 Arc::Framebuffer framebuffer(1280, 720);
-
-std::cout << "Framebuffer Created Successfully!" << std::endl;
 
 Arc::EditorLayer editor;
 
@@ -96,9 +92,13 @@ std::cout << "ImGui Version: " << ImGui::GetVersion() << std::endl;
 
     float vertices[] =
     {
-         0.0f,  0.5f,
-         0.5f, -0.5f,
-         -0.5f, 0.5f
+        -0.5f, -0.5f,
+        0.5f,  0.5f,
+        -0.5f,  0.5f,
+
+        -0.5f, -0.5f,
+        0.5f, -0.5f,
+        0.5f,  0.5f 
     };
 
     unsigned int VAO, VBO;
@@ -152,7 +152,7 @@ std::cout << "ImGui Version: " << ImGui::GetVersion() << std::endl;
 
     glUseProgram(shaderProgram);
     glBindVertexArray(VAO);
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glDrawArrays(GL_TRIANGLES, 0, 6);
 
     framebuffer.Unbind();
 
@@ -171,7 +171,6 @@ editor.Render(framebuffer.GetColorAttachment());
 editor.End();
 
 ImGui::Render();
-ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
     glfwSwapBuffers(window);
