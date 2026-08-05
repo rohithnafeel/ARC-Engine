@@ -57,19 +57,6 @@ namespace Arc
 
        GLenum status = glCheckFramebufferStatus(GL_FRAMEBUFFER);
 
-std::cout << "Framebuffer Status = " << status << std::endl;
-
-if (status == GL_FRAMEBUFFER_COMPLETE)
-{
-    std::cout << "Framebuffer COMPLETE!" << std::endl;
-}
-else
-{
-    std::cout << "Framebuffer NOT COMPLETE!" << std::endl;
-}
-        glBindFramebuffer(GL_FRAMEBUFFER, 0);
-
-        std::cout << "Framebuffer ID = " << m_FBO << std::endl;
     }
 
     Framebuffer::~Framebuffer()
@@ -149,7 +136,6 @@ else
 
     if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
     {
-        std::cout << "Framebuffer resize failed!" << std::endl;
     }
 
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
