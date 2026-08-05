@@ -33,7 +33,6 @@ int main()
 {
     if (!glfwInit())
     {
-        std::cout << "Failed to initialize GLFW\n";
         return -1;
     }
 
@@ -54,7 +53,6 @@ int main()
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
-        std::cout << "Failed to initialize GLAD\n";
         return -1;
     }
 
@@ -72,13 +70,11 @@ ImGui::StyleColorsDark();
 
     if (!ImGui_ImplGlfw_InitForOpenGL(window, true))
     {
-        std::cout << "Failed to initialize ImGui GLFW Backend\n";
         return -1;
     }
 
     if (!ImGui_ImplOpenGL3_Init("#version 460 core"))
 {
-    std::cout << "Failed to initialize ImGui OpenGL Backend\n";
     return -1;
 }
 
