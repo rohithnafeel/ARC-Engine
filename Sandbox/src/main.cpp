@@ -82,10 +82,6 @@ Arc::Framebuffer framebuffer(1280, 720);
 
 Arc::EditorLayer editor;
 
-std::cout << "ImGui Version: " << ImGui::GetVersion() << std::endl;
-
-   
-
     float vertices[] =
     {
         -0.5f, -0.5f,
