@@ -158,7 +158,7 @@ ImGui::NewFrame();
 
 editor.Begin();
 
-editor.Render(framebuffer.GetColorAttachment());
+editor.Render(framebuffer);
 
 editor.End();
 

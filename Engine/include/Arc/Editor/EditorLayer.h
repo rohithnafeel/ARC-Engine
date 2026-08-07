@@ -8,15 +8,17 @@
 
 namespace Arc
 {
+    class Framebuffer;
+
     class EditorLayer
     {
     public:
         void Begin();
-        void Render(unsigned int framebufferTexture);
+        void Render(Framebuffer& framebuffer);
         void End();
 
     private:
-    Dockspace m_Dockspace;
+        Dockspace m_Dockspace;
         ViewportPanel m_ViewportPanel;
         HierarchyPanel m_HierarchyPanel;
         InspectorPanel m_InspectorPanel;

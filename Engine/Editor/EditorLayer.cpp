@@ -12,7 +12,7 @@ namespace Arc
         m_Dockspace.Begin();
     }
 
-    void EditorLayer::Render(unsigned int framebufferTexture)
+    void EditorLayer::Render(Framebuffer& framebuffer)
     {
         if (ImGui::BeginMainMenuBar())
         {
@@ -50,7 +50,7 @@ namespace Arc
             ImGui::EndMainMenuBar();
         }
 
-        m_ViewportPanel.Render(framebufferTexture);
+        m_ViewportPanel.Render(framebuffer);
         m_HierarchyPanel.Render();
         m_InspectorPanel.Render();
         m_ConsolePanel.Render();
