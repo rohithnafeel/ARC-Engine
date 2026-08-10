@@ -28,12 +28,6 @@ Recommended tools:
 - MinGW or MSVC
 - Git
 
-Supported platforms:
-
-- Windows (Primary)
-- Linux (Planned)
-- macOS (Planned)
-
 ---
 
 ## Project Structure
