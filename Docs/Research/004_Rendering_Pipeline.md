@@ -1,49 +1,81 @@
-# Research 4:
+# Research 04: OpenGL Fundamentals
 
-## What is a vertex?
-*Vertex are the value from graph which is used to create the shape in opengl because the cpu and gpu can't directly produce image.*
+Notes on the low-level building blocks of OpenGL rendering — vertices, buffers, and coordinate systems.
 
-## Why do we need three vertices to make a triangle?
-*There are three points in a triangle so we need three vertices to make a triangle.*
+## Table of Contents
 
-#### Example:
+- [What is a Vertex?](#what-is-a-vertex)
+- [Why Do We Need Three Vertices to Make a Triangle?](#why-do-we-need-three-vertices-to-make-a-triangle)
+- [What is a Vertex Buffer Object (VBO)?](#what-is-a-vertex-buffer-object-vbo)
+- [Why Can't the GPU Directly Access CPU Memory?](#why-cant-the-gpu-directly-access-cpu-memory)
+- [What is a Vertex Array Object (VAO)?](#what-is-a-vertex-array-object-vao)
+- [What are Normalized Device Coordinates (NDC)?](#what-are-normalized-device-coordinates-ndc)
+- [Why Does OpenGL Use Values From -1 to 1?](#why-does-opengl-use-values-from--1-to-1)
+- [References](#references-2)
 
-1. Square = 4 vertices
-2. Triangle = 3 vertices
-3. Hexagon = 6 vertices
+---
+
+## What is a Vertex?
+
+A vertex is a value from a graph used to create shapes in [OpenGL](https://www.opengl.org/), because the CPU and GPU can't directly produce an image on their own.
+
+## Why Do We Need Three Vertices to Make a Triangle?
+
+A triangle has three points, so three vertices are needed to define it.
+
+### Example
+
+| Shape | Vertices |
+|---|---|
+| Square | 4 |
+| Triangle | 3 |
+| Hexagon | 6 |
 
 ## What is a Vertex Buffer Object (VBO)?
-*Vertex buffer object is a process to convert a vertices from cpu memory to gpu memory because gpu can't directly read the vertices.*
 
-## Why can't the GPU directly access CPU memory?
-*A gpu can't directly access cpu memory because both has different ram which the cpu ram is controlled by motherboard and the gpu has seperate vram.*
+A Vertex Buffer Object is the mechanism used to transfer vertex data from CPU memory to GPU memory, since the GPU can't directly read vertices stored in CPU memory.
+
+## Why Can't the GPU Directly Access CPU Memory?
+
+A GPU can't directly access CPU memory because the two use separate RAM: CPU RAM is controlled by the motherboard, while the GPU has its own dedicated VRAM.
 
 ## What is a Vertex Array Object (VAO)?
-*Vertex array object is a opengl object which converts the array to a correct order to get the output.It decides how much at a time either 2 or 3 or more.*
+
+A Vertex Array Object is an OpenGL object that arranges vertex data into the correct order to produce the intended output. It defines how the data is read at a time — for example, in groups of 2, 3, or more values.
 
 ## What are Normalized Device Coordinates (NDC)?
-*Normalized device coordinates are opengl's internal coordinate for describing where the thigs to appear on screen. No matter if its 800 * 600 or 4k.*
+
+Normalized Device Coordinates (NDC) are OpenGL's internal coordinate system for describing where things appear on screen, regardless of whether the display is 800×600 or 4K.
 
 OpenGL always treats the visible area as a fixed square:
 
-x-axis: -1 (left edge) to +1 (right edge)
-y-axis: -1 (bottom edge) to +1 (top edge)
-(0, 0) = dead center of the screen
+- **x-axis:** -1 (left edge) to +1 (right edge)
+- **y-axis:** -1 (bottom edge) to +1 (top edge)
+- **(0, 0):** dead center of the screen
 
-*Anything you draw with coordinates inside that -1 to 1 box is potentially visible. Anything outside it gets clipped — OpenGL simply doesn't draw it.*
+Anything drawn with coordinates inside that -1 to 1 box is potentially visible. Anything outside it gets clipped — OpenGL simply doesn't draw it.
 
-## Why does OpenGL use values from -1 to 1?
-1. Resolution independence
-As we covered, if OpenGL used pixel coordinates directly, your vertex data would need to change depending on window size. By fixing the range to -1 to 1 regardless of resolution, your vertex data stays constant, and the viewport transform maps it to actual pixels at draw time. This decoupling is the main reason.
+## Why Does OpenGL Use Values From -1 to 1?
 
-2. Centering at (0,0)
-Using -1 to 1 puts the origin at the center of the screen instead of a corner. This is more natural for a lot of graphics math — rotations, scaling, and mirroring all become simpler when done around a center point rather than a corner. If origin were at a corner, scaling an object would also shift its position, which is awkward.
+1. **Resolution independence**
+   If OpenGL used pixel coordinates directly, vertex data would need to change depending on window size. By fixing the range to -1 to 1 regardless of resolution, vertex data stays constant, and the viewport transform maps it to actual pixels at draw time. This decoupling is the main reason for the convention.
 
-3. Symmetric range simplifies clipping
-The GPU has a clipping stage that discards anything outside the visible volume before rasterization. A symmetric range like -1 to 1 makes the clipping test trivial: just check |x| ≤ 1 and |y| ≤ 1. No need to track different bounds for each axis or worry about sign conventions.
+2. **Centering at (0, 0)**
+   Using -1 to 1 places the origin at the center of the screen instead of a corner. This is more natural for graphics math — rotations, scaling, and mirroring all become simpler around a center point than around a corner. If the origin were at a corner, scaling an object would also shift its position, which is awkward.
 
-4. It falls out of homogeneous coordinates and the perspective divide
-This is the deeper reason. In the 3D rendering pipeline, vertices go through matrix transforms into clip space, which uses 4D homogeneous coordinates (x, y, z, w). To get NDC, the GPU does a "perspective divide": divide x, y, z by w. This division naturally produces a normalized, resolution-independent, symmetric range — and -1 to 1 is the conventional range this math is designed to land in.
+3. **Symmetric range simplifies clipping**
+   The GPU has a clipping stage that discards anything outside the visible volume before rasterization. A symmetric range like -1 to 1 makes the clipping test trivial — just check `|x| ≤ 1` and `|y| ≤ 1` — with no need to track different bounds per axis or worry about sign conventions.
 
-5. It's a hardware/API convention, not a law of physics
-Worth knowing: -1 to 1 isn't universal across all graphics APIs. OpenGL uses -1 to 1 for NDC z-depth too, but Direct3D and Vulkan use 0 to 1 for z. So it's a deliberate design convention OpenGL settled on, and other APIs made slightly different choices for their own reasons.
+4. **It falls out of homogeneous coordinates and the perspective divide**
+   This is the deeper reason. In the 3D rendering pipeline, vertices pass through matrix transforms into clip space, which uses 4D homogeneous coordinates `(x, y, z, w)`. To get NDC, the GPU performs a **perspective divide** — dividing x, y, and z by w. This division naturally produces a normalized, resolution-independent, symmetric range, and -1 to 1 is the conventional range this math is designed to land in.
+
+5. **It's a hardware/API convention, not a law of physics**
+   The -1 to 1 range isn't universal across graphics APIs. OpenGL uses -1 to 1 for NDC z-depth as well, but [Direct3D](https://learn.microsoft.com/en-us/windows/win32/direct3d) and [Vulkan](https://www.vulkan.org/) use 0 to 1 for z instead. It's a deliberate design convention OpenGL settled on — other APIs made different choices for their own reasons.
+
+## References
+
+- [OpenGL Official Site](https://www.opengl.org/)
+- [OpenGL Wiki — Vertex Specification](https://www.khronos.org/opengl/wiki/Vertex_Specification)
+- [OpenGL Wiki — Coordinate Systems](https://learnopengl.com/Getting-started/Coordinate-Systems)
+- [Direct3D Documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d)
+- [Vulkan Official Site](https://www.vulkan.org/)
