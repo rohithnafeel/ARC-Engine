@@ -1,7 +1,13 @@
 add_library(Engine STATIC
 
+    Core/Application.cpp
+    Core/Layer.cpp
+    Core/LayerStack.cpp
+    Core/TestLayer.cpp
+
     src/Engine.cpp
 
+    src/Renderer/Renderer.cpp
     src/Renderer/Framebuffer.cpp
 
     Editor/EditorLayer.cpp

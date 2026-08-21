@@ -1,6 +1,15 @@
 add_executable(Sandbox
+
     src/main.cpp
+    src/SandboxApp.cpp
+
     ../ThirdParty/GLAD/src/glad.c
+)
+
+target_include_directories(Sandbox PRIVATE
+    src
+    ../Engine
+    ../Engine/include
 )
 
 target_link_libraries(Sandbox PRIVATE
