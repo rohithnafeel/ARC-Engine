@@ -1,19 +1,34 @@
 #include "Arc/Editor/EditorLayer.h"
 
 #include <imgui.h>
-#include <imgui_internal.h>
-
-#pragma message("Using ImGui version: " IMGUI_VERSION)
+#include <iostream>
 
 namespace Arc
 {
-    void EditorLayer::Begin()
+    EditorLayer::EditorLayer()
+        : Layer("EditorLayer")
     {
-        m_Dockspace.Begin();
     }
 
-    void EditorLayer::Render(Framebuffer& framebuffer)
+    void EditorLayer::OnAttach()
     {
+        std::cout << "EditorLayer Attached\n";
+    }
+
+    void EditorLayer::OnDetach()
+    {
+        std::cout << "EditorLayer Detached\n";
+    }
+
+    void EditorLayer::OnUpdate()
+    {
+    }
+
+    void EditorLayer::OnImGuiRender()
+    {
+        m_Dockspace.Begin();
+
+        // Main menu bar
         if (ImGui::BeginMainMenuBar())
         {
             if (ImGui::BeginMenu("File"))
@@ -21,8 +36,11 @@ namespace Arc
                 ImGui::MenuItem("New");
                 ImGui::MenuItem("Open");
                 ImGui::MenuItem("Save");
+
                 ImGui::Separator();
+
                 ImGui::MenuItem("Exit");
+
                 ImGui::EndMenu();
             }
 
@@ -30,6 +48,7 @@ namespace Arc
             {
                 ImGui::MenuItem("Undo");
                 ImGui::MenuItem("Redo");
+
                 ImGui::EndMenu();
             }
 
@@ -38,26 +57,26 @@ namespace Arc
                 ImGui::MenuItem("Viewport");
                 ImGui::MenuItem("Hierarchy");
                 ImGui::MenuItem("Inspector");
+                ImGui::MenuItem("Console");
+
                 ImGui::EndMenu();
             }
 
             if (ImGui::BeginMenu("Help"))
             {
                 ImGui::MenuItem("About");
+
                 ImGui::EndMenu();
             }
 
             ImGui::EndMainMenuBar();
         }
 
-        m_ViewportPanel.Render(framebuffer);
+        // Editor panels
         m_HierarchyPanel.Render();
         m_InspectorPanel.Render();
         m_ConsolePanel.Render();
-    }
 
-    void EditorLayer::End()
-    {
         m_Dockspace.End();
     }
 }

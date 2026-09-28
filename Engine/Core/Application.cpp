@@ -4,34 +4,20 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
+#include <imgui.h>
+#include <backends/imgui_impl_glfw.h>
+#include <backends/imgui_impl_opengl3.h>
+
 #include <iostream>
 
 namespace Arc
 {
-    const char* vertexShaderSource = R"(
-        #version 460 core
-
-        layout (location = 0) in vec2 aPos;
-
-        void main()
-        {
-            gl_Position = vec4(aPos, 0.0, 1.0);
-        }
-    )";
-
-    const char* fragmentShaderSource = R"(
-        #version 460 core
-
-        out vec4 FragColor;
-
-        void main()
-        {
-            FragColor = vec4(1.0, 0.5, 0.2, 1.0);
-        }
-    )";
-
     Application::Application()
     {
+        // -------------------------
+        // Initialize GLFW
+        // -------------------------
+
         if (!glfwInit())
         {
             std::cerr << "Failed to initialize GLFW\n";
@@ -41,6 +27,10 @@ namespace Arc
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
         glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
         glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+
+        // -------------------------
+        // Create Window
+        // -------------------------
 
         m_Window = glfwCreateWindow(
             1280,
@@ -60,6 +50,10 @@ namespace Arc
         glfwMakeContextCurrent(m_Window);
         glfwSwapInterval(1);
 
+        // -------------------------
+        // Initialize GLAD
+        // -------------------------
+
         if (!gladLoadGLLoader(
                 (GLADloadproc)glfwGetProcAddress))
         {
@@ -72,118 +66,122 @@ namespace Arc
             return;
         }
 
+        // -------------------------
+        // Initialize Renderer
+        // -------------------------
+
         Renderer::Init();
 
-        glEnable(GL_DEPTH_TEST);
+        // -------------------------
+        // Initialize ImGui
+        // -------------------------
 
-        float vertices[] =
-        {
-             0.0f,  0.5f,
-            -0.5f, -0.5f,
-             0.5f, -0.5f
-        };
+        IMGUI_CHECKVERSION();
 
-        glGenVertexArrays(1, &m_VAO);
-        glGenBuffers(1, &m_VBO);
+        ImGui::CreateContext();
 
-        glBindVertexArray(m_VAO);
+        ImGuiIO& io = ImGui::GetIO();
+        (void)io;
 
-        glBindBuffer(GL_ARRAY_BUFFER, m_VBO);
+        ImGui::StyleColorsDark();
 
-        glBufferData(
-            GL_ARRAY_BUFFER,
-            sizeof(vertices),
-            vertices,
-            GL_STATIC_DRAW
+        ImGui_ImplGlfw_InitForOpenGL(
+            m_Window,
+            true
         );
 
-        glVertexAttribPointer(
-            0,
-            2,
-            GL_FLOAT,
-            GL_FALSE,
-            2 * sizeof(float),
-            (void*)0
+        ImGui_ImplOpenGL3_Init(
+            "#version 460"
         );
-
-        glEnableVertexAttribArray(0);
-
-        unsigned int vertexShader =
-            glCreateShader(GL_VERTEX_SHADER);
-
-        glShaderSource(
-            vertexShader,
-            1,
-            &vertexShaderSource,
-            nullptr
-        );
-
-        glCompileShader(vertexShader);
-
-        unsigned int fragmentShader =
-            glCreateShader(GL_FRAGMENT_SHADER);
-
-        glShaderSource(
-            fragmentShader,
-            1,
-            &fragmentShaderSource,
-            nullptr
-        );
-
-        glCompileShader(fragmentShader);
-
-        m_ShaderProgram = glCreateProgram();
-
-        glAttachShader(
-            m_ShaderProgram,
-            vertexShader
-        );
-
-        glAttachShader(
-            m_ShaderProgram,
-            fragmentShader
-        );
-
-        glLinkProgram(m_ShaderProgram);
-
-        glDeleteShader(vertexShader);
-        glDeleteShader(fragmentShader);
-
-        glBindVertexArray(0);
     }
 
     Application::~Application()
-{
-    Renderer::Shutdown();
-
-    if (m_Window)
     {
-        glfwDestroyWindow(m_Window);
-    }
+        // -------------------------
+        // Shutdown ImGui
+        // -------------------------
 
-    glfwTerminate();
-}
+        ImGui_ImplOpenGL3_Shutdown();
+        ImGui_ImplGlfw_Shutdown();
 
-    void Application::Run()
-{
-    while (!glfwWindowShouldClose(m_Window))
-    {
-        glfwPollEvents();
+        ImGui::DestroyContext();
 
-        for (Layer* layer : m_LayerStack)
+        // -------------------------
+        // Shutdown Renderer
+        // -------------------------
+
+        Renderer::Shutdown();
+
+        // -------------------------
+        // Destroy Window
+        // -------------------------
+
+        if (m_Window)
         {
-            layer->OnUpdate();
+            glfwDestroyWindow(m_Window);
         }
 
-        Renderer::BeginFrame();
-
-        Renderer::DrawTriangle();
-
-        Renderer::EndFrame();
-
-        glfwSwapBuffers(m_Window);
+        glfwTerminate();
     }
+
+    void Application::Run()
+    {
+        while (!glfwWindowShouldClose(m_Window))
+        {
+            // -------------------------
+            // Poll Window Events
+            // -------------------------
+
+            glfwPollEvents();
+
+            // -------------------------
+            // Start ImGui Frame
+            // -------------------------
+
+            ImGui_ImplOpenGL3_NewFrame();
+            ImGui_ImplGlfw_NewFrame();
+
+            ImGui::NewFrame();
+
+            ImGui::ShowDemoWindow();
+
+            // -------------------------
+            // Update Layers
+            // -------------------------
+
+            ImGui::ShowDemoWindow();
+
+for (Layer* layer : m_LayerStack)
+{
+    layer->OnImGuiRender();
 }
+            // -------------------------
+            // Render Engine
+            // -------------------------
+
+            Renderer::BeginFrame();
+
+            Renderer::DrawTriangle();
+
+            Renderer::EndFrame();
+
+            // -------------------------
+            // Render ImGui
+            // -------------------------
+
+            ImGui::Render();
+
+            ImGui_ImplOpenGL3_RenderDrawData(
+                ImGui::GetDrawData()
+            );
+
+            // -------------------------
+            // Present Frame
+            // -------------------------
+
+            glfwSwapBuffers(m_Window);
+        }
+    }
 
     void Application::PushLayer(Layer* layer)
     {
