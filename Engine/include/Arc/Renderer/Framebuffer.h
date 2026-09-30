@@ -19,12 +19,9 @@ namespace Arc
         unsigned int GetHeight() const;
 
     private:
-        void Invalidate();
-
-    private:
-        unsigned int m_FBO = 0;
+        unsigned int m_RendererID = 0;
         unsigned int m_ColorAttachment = 0;
-        unsigned int m_RBO = 0;
+        unsigned int m_DepthAttachment = 0;
 
         unsigned int m_Width = 0;
         unsigned int m_Height = 0;

@@ -81,7 +81,8 @@ namespace Arc
         ImGui::CreateContext();
 
         ImGuiIO& io = ImGui::GetIO();
-        (void)io;
+
+io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
 
         ImGui::StyleColorsDark();
 
@@ -125,63 +126,71 @@ namespace Arc
     }
 
     void Application::Run()
-    {
-        while (!glfwWindowShouldClose(m_Window))
-        {
-            // -------------------------
-            // Poll Window Events
-            // -------------------------
-
-            glfwPollEvents();
-
-            // -------------------------
-            // Start ImGui Frame
-            // -------------------------
-
-            ImGui_ImplOpenGL3_NewFrame();
-            ImGui_ImplGlfw_NewFrame();
-
-            ImGui::NewFrame();
-
-            ImGui::ShowDemoWindow();
-
-            // -------------------------
-            // Update Layers
-            // -------------------------
-
-            ImGui::ShowDemoWindow();
-
-for (Layer* layer : m_LayerStack)
 {
-    layer->OnImGuiRender();
-}
-            // -------------------------
-            // Render Engine
-            // -------------------------
+    while (!glfwWindowShouldClose(m_Window))
+    {
+        glfwPollEvents();
 
-            Renderer::BeginFrame();
+        // -------------------------
+        // ImGui: Start frame
+        // -------------------------
 
-            Renderer::DrawTriangle();
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
 
-            Renderer::EndFrame();
+        // -------------------------
+        // Engine layers
+        // -------------------------
 
-            // -------------------------
-            // Render ImGui
-            // -------------------------
-
-            ImGui::Render();
-
-            ImGui_ImplOpenGL3_RenderDrawData(
-                ImGui::GetDrawData()
-            );
-
-            // -------------------------
-            // Present Frame
-            // -------------------------
-
-            glfwSwapBuffers(m_Window);
+        for (Layer* layer : m_LayerStack)
+        {
+            layer->OnUpdate();
         }
+
+        // -------------------------
+        // Editor UI
+        // -------------------------
+
+        for (Layer* layer : m_LayerStack)
+        {
+            layer->OnImGuiRender();
+        }
+
+        // -------------------------
+        // ImGui: Render
+        // -------------------------
+
+        ImGui::Render();
+
+        // Make absolutely sure
+        // we're rendering ImGui to
+        // the main window.
+        glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
+        int displayWidth;
+        int displayHeight;
+
+        glfwGetFramebufferSize(
+            m_Window,
+            &displayWidth,
+            &displayHeight
+        );
+
+        glViewport(
+            0,
+            0,
+            displayWidth,
+            displayHeight
+        );
+
+        ImGui_ImplOpenGL3_RenderDrawData(
+            ImGui::GetDrawData()
+        );
+
+        glfwSwapBuffers(m_Window);
     }
+}
 
     void Application::PushLayer(Layer* layer)
     {

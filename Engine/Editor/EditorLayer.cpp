@@ -1,7 +1,9 @@
 #include "Arc/Editor/EditorLayer.h"
+#include "Arc/Renderer/Renderer.h"
 
 #include <imgui.h>
 #include <iostream>
+#include <memory>
 
 namespace Arc
 {
@@ -13,16 +15,33 @@ namespace Arc
     void EditorLayer::OnAttach()
     {
         std::cout << "EditorLayer Attached\n";
+
+        // Create the editor framebuffer
+        m_Framebuffer = std::make_unique<Framebuffer>(1280, 720);
+
+        std::cout << "Editor Framebuffer Created\n";
     }
 
     void EditorLayer::OnDetach()
     {
         std::cout << "EditorLayer Detached\n";
+
+        m_Framebuffer.reset();
     }
 
     void EditorLayer::OnUpdate()
-    {
-    }
+{
+    if (!m_Framebuffer)
+        return;
+
+    m_Framebuffer->Bind();
+
+    Renderer::BeginFrame();
+    Renderer::DrawTriangle();
+    Renderer::EndFrame();
+
+    m_Framebuffer->Unbind();
+}
 
     void EditorLayer::OnImGuiRender()
     {
@@ -72,10 +91,10 @@ namespace Arc
             ImGui::EndMainMenuBar();
         }
 
-        // Editor panels
-        m_HierarchyPanel.Render();
-        m_InspectorPanel.Render();
-        m_ConsolePanel.Render();
+m_ViewportPanel.Render(*m_Framebuffer);
+m_HierarchyPanel.Render();
+m_InspectorPanel.Render();
+m_ConsolePanel.Render();
 
         m_Dockspace.End();
     }
