@@ -1,16 +1,17 @@
-#include "HierarchyPanel.h"
-
-#include <imgui.h>
-
-namespace Arc
+void HierarchyPanel::Render()
 {
-    void HierarchyPanel::Render()
+    ImGui::Begin("Hierarchy");
+
+    ImGui::Text("Scene");
+
+    if (ImGui::TreeNode("Entities"))
     {
-        ImGui::Begin("Hierarchy");
-
+        ImGui::BulletText("Player");
         ImGui::BulletText("Camera");
-        ImGui::BulletText("Triangle");
+        ImGui::BulletText("Light");
 
-        ImGui::End();
+        ImGui::TreePop();
     }
+
+    ImGui::End();
 }
