@@ -1,5 +1,7 @@
 #pragma once
 
+#include <glm/glm.hpp>
+
 namespace Arc
 {
     class Renderer
@@ -11,5 +13,7 @@ namespace Arc
         static void BeginFrame();
         static void DrawTriangle();
         static void EndFrame();
+
+        static void SetCamera(const glm::mat4& viewProjection);
     };
 }

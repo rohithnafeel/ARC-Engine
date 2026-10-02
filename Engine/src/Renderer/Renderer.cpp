@@ -1,6 +1,7 @@
 #include "Arc/Renderer/Renderer.h"
 
 #include <glad/glad.h>
+#include <glm/glm.hpp>
 
 namespace Arc
 {
@@ -8,16 +9,30 @@ namespace Arc
     static unsigned int s_VBO = 0;
     static unsigned int s_ShaderProgram = 0;
 
+    static int s_ViewProjectionLocation = -1;
+
+    // ============================================================
+    // Vertex Shader
+    // ============================================================
+
     static const char* vertexShaderSource = R"(
         #version 460 core
 
         layout (location = 0) in vec2 aPos;
 
+        uniform mat4 u_ViewProjection;
+
         void main()
         {
-            gl_Position = vec4(aPos, 0.0, 1.0);
+            gl_Position =
+                u_ViewProjection *
+                vec4(aPos, 0.0, 1.0);
         }
     )";
+
+    // ============================================================
+    // Fragment Shader
+    // ============================================================
 
     static const char* fragmentShaderSource = R"(
         #version 460 core
@@ -26,9 +41,18 @@ namespace Arc
 
         void main()
         {
-            FragColor = vec4(1.0, 0.5, 0.2, 1.0);
+            FragColor = vec4(
+                1.0,
+                0.5,
+                0.2,
+                1.0
+            );
         }
     )";
+
+    // ============================================================
+    // Init
+    // ============================================================
 
     void Renderer::Init()
     {
@@ -46,7 +70,10 @@ namespace Arc
 
         glBindVertexArray(s_VAO);
 
-        glBindBuffer(GL_ARRAY_BUFFER, s_VBO);
+        glBindBuffer(
+            GL_ARRAY_BUFFER,
+            s_VBO
+        );
 
         glBufferData(
             GL_ARRAY_BUFFER,
@@ -66,6 +93,10 @@ namespace Arc
 
         glEnableVertexAttribArray(0);
 
+        // ========================================================
+        // Compile Vertex Shader
+        // ========================================================
+
         unsigned int vertexShader =
             glCreateShader(GL_VERTEX_SHADER);
 
@@ -77,6 +108,10 @@ namespace Arc
         );
 
         glCompileShader(vertexShader);
+
+        // ========================================================
+        // Compile Fragment Shader
+        // ========================================================
 
         unsigned int fragmentShader =
             glCreateShader(GL_FRAGMENT_SHADER);
@@ -90,7 +125,12 @@ namespace Arc
 
         glCompileShader(fragmentShader);
 
-        s_ShaderProgram = glCreateProgram();
+        // ========================================================
+        // Create Shader Program
+        // ========================================================
+
+        s_ShaderProgram =
+            glCreateProgram();
 
         glAttachShader(
             s_ShaderProgram,
@@ -102,29 +142,84 @@ namespace Arc
             fragmentShader
         );
 
-        glLinkProgram(s_ShaderProgram);
+        glLinkProgram(
+            s_ShaderProgram
+        );
 
+        // ========================================================
+        // Camera Uniform
+        // ========================================================
+
+        s_ViewProjectionLocation =
+            glGetUniformLocation(
+                s_ShaderProgram,
+                "u_ViewProjection"
+            );
+
+        // Shaders can be deleted after linking
         glDeleteShader(vertexShader);
         glDeleteShader(fragmentShader);
 
         glBindVertexArray(0);
     }
 
+    // ============================================================
+    // Set Camera
+    // ============================================================
+
+    void Renderer::SetCamera(
+        const glm::mat4& viewProjection
+    )
+    {
+        glUseProgram(s_ShaderProgram);
+
+        glUniformMatrix4fv(
+            s_ViewProjectionLocation,
+            1,
+            GL_FALSE,
+            &viewProjection[0][0]
+        );
+    }
+
+    // ============================================================
+    // Shutdown
+    // ============================================================
+
     void Renderer::Shutdown()
     {
         if (s_ShaderProgram)
-            glDeleteProgram(s_ShaderProgram);
+        {
+            glDeleteProgram(
+                s_ShaderProgram
+            );
+        }
 
         if (s_VAO)
-            glDeleteVertexArrays(1, &s_VAO);
+        {
+            glDeleteVertexArrays(
+                1,
+                &s_VAO
+            );
+        }
 
         if (s_VBO)
-            glDeleteBuffers(1, &s_VBO);
+        {
+            glDeleteBuffers(
+                1,
+                &s_VBO
+            );
+        }
 
         s_ShaderProgram = 0;
         s_VAO = 0;
         s_VBO = 0;
+
+        s_ViewProjectionLocation = -1;
     }
+
+    // ============================================================
+    // Begin Frame
+    // ============================================================
 
     void Renderer::BeginFrame()
     {
@@ -141,11 +236,19 @@ namespace Arc
         );
     }
 
+    // ============================================================
+    // Draw Triangle
+    // ============================================================
+
     void Renderer::DrawTriangle()
     {
-        glUseProgram(s_ShaderProgram);
+        glUseProgram(
+            s_ShaderProgram
+        );
 
-        glBindVertexArray(s_VAO);
+        glBindVertexArray(
+            s_VAO
+        );
 
         glDrawArrays(
             GL_TRIANGLES,
@@ -154,9 +257,14 @@ namespace Arc
         );
     }
 
+    // ============================================================
+    // End Frame
+    // ============================================================
+
     void Renderer::EndFrame()
     {
         glBindVertexArray(0);
+
         glUseProgram(0);
     }
 }

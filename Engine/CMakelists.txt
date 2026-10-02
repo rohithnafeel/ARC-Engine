@@ -10,6 +10,8 @@ add_library(Engine STATIC
     src/Renderer/Renderer.cpp
     src/Renderer/Framebuffer.cpp
 
+    Renderer/Camera/OrthographicCamera.cpp
+
     Editor/EditorLayer.cpp
     Editor/Dockspace.cpp
 
@@ -30,6 +32,7 @@ target_include_directories(Engine PUBLIC
     ../ThirdParty/GLAD/include
     ../ThirdParty/GLFW/include
     ../ThirdParty/ImGui
+    ../ThirdParty/GLM
 )
 
 target_link_directories(Engine PUBLIC

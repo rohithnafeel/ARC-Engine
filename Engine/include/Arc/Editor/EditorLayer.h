@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Core/Layer.h"
-
 #include "Dockspace.h"
 #include "ViewportPanel.h"
 #include "HierarchyPanel.h"
@@ -9,7 +8,7 @@
 #include "ConsolePanel.h"
 
 #include "Arc/Renderer/Framebuffer.h"
-
+#include "Renderer/Camera/OrthographicCamera.h"
 #include <memory>
 
 namespace Arc
@@ -33,5 +32,7 @@ namespace Arc
         ConsolePanel m_ConsolePanel;
 
         std::unique_ptr<Framebuffer> m_Framebuffer;
+
+        OrthographicCamera m_Camera;
     };
 }
