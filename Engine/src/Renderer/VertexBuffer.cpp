@@ -51,6 +51,19 @@ namespace Arc
         );
     }
 
+    void VertexBuffer::SetLayout(
+        const BufferLayout& layout
+    )
+    {
+        m_Layout = layout;
+    }
+
+    const BufferLayout&
+    VertexBuffer::GetLayout() const
+    {
+        return m_Layout;
+    }
+
     unsigned int VertexBuffer::GetRendererID() const
     {
         return m_RendererID;

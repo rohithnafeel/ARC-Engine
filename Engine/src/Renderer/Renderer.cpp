@@ -2,18 +2,18 @@
 #include "Arc/Renderer/VertexArray.h"
 #include "Arc/Renderer/VertexBuffer.h"
 #include "Arc/Renderer/Shader.h"
+#include "Arc/Renderer/Buffer.h"
 
 #include <glad/glad.h>
 
 #include <glm/glm.hpp>
 
 #include <memory>
-#include <string>
 
 namespace Arc
 {
     static std::unique_ptr<VertexArray> s_VertexArray;
-    static std::unique_ptr<VertexBuffer> s_VertexBuffer;
+    static std::shared_ptr<VertexBuffer> s_VertexBuffer;
     static std::unique_ptr<Shader> s_Shader;
 
     static const char* vertexShaderSource = R"(
@@ -72,7 +72,7 @@ namespace Arc
         // -----------------------------
 
         s_VertexBuffer =
-            std::make_unique<VertexBuffer>(
+            std::make_shared<VertexBuffer>(
                 vertices,
                 sizeof(vertices)
             );
@@ -81,8 +81,22 @@ namespace Arc
         // Vertex Layout
         // -----------------------------
 
+        BufferLayout layout =
+        {
+            {
+                ShaderDataType::Float2,
+                "a_Position"
+            }
+        };
+
+        s_VertexBuffer->SetLayout(layout);
+
+        // -----------------------------
+        // Add Buffer To Vertex Array
+        // -----------------------------
+
         s_VertexArray->AddVertexBuffer(
-            *s_VertexBuffer
+            s_VertexBuffer
         );
 
         s_VertexArray->Unbind();

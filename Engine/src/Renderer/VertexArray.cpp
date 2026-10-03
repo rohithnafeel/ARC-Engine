@@ -1,10 +1,43 @@
 #include "Arc/Renderer/VertexArray.h"
 #include "Arc/Renderer/VertexBuffer.h"
+#include "Arc/Renderer/Buffer.h"
 
 #include <glad/glad.h>
 
+#include <cstdint>
+
 namespace Arc
 {
+    static GLenum ShaderDataTypeToOpenGLBaseType(
+        ShaderDataType type
+    )
+    {
+        switch (type)
+        {
+            case ShaderDataType::Float:
+            case ShaderDataType::Float2:
+            case ShaderDataType::Float3:
+            case ShaderDataType::Float4:
+            case ShaderDataType::Mat3:
+            case ShaderDataType::Mat4:
+                return GL_FLOAT;
+
+            case ShaderDataType::Int:
+            case ShaderDataType::Int2:
+            case ShaderDataType::Int3:
+            case ShaderDataType::Int4:
+                return GL_INT;
+
+            case ShaderDataType::Bool:
+                return GL_BOOL;
+
+            case ShaderDataType::None:
+                break;
+        }
+
+        return GL_NONE;
+    }
+
     VertexArray::VertexArray()
     {
         glGenVertexArrays(
@@ -34,23 +67,40 @@ namespace Arc
     }
 
     void VertexArray::AddVertexBuffer(
-        const VertexBuffer& vertexBuffer
+        const std::shared_ptr<VertexBuffer>& vertexBuffer
     )
     {
         Bind();
 
-        vertexBuffer.Bind();
+        vertexBuffer->Bind();
 
-        glEnableVertexAttribArray(0);
+        const auto& layout =
+            vertexBuffer->GetLayout();
 
-        glVertexAttribPointer(
-            0,
-            2,
-            GL_FLOAT,
-            GL_FALSE,
-            2 * sizeof(float),
-            (void*)0
-        );
+        unsigned int index = 0;
+
+        for (const auto& element : layout)
+        {
+            GLenum type =
+                ShaderDataTypeToOpenGLBaseType(
+                    element.Type
+                );
+
+            glEnableVertexAttribArray(index);
+
+            glVertexAttribPointer(
+                index,
+                element.GetComponentCount(),
+                type,
+                element.Normalized
+                    ? GL_TRUE
+                    : GL_FALSE,
+                layout.GetStride(),
+                (const void*)(uintptr_t)element.Offset
+            );
+
+            index++;
+        }
     }
 
     unsigned int VertexArray::GetRendererID() const

@@ -12,6 +12,7 @@ add_library(Engine STATIC
     src/Renderer/VertexBuffer.cpp
     src/Renderer/VertexArray.cpp
     src/Renderer/Shader.cpp
+    src/Renderer/Buffer.cpp
     src/Renderer/Framebuffer.cpp
 
     Renderer/Camera/OrthographicCamera.cpp

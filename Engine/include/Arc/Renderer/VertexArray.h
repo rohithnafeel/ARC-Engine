@@ -1,5 +1,7 @@
 #pragma once
 
+#include <memory>
+
 namespace Arc
 {
     class VertexBuffer;
@@ -14,7 +16,7 @@ namespace Arc
         void Unbind() const;
 
         void AddVertexBuffer(
-            const VertexBuffer& vertexBuffer
+            const std::shared_ptr<VertexBuffer>& vertexBuffer
         );
 
         unsigned int GetRendererID() const;
