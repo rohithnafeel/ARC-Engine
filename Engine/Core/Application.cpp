@@ -2,6 +2,7 @@
 #include "Core/Input.h"
 
 #include "Arc/Renderer/Renderer.h"
+#include "Arc/Renderer/Renderer2D.h"
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -16,19 +17,30 @@ namespace Arc
 {
     Application* Application::s_Instance = nullptr;
 
+
+    // ============================================================
+    // Constructor
+    // ============================================================
+
     Application::Application()
     {
         s_Instance = this;
 
-        // -----------------------------
-        // GLFW Initialization
-        // -----------------------------
+
+        // --------------------------------------------------------
+        // Initialize GLFW
+        // --------------------------------------------------------
 
         if (!glfwInit())
         {
             std::cerr << "Failed to initialize GLFW!\n";
             return;
         }
+
+
+        // --------------------------------------------------------
+        // OpenGL Version
+        // --------------------------------------------------------
 
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
         glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
@@ -37,28 +49,45 @@ namespace Arc
             GLFW_OPENGL_CORE_PROFILE
         );
 
-        m_Window = glfwCreateWindow(
-            1280,
-            720,
-            "Arc Engine",
-            nullptr,
-            nullptr
-        );
+
+        // --------------------------------------------------------
+        // Create Window
+        // --------------------------------------------------------
+
+        m_Window =
+            glfwCreateWindow(
+                1280,
+                720,
+                "Arc Engine",
+                nullptr,
+                nullptr
+            );
+
 
         if (!m_Window)
         {
             std::cerr << "Failed to create GLFW window!\n";
+
             glfwTerminate();
+
             return;
         }
 
+
+        // --------------------------------------------------------
+        // Make OpenGL Context Current
+        // --------------------------------------------------------
+
         glfwMakeContextCurrent(m_Window);
 
+
+        // Enable VSync
         glfwSwapInterval(1);
 
-        // -----------------------------
-        // GLAD
-        // -----------------------------
+
+        // --------------------------------------------------------
+        // Initialize GLAD
+        // --------------------------------------------------------
 
         if (!gladLoadGLLoader(
                 (GLADloadproc)glfwGetProcAddress))
@@ -66,6 +95,7 @@ namespace Arc
             std::cerr << "Failed to initialize GLAD!\n";
 
             glfwDestroyWindow(m_Window);
+
             m_Window = nullptr;
 
             glfwTerminate();
@@ -73,21 +103,21 @@ namespace Arc
             return;
         }
 
-        // -----------------------------
-        // Input
-        // -----------------------------
+
+        // --------------------------------------------------------
+        // Initialize Engine Systems
+        // --------------------------------------------------------
 
         Input::Init(m_Window);
 
-        // -----------------------------
-        // Renderer
-        // -----------------------------
-
         Renderer::Init();
 
-        // -----------------------------
-        // ImGui
-        // -----------------------------
+        Renderer2D::Init();
+
+
+        // --------------------------------------------------------
+        // Initialize ImGui
+        // --------------------------------------------------------
 
         IMGUI_CHECKVERSION();
 
@@ -95,128 +125,169 @@ namespace Arc
 
         ImGuiIO& io = ImGui::GetIO();
 
-        io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
+        io.ConfigFlags |=
+            ImGuiConfigFlags_DockingEnable;
 
         ImGui::StyleColorsDark();
+
 
         ImGui_ImplGlfw_InitForOpenGL(
             m_Window,
             true
         );
 
-        ImGui_ImplOpenGL3_Init("#version 460");
+        ImGui_ImplOpenGL3_Init(
+            "#version 460"
+        );
 
-        // -----------------------------
-        // Delta Time
-        // -----------------------------
+
+        // --------------------------------------------------------
+        // Initialize Delta Time
+        // --------------------------------------------------------
 
         m_LastFrameTime =
-            static_cast<float>(glfwGetTime());
+            static_cast<float>(
+                glfwGetTime()
+            );
     }
+
+
+    // ============================================================
+    // Destructor
+    // ============================================================
 
     Application::~Application()
     {
-        // -----------------------------
-        // ImGui Shutdown
-        // -----------------------------
+        // --------------------------------------------------------
+        // Shutdown ImGui
+        // --------------------------------------------------------
 
         ImGui_ImplOpenGL3_Shutdown();
+
         ImGui_ImplGlfw_Shutdown();
 
         ImGui::DestroyContext();
 
-        // -----------------------------
-        // Renderer Shutdown
-        // -----------------------------
+
+        // --------------------------------------------------------
+        // Shutdown Renderer Systems
+        // --------------------------------------------------------
+
+        Renderer2D::Shutdown();
 
         Renderer::Shutdown();
 
-        // -----------------------------
-        // GLFW Shutdown
-        // -----------------------------
+
+        // --------------------------------------------------------
+        // Destroy Window
+        // --------------------------------------------------------
 
         if (m_Window)
         {
             glfwDestroyWindow(m_Window);
+
             m_Window = nullptr;
         }
+
+
+        // --------------------------------------------------------
+        // Shutdown GLFW
+        // --------------------------------------------------------
 
         glfwTerminate();
 
         s_Instance = nullptr;
     }
 
+
+    // ============================================================
+    // Run
+    // ============================================================
+
     void Application::Run()
     {
         if (!m_Window)
             return;
 
+
         while (!glfwWindowShouldClose(m_Window))
         {
-            // -----------------------------
-            // Delta Time
-            // -----------------------------
+            // ----------------------------------------------------
+            // Calculate Delta Time
+            // ----------------------------------------------------
 
             float currentTime =
-                static_cast<float>(glfwGetTime());
+                static_cast<float>(
+                    glfwGetTime()
+                );
 
             m_DeltaTime =
-                currentTime - m_LastFrameTime;
+                currentTime -
+                m_LastFrameTime;
 
-            m_LastFrameTime = currentTime;
+            m_LastFrameTime =
+                currentTime;
 
-            // Prevent unusually large delta time
-            // from causing huge movement.
+
+            // Prevent extremely large delta time
             if (m_DeltaTime > 0.1f)
                 m_DeltaTime = 0.1f;
 
-            // -----------------------------
-            // Events
-            // -----------------------------
+
+            // ----------------------------------------------------
+            // Poll Events
+            // ----------------------------------------------------
 
             glfwPollEvents();
 
-            // -----------------------------
-            // ImGui New Frame
-            // -----------------------------
+
+            // ----------------------------------------------------
+            // Start ImGui Frame
+            // ----------------------------------------------------
 
             ImGui_ImplOpenGL3_NewFrame();
+
             ImGui_ImplGlfw_NewFrame();
 
             ImGui::NewFrame();
 
-            // -----------------------------
-            // Layer Update
-            // -----------------------------
+
+            // ----------------------------------------------------
+            // Update Layers
+            // ----------------------------------------------------
 
             for (Layer* layer : m_LayerStack)
             {
                 layer->OnUpdate();
             }
 
-            // -----------------------------
-            // ImGui Layer Rendering
-            // -----------------------------
+
+            // ----------------------------------------------------
+            // Render ImGui
+            // ----------------------------------------------------
 
             for (Layer* layer : m_LayerStack)
             {
                 layer->OnImGuiRender();
             }
 
-            // -----------------------------
-            // ImGui Render
-            // -----------------------------
 
             ImGui::Render();
 
-            // -----------------------------
-            // Render to Main Window
-            // -----------------------------
+
+            // ----------------------------------------------------
+            // Bind Default Framebuffer
+            // ----------------------------------------------------
 
             glBindFramebuffer(
                 GL_FRAMEBUFFER,
                 0
             );
+
+
+            // ----------------------------------------------------
+            // Set Viewport to Window Size
+            // ----------------------------------------------------
 
             int displayWidth;
             int displayHeight;
@@ -227,6 +298,7 @@ namespace Arc
                 &displayHeight
             );
 
+
             glViewport(
                 0,
                 0,
@@ -234,27 +306,48 @@ namespace Arc
                 displayHeight
             );
 
+
+            // ----------------------------------------------------
+            // Render ImGui
+            // ----------------------------------------------------
+
             ImGui_ImplOpenGL3_RenderDrawData(
                 ImGui::GetDrawData()
             );
 
-            // -----------------------------
-            // Present Frame
-            // -----------------------------
+
+            // ----------------------------------------------------
+            // Swap Buffers
+            // ----------------------------------------------------
 
             glfwSwapBuffers(m_Window);
         }
     }
+
+
+    // ============================================================
+    // Push Layer
+    // ============================================================
 
     void Application::PushLayer(Layer* layer)
     {
         m_LayerStack.PushLayer(layer);
     }
 
+
+    // ============================================================
+    // Push Overlay
+    // ============================================================
+
     void Application::PushOverlay(Layer* overlay)
     {
         m_LayerStack.PushOverlay(overlay);
     }
+
+
+    // ============================================================
+    // Get Delta Time
+    // ============================================================
 
     float Application::GetDeltaTime()
     {

@@ -1,4 +1,5 @@
-#include "Arc/Renderer/Renderer.h"
+#include "Arc/Renderer/Renderer2D.h"
+
 #include "Arc/Renderer/VertexArray.h"
 #include "Arc/Renderer/VertexBuffer.h"
 #include "Arc/Renderer/IndexBuffer.h"
@@ -6,14 +7,13 @@
 #include "Arc/Renderer/Buffer.h"
 
 #include <glad/glad.h>
-#include <glm/glm.hpp>
 
 #include <memory>
 
 namespace Arc
 {
     // ============================================================
-    // Renderer Resources
+    // Renderer2D Resources
     // ============================================================
 
     static std::unique_ptr<VertexArray> s_VertexArray;
@@ -29,15 +29,17 @@ namespace Arc
     static const char* vertexShaderSource = R"(
         #version 460 core
 
-        layout (location = 0) in vec2 aPos;
+        layout (location = 0) in vec3 a_Position;
 
         uniform mat4 u_ViewProjection;
+        uniform mat4 u_Transform;
 
         void main()
         {
             gl_Position =
                 u_ViewProjection *
-                vec4(aPos, 0.0, 1.0);
+                u_Transform *
+                vec4(a_Position, 1.0);
         }
     )";
 
@@ -49,16 +51,13 @@ namespace Arc
     static const char* fragmentShaderSource = R"(
         #version 460 core
 
+        uniform vec4 u_Color;
+
         out vec4 FragColor;
 
         void main()
         {
-            FragColor = vec4(
-                1.0,
-                0.5,
-                0.2,
-                1.0
-            );
+            FragColor = u_Color;
         }
     )";
 
@@ -67,35 +66,31 @@ namespace Arc
     // Init
     // ============================================================
 
-    void Renderer::Init()
+    void Renderer2D::Init()
     {
         // --------------------------------------------------------
-        // Create Vertex Array
+        // Vertex Array
         // --------------------------------------------------------
 
-        s_VertexArray = std::make_unique<VertexArray>();
+        s_VertexArray =
+            std::make_unique<VertexArray>();
 
 
         // --------------------------------------------------------
-        // Quad Vertex Data
-        //
-        // 3 ---- 2
-        // |    / |
-        // |  /   |
-        // 0 ---- 1
+        // Unit Quad
         // --------------------------------------------------------
 
         float vertices[] =
         {
-            -0.5f, -0.5f,   // 0
-             0.5f, -0.5f,   // 1
-             0.5f,  0.5f,   // 2
-            -0.5f,  0.5f    // 3
+            -0.5f, -0.5f, 0.0f,  // 0
+             0.5f, -0.5f, 0.0f,  // 1
+             0.5f,  0.5f, 0.0f,  // 2
+            -0.5f,  0.5f, 0.0f   // 3
         };
 
 
         // --------------------------------------------------------
-        // Create Vertex Buffer
+        // Vertex Buffer
         // --------------------------------------------------------
 
         s_VertexBuffer =
@@ -112,7 +107,7 @@ namespace Arc
         BufferLayout layout =
         {
             {
-                ShaderDataType::Float2,
+                ShaderDataType::Float3,
                 "a_Position"
             }
         };
@@ -122,7 +117,7 @@ namespace Arc
 
 
         // --------------------------------------------------------
-        // Add Vertex Buffer to Vertex Array
+        // Attach Vertex Buffer
         // --------------------------------------------------------
 
         s_VertexArray->AddVertexBuffer(
@@ -131,12 +126,7 @@ namespace Arc
 
 
         // --------------------------------------------------------
-        // Quad Index Data
-        //
-        // Two triangles:
-        //
-        // Triangle 1: 0 -> 1 -> 2
-        // Triangle 2: 2 -> 3 -> 0
+        // Index Buffer
         // --------------------------------------------------------
 
         unsigned int indices[] =
@@ -146,10 +136,6 @@ namespace Arc
         };
 
 
-        // --------------------------------------------------------
-        // Create Index Buffer
-        // --------------------------------------------------------
-
         s_IndexBuffer =
             std::make_shared<IndexBuffer>(
                 indices,
@@ -158,7 +144,7 @@ namespace Arc
 
 
         // --------------------------------------------------------
-        // Attach Index Buffer to Vertex Array
+        // Attach Index Buffer
         // --------------------------------------------------------
 
         s_VertexArray->SetIndexBuffer(
@@ -167,14 +153,14 @@ namespace Arc
 
 
         // --------------------------------------------------------
-        // Unbind Vertex Array
+        // Unbind
         // --------------------------------------------------------
 
         s_VertexArray->Unbind();
 
 
         // --------------------------------------------------------
-        // Create Shader
+        // Shader
         // --------------------------------------------------------
 
         s_Shader =
@@ -186,10 +172,26 @@ namespace Arc
 
 
     // ============================================================
-    // Set Camera
+    // Shutdown
     // ============================================================
 
-    void Renderer::SetCamera(
+    void Renderer2D::Shutdown()
+    {
+        s_Shader.reset();
+
+        s_IndexBuffer.reset();
+
+        s_VertexBuffer.reset();
+
+        s_VertexArray.reset();
+    }
+
+
+    // ============================================================
+    // Begin Scene
+    // ============================================================
+
+    void Renderer2D::BeginScene(
         const glm::mat4& viewProjection
     )
     {
@@ -203,50 +205,54 @@ namespace Arc
 
 
     // ============================================================
-    // Shutdown
+    // Draw Quad
     // ============================================================
 
-    void Renderer::Shutdown()
+    void Renderer2D::DrawQuad(
+        const Transform& transform,
+        const glm::vec4& color
+    )
     {
-        s_Shader.reset();
+        // --------------------------------------------------------
+        // Upload Transform
+        // --------------------------------------------------------
 
-        s_IndexBuffer.reset();
-
-        s_VertexBuffer.reset();
-
-        s_VertexArray.reset();
-    }
-
-
-    // ============================================================
-    // Begin Frame
-    // ============================================================
-
-    void Renderer::BeginFrame()
-    {
-        glClearColor(
-            0.1f,
-            0.2f,
-            0.3f,
-            1.0f
+        s_Shader->SetMat4(
+            "u_Transform",
+            transform.GetTransform()
         );
 
-        glClear(
-            GL_COLOR_BUFFER_BIT |
-            GL_DEPTH_BUFFER_BIT
+
+        // --------------------------------------------------------
+        // Upload Color
+        // --------------------------------------------------------
+
+        int colorLocation =
+            glGetUniformLocation(
+                s_Shader->GetRendererID(),
+                "u_Color"
+            );
+
+
+        glUniform4f(
+            colorLocation,
+            color.r,
+            color.g,
+            color.b,
+            color.a
         );
-    }
 
 
-    // ============================================================
-    // Draw Indexed Quad
-    // ============================================================
-
-    void Renderer::DrawTriangle()
-    {
-        s_Shader->Bind();
+        // --------------------------------------------------------
+        // Bind Vertex Array
+        // --------------------------------------------------------
 
         s_VertexArray->Bind();
+
+
+        // --------------------------------------------------------
+        // Indexed Draw
+        // --------------------------------------------------------
 
         glDrawElements(
             GL_TRIANGLES,
@@ -258,10 +264,10 @@ namespace Arc
 
 
     // ============================================================
-    // End Frame
+    // End Scene
     // ============================================================
 
-    void Renderer::EndFrame()
+    void Renderer2D::EndScene()
     {
         s_VertexArray->Unbind();
 

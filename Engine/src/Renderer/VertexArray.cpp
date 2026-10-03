@@ -1,11 +1,11 @@
 #include "Arc/Renderer/VertexArray.h"
 #include "Arc/Renderer/VertexBuffer.h"
+#include "Arc/Renderer/IndexBuffer.h"
 #include "Arc/Renderer/Buffer.h"
 
 #include <glad/glad.h>
 
 #include <cstdint>
-
 namespace Arc
 {
     static GLenum ShaderDataTypeToOpenGLBaseType(
@@ -101,6 +101,23 @@ namespace Arc
 
             index++;
         }
+    }
+
+    void VertexArray::SetIndexBuffer(
+        const std::shared_ptr<IndexBuffer>& indexBuffer
+    )
+    {
+        Bind();
+
+        indexBuffer->Bind();
+
+        m_IndexBuffer = indexBuffer;
+    }
+
+    const std::shared_ptr<IndexBuffer>&
+    VertexArray::GetIndexBuffer() const
+    {
+        return m_IndexBuffer;
     }
 
     unsigned int VertexArray::GetRendererID() const

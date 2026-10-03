@@ -1,6 +1,8 @@
 #include "Arc/Editor/EditorLayer.h"
 
 #include "Arc/Renderer/Renderer.h"
+#include "Arc/Renderer/Renderer2D.h"
+#include "Arc/Math/Transform.h"
 
 #include "Core/Application.h"
 #include "Core/Input.h"
@@ -16,21 +18,31 @@
 
 namespace Arc
 {
+    // ============================================================
+    // Constructor
+    // ============================================================
+
     EditorLayer::EditorLayer()
         : Layer("EditorLayer"),
           m_Camera(
               -10.0f,
-              10.0f,
+               10.0f,
               -5.625f,
-              5.625f
+               5.625f
           )
     {
     }
+
+
+    // ============================================================
+    // On Attach
+    // ============================================================
 
     void EditorLayer::OnAttach()
     {
         std::cout
             << "EditorLayer Attached\n";
+
 
         m_Framebuffer =
             std::make_unique<Framebuffer>(
@@ -38,9 +50,15 @@ namespace Arc
                 720
             );
 
+
         std::cout
             << "Editor Framebuffer Created\n";
     }
+
+
+    // ============================================================
+    // On Detach
+    // ============================================================
 
     void EditorLayer::OnDetach()
     {
@@ -50,26 +68,34 @@ namespace Arc
         m_Framebuffer.reset();
     }
 
+
+    // ============================================================
+    // On Update
+    // ============================================================
+
     void EditorLayer::OnUpdate()
     {
         if (!m_Framebuffer)
             return;
 
-        // -----------------------------
+
+        // --------------------------------------------------------
         // Delta Time
-        // -----------------------------
+        // --------------------------------------------------------
 
         float deltaTime =
             Application::GetDeltaTime();
 
-        // -----------------------------
-        // Camera Movement
-        // -----------------------------
-
         float cameraSpeed = 5.0f;
+
+
+        // --------------------------------------------------------
+        // Camera Movement
+        // --------------------------------------------------------
 
         glm::vec3 cameraPosition =
             m_Camera.GetPosition();
+
 
         if (Input::IsKeyPressed(GLFW_KEY_W))
         {
@@ -77,11 +103,13 @@ namespace Arc
                 cameraSpeed * deltaTime;
         }
 
+
         if (Input::IsKeyPressed(GLFW_KEY_S))
         {
             cameraPosition.y -=
                 cameraSpeed * deltaTime;
         }
+
 
         if (Input::IsKeyPressed(GLFW_KEY_A))
         {
@@ -89,45 +117,102 @@ namespace Arc
                 cameraSpeed * deltaTime;
         }
 
+
         if (Input::IsKeyPressed(GLFW_KEY_D))
         {
             cameraPosition.x +=
                 cameraSpeed * deltaTime;
         }
 
+
         m_Camera.SetPosition(
             cameraPosition
         );
 
-        // -----------------------------
-        // Scene Rendering
-        // -----------------------------
+
+        // --------------------------------------------------------
+        // Bind Framebuffer
+        // --------------------------------------------------------
 
         m_Framebuffer->Bind();
 
+
+        // --------------------------------------------------------
+        // Begin Frame
+        // --------------------------------------------------------
+
         Renderer::BeginFrame();
 
-        Renderer::SetCamera(
+
+        // --------------------------------------------------------
+        // Begin 2D Scene
+        // --------------------------------------------------------
+
+        Renderer2D::BeginScene(
             m_Camera.GetViewProjectionMatrix()
         );
 
-        Renderer::DrawTriangle();
 
-        Renderer::EndFrame();
+        // --------------------------------------------------------
+        // Create Quad Transform
+        // --------------------------------------------------------
+
+        Transform quadTransform;
+
+        quadTransform.Position =
+            { 0.0f, 0.0f, 0.0f };
+
+        quadTransform.Rotation =
+            25.0f;
+
+        quadTransform.Scale =
+            { 2.0f, 2.0f, 1.0f };
+
+
+        // --------------------------------------------------------
+        // Draw Quad
+        // --------------------------------------------------------
+
+        Renderer2D::DrawQuad(
+            quadTransform,
+            { 1.0f, 0.3f, 0.2f, 1.0f }
+        );
+
+
+        // --------------------------------------------------------
+        // End 2D Scene
+        // --------------------------------------------------------
+
+        Renderer2D::EndScene();
+
+
+        // --------------------------------------------------------
+        // Unbind Framebuffer
+        // --------------------------------------------------------
 
         m_Framebuffer->Unbind();
     }
+
+
+    // ============================================================
+    // ImGui
+    // ============================================================
 
     void EditorLayer::OnImGuiRender()
     {
         m_Dockspace.Begin();
 
-        // -----------------------------
+
+        // --------------------------------------------------------
         // Main Menu Bar
-        // -----------------------------
+        // --------------------------------------------------------
 
         if (ImGui::BeginMainMenuBar())
         {
+            // ----------------------------------------------------
+            // File
+            // ----------------------------------------------------
+
             if (ImGui::BeginMenu("File"))
             {
                 ImGui::MenuItem("New");
@@ -141,6 +226,11 @@ namespace Arc
                 ImGui::EndMenu();
             }
 
+
+            // ----------------------------------------------------
+            // Edit
+            // ----------------------------------------------------
+
             if (ImGui::BeginMenu("Edit"))
             {
                 ImGui::MenuItem("Undo");
@@ -148,6 +238,11 @@ namespace Arc
 
                 ImGui::EndMenu();
             }
+
+
+            // ----------------------------------------------------
+            // View
+            // ----------------------------------------------------
 
             if (ImGui::BeginMenu("View"))
             {
@@ -159,6 +254,11 @@ namespace Arc
                 ImGui::EndMenu();
             }
 
+
+            // ----------------------------------------------------
+            // Help
+            // ----------------------------------------------------
+
             if (ImGui::BeginMenu("Help"))
             {
                 ImGui::MenuItem("About");
@@ -166,12 +266,14 @@ namespace Arc
                 ImGui::EndMenu();
             }
 
+
             ImGui::EndMainMenuBar();
         }
 
-        // -----------------------------
-        // Editor Panels
-        // -----------------------------
+
+        // --------------------------------------------------------
+        // Panels
+        // --------------------------------------------------------
 
         m_ViewportPanel.Render(
             *m_Framebuffer
@@ -183,9 +285,10 @@ namespace Arc
 
         m_ConsolePanel.Render();
 
-        // -----------------------------
+
+        // --------------------------------------------------------
         // End Dockspace
-        // -----------------------------
+        // --------------------------------------------------------
 
         m_Dockspace.End();
     }
