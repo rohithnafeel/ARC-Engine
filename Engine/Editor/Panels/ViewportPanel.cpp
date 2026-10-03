@@ -2,7 +2,6 @@
 #include "Arc/Renderer/Framebuffer.h"
 
 #include <imgui.h>
-#include <iostream>
 
 namespace Arc
 {

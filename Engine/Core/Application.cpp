@@ -1,4 +1,6 @@
 #include "Core/Application.h"
+#include "Core/Input.h"
+
 #include "Arc/Renderer/Renderer.h"
 
 #include <glad/glad.h>
@@ -12,25 +14,28 @@
 
 namespace Arc
 {
+    Application* Application::s_Instance = nullptr;
+
     Application::Application()
     {
-        // -------------------------
-        // Initialize GLFW
-        // -------------------------
+        s_Instance = this;
+
+        // -----------------------------
+        // GLFW Initialization
+        // -----------------------------
 
         if (!glfwInit())
         {
-            std::cerr << "Failed to initialize GLFW\n";
+            std::cerr << "Failed to initialize GLFW!\n";
             return;
         }
 
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
         glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
-        glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
-        // -------------------------
-        // Create Window
-        // -------------------------
+        glfwWindowHint(
+            GLFW_OPENGL_PROFILE,
+            GLFW_OPENGL_CORE_PROFILE
+        );
 
         m_Window = glfwCreateWindow(
             1280,
@@ -42,39 +47,47 @@ namespace Arc
 
         if (!m_Window)
         {
-            std::cerr << "Failed to create GLFW window\n";
+            std::cerr << "Failed to create GLFW window!\n";
             glfwTerminate();
             return;
         }
 
         glfwMakeContextCurrent(m_Window);
+
         glfwSwapInterval(1);
 
-        // -------------------------
-        // Initialize GLAD
-        // -------------------------
+        // -----------------------------
+        // GLAD
+        // -----------------------------
 
         if (!gladLoadGLLoader(
                 (GLADloadproc)glfwGetProcAddress))
         {
-            std::cerr << "Failed to initialize GLAD\n";
+            std::cerr << "Failed to initialize GLAD!\n";
 
             glfwDestroyWindow(m_Window);
             m_Window = nullptr;
 
             glfwTerminate();
+
             return;
         }
 
-        // -------------------------
-        // Initialize Renderer
-        // -------------------------
+        // -----------------------------
+        // Input
+        // -----------------------------
+
+        Input::Init(m_Window);
+
+        // -----------------------------
+        // Renderer
+        // -----------------------------
 
         Renderer::Init();
 
-        // -------------------------
-        // Initialize ImGui
-        // -------------------------
+        // -----------------------------
+        // ImGui
+        // -----------------------------
 
         IMGUI_CHECKVERSION();
 
@@ -82,7 +95,7 @@ namespace Arc
 
         ImGuiIO& io = ImGui::GetIO();
 
-io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
+        io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
 
         ImGui::StyleColorsDark();
 
@@ -91,106 +104,147 @@ io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
             true
         );
 
-        ImGui_ImplOpenGL3_Init(
-            "#version 460"
-        );
+        ImGui_ImplOpenGL3_Init("#version 460");
+
+        // -----------------------------
+        // Delta Time
+        // -----------------------------
+
+        m_LastFrameTime =
+            static_cast<float>(glfwGetTime());
     }
 
     Application::~Application()
     {
-        // -------------------------
-        // Shutdown ImGui
-        // -------------------------
+        // -----------------------------
+        // ImGui Shutdown
+        // -----------------------------
 
         ImGui_ImplOpenGL3_Shutdown();
         ImGui_ImplGlfw_Shutdown();
 
         ImGui::DestroyContext();
 
-        // -------------------------
-        // Shutdown Renderer
-        // -------------------------
+        // -----------------------------
+        // Renderer Shutdown
+        // -----------------------------
 
         Renderer::Shutdown();
 
-        // -------------------------
-        // Destroy Window
-        // -------------------------
+        // -----------------------------
+        // GLFW Shutdown
+        // -----------------------------
 
         if (m_Window)
         {
             glfwDestroyWindow(m_Window);
+            m_Window = nullptr;
         }
 
         glfwTerminate();
+
+        s_Instance = nullptr;
     }
 
     void Application::Run()
-{
-    while (!glfwWindowShouldClose(m_Window))
     {
-        glfwPollEvents();
+        if (!m_Window)
+            return;
 
-        // -------------------------
-        // ImGui: Start frame
-        // -------------------------
-
-        ImGui_ImplOpenGL3_NewFrame();
-        ImGui_ImplGlfw_NewFrame();
-        ImGui::NewFrame();
-
-        // -------------------------
-        // Engine layers
-        // -------------------------
-
-        for (Layer* layer : m_LayerStack)
+        while (!glfwWindowShouldClose(m_Window))
         {
-            layer->OnUpdate();
+            // -----------------------------
+            // Delta Time
+            // -----------------------------
+
+            float currentTime =
+                static_cast<float>(glfwGetTime());
+
+            m_DeltaTime =
+                currentTime - m_LastFrameTime;
+
+            m_LastFrameTime = currentTime;
+
+            // Prevent unusually large delta time
+            // from causing huge movement.
+            if (m_DeltaTime > 0.1f)
+                m_DeltaTime = 0.1f;
+
+            // -----------------------------
+            // Events
+            // -----------------------------
+
+            glfwPollEvents();
+
+            // -----------------------------
+            // ImGui New Frame
+            // -----------------------------
+
+            ImGui_ImplOpenGL3_NewFrame();
+            ImGui_ImplGlfw_NewFrame();
+
+            ImGui::NewFrame();
+
+            // -----------------------------
+            // Layer Update
+            // -----------------------------
+
+            for (Layer* layer : m_LayerStack)
+            {
+                layer->OnUpdate();
+            }
+
+            // -----------------------------
+            // ImGui Layer Rendering
+            // -----------------------------
+
+            for (Layer* layer : m_LayerStack)
+            {
+                layer->OnImGuiRender();
+            }
+
+            // -----------------------------
+            // ImGui Render
+            // -----------------------------
+
+            ImGui::Render();
+
+            // -----------------------------
+            // Render to Main Window
+            // -----------------------------
+
+            glBindFramebuffer(
+                GL_FRAMEBUFFER,
+                0
+            );
+
+            int displayWidth;
+            int displayHeight;
+
+            glfwGetFramebufferSize(
+                m_Window,
+                &displayWidth,
+                &displayHeight
+            );
+
+            glViewport(
+                0,
+                0,
+                displayWidth,
+                displayHeight
+            );
+
+            ImGui_ImplOpenGL3_RenderDrawData(
+                ImGui::GetDrawData()
+            );
+
+            // -----------------------------
+            // Present Frame
+            // -----------------------------
+
+            glfwSwapBuffers(m_Window);
         }
-
-        // -------------------------
-        // Editor UI
-        // -------------------------
-
-        for (Layer* layer : m_LayerStack)
-        {
-            layer->OnImGuiRender();
-        }
-
-        // -------------------------
-        // ImGui: Render
-        // -------------------------
-
-        ImGui::Render();
-
-        // Make absolutely sure
-        // we're rendering ImGui to
-        // the main window.
-        glBindFramebuffer(GL_FRAMEBUFFER, 0);
-
-        int displayWidth;
-        int displayHeight;
-
-        glfwGetFramebufferSize(
-            m_Window,
-            &displayWidth,
-            &displayHeight
-        );
-
-        glViewport(
-            0,
-            0,
-            displayWidth,
-            displayHeight
-        );
-
-        ImGui_ImplOpenGL3_RenderDrawData(
-            ImGui::GetDrawData()
-        );
-
-        glfwSwapBuffers(m_Window);
     }
-}
 
     void Application::PushLayer(Layer* layer)
     {
@@ -200,5 +254,13 @@ io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
     void Application::PushOverlay(Layer* overlay)
     {
         m_LayerStack.PushOverlay(overlay);
+    }
+
+    float Application::GetDeltaTime()
+    {
+        if (!s_Instance)
+            return 0.0f;
+
+        return s_Instance->m_DeltaTime;
     }
 }

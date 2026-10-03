@@ -4,6 +4,7 @@ add_library(Engine STATIC
     Core/Layer.cpp
     Core/LayerStack.cpp
     Core/TestLayer.cpp
+    Core/Input.cpp
 
     src/Engine.cpp
 

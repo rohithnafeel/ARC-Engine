@@ -1,7 +1,16 @@
 #include "Arc/Editor/EditorLayer.h"
+
 #include "Arc/Renderer/Renderer.h"
 
+#include "Core/Application.h"
+#include "Core/Input.h"
+
 #include <imgui.h>
+
+#include <GLFW/glfw3.h>
+
+#include <glm/glm.hpp>
+
 #include <iostream>
 #include <memory>
 
@@ -9,24 +18,34 @@ namespace Arc
 {
     EditorLayer::EditorLayer()
         : Layer("EditorLayer"),
-          m_Camera(-10.0f, 10.0f, -5.625f, 5.625f)
+          m_Camera(
+              -10.0f,
+              10.0f,
+              -5.625f,
+              5.625f
+          )
     {
     }
 
     void EditorLayer::OnAttach()
     {
-        std::cout << "EditorLayer Attached\n";
+        std::cout
+            << "EditorLayer Attached\n";
 
-        // Create the editor framebuffer
         m_Framebuffer =
-            std::make_unique<Framebuffer>(1280, 720);
+            std::make_unique<Framebuffer>(
+                1280,
+                720
+            );
 
-        std::cout << "Editor Framebuffer Created\n";
+        std::cout
+            << "Editor Framebuffer Created\n";
     }
 
     void EditorLayer::OnDetach()
     {
-        std::cout << "EditorLayer Detached\n";
+        std::cout
+            << "EditorLayer Detached\n";
 
         m_Framebuffer.reset();
     }
@@ -36,22 +55,66 @@ namespace Arc
         if (!m_Framebuffer)
             return;
 
-        // Render game scene into the framebuffer
+        // -----------------------------
+        // Delta Time
+        // -----------------------------
+
+        float deltaTime =
+            Application::GetDeltaTime();
+
+        // -----------------------------
+        // Camera Movement
+        // -----------------------------
+
+        float cameraSpeed = 5.0f;
+
+        glm::vec3 cameraPosition =
+            m_Camera.GetPosition();
+
+        if (Input::IsKeyPressed(GLFW_KEY_W))
+        {
+            cameraPosition.y +=
+                cameraSpeed * deltaTime;
+        }
+
+        if (Input::IsKeyPressed(GLFW_KEY_S))
+        {
+            cameraPosition.y -=
+                cameraSpeed * deltaTime;
+        }
+
+        if (Input::IsKeyPressed(GLFW_KEY_A))
+        {
+            cameraPosition.x -=
+                cameraSpeed * deltaTime;
+        }
+
+        if (Input::IsKeyPressed(GLFW_KEY_D))
+        {
+            cameraPosition.x +=
+                cameraSpeed * deltaTime;
+        }
+
+        m_Camera.SetPosition(
+            cameraPosition
+        );
+
+        // -----------------------------
+        // Scene Rendering
+        // -----------------------------
+
         m_Framebuffer->Bind();
 
         Renderer::BeginFrame();
 
-        // Send camera matrix to the renderer
         Renderer::SetCamera(
             m_Camera.GetViewProjectionMatrix()
         );
 
-        // Render scene
         Renderer::DrawTriangle();
 
         Renderer::EndFrame();
 
-        // Return to default framebuffer
         m_Framebuffer->Unbind();
     }
 
@@ -59,10 +122,12 @@ namespace Arc
     {
         m_Dockspace.Begin();
 
-        // Main menu bar
+        // -----------------------------
+        // Main Menu Bar
+        // -----------------------------
+
         if (ImGui::BeginMainMenuBar())
         {
-            // File
             if (ImGui::BeginMenu("File"))
             {
                 ImGui::MenuItem("New");
@@ -76,7 +141,6 @@ namespace Arc
                 ImGui::EndMenu();
             }
 
-            // Edit
             if (ImGui::BeginMenu("Edit"))
             {
                 ImGui::MenuItem("Undo");
@@ -85,7 +149,6 @@ namespace Arc
                 ImGui::EndMenu();
             }
 
-            // View
             if (ImGui::BeginMenu("View"))
             {
                 ImGui::MenuItem("Viewport");
@@ -96,7 +159,6 @@ namespace Arc
                 ImGui::EndMenu();
             }
 
-            // Help
             if (ImGui::BeginMenu("Help"))
             {
                 ImGui::MenuItem("About");
@@ -107,11 +169,23 @@ namespace Arc
             ImGui::EndMainMenuBar();
         }
 
-        // Editor panels
-        m_ViewportPanel.Render(*m_Framebuffer);
+        // -----------------------------
+        // Editor Panels
+        // -----------------------------
+
+        m_ViewportPanel.Render(
+            *m_Framebuffer
+        );
+
         m_HierarchyPanel.Render();
+
         m_InspectorPanel.Render();
+
         m_ConsolePanel.Render();
+
+        // -----------------------------
+        // End Dockspace
+        // -----------------------------
 
         m_Dockspace.End();
     }

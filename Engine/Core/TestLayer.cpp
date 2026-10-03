@@ -1,4 +1,4 @@
-#include "Core/TestLayer.h"
+#include "TestLayer.h"
 
 #include <iostream>
 
@@ -6,16 +6,22 @@ namespace Arc
 {
     void TestLayer::OnAttach()
     {
-        std::cout << "Attached: " << m_Name << std::endl;
+        std::cout
+            << "Attached: "
+            << m_Name
+            << "\n";
     }
 
     void TestLayer::OnDetach()
     {
-        std::cout << "Detached: " << m_Name << std::endl;
+        std::cout
+            << "Detached: "
+            << m_Name
+            << "\n";
     }
 
     void TestLayer::OnUpdate()
     {
-        std::cout << "Updating: " << m_Name << std::endl;
+        // Nothing here for now.
     }
 }

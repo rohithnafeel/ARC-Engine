@@ -7,10 +7,16 @@ namespace Arc
 {
     SandboxApp::SandboxApp()
     {
-        PushLayer(new TestLayer("GameLayer"));
+        PushLayer(
+            new TestLayer("GameLayer")
+        );
 
-        PushLayer(new EditorLayer());
+        PushLayer(
+            new EditorLayer()
+        );
 
-        PushOverlay(new TestLayer("DebugOverlay"));
+        PushOverlay(
+            new TestLayer("DebugOverlay")
+        );
     }
 }
