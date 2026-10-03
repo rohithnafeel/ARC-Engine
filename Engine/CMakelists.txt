@@ -9,6 +9,9 @@ add_library(Engine STATIC
     src/Engine.cpp
 
     src/Renderer/Renderer.cpp
+    src/Renderer/VertexBuffer.cpp
+    src/Renderer/VertexArray.cpp
+    src/Renderer/Shader.cpp
     src/Renderer/Framebuffer.cpp
 
     Renderer/Camera/OrthographicCamera.cpp
