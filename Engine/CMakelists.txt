@@ -9,6 +9,9 @@ add_library(Engine STATIC
     src/Engine.cpp
 
     src/Math/Transform.cpp
+    src/Scene/Entity.cpp
+    src/Scene/Entity.cpp
+    src/Scene/Scene.cpp
 
     src/Renderer/Renderer.cpp
     src/Renderer/VertexBuffer.cpp

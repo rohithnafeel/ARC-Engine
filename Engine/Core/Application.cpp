@@ -44,6 +44,7 @@ namespace Arc
 
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
         glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
+
         glfwWindowHint(
             GLFW_OPENGL_PROFILE,
             GLFW_OPENGL_CORE_PROFILE
@@ -158,6 +159,9 @@ namespace Arc
 
     Application::~Application()
     {
+        std::cout << "APPLICATION DESTRUCTOR\n";
+
+
         // --------------------------------------------------------
         // Shutdown ImGui
         // --------------------------------------------------------
@@ -206,8 +210,14 @@ namespace Arc
 
     void Application::Run()
     {
+        std::cout << "APPLICATION RUN STARTED\n";
+
+
         if (!m_Window)
+        {
+            std::cout << "NO WINDOW - RUN EXITING\n";
             return;
+        }
 
 
         while (!glfwWindowShouldClose(m_Window))
@@ -229,7 +239,10 @@ namespace Arc
                 currentTime;
 
 
-            // Prevent extremely large delta time
+            // ----------------------------------------------------
+            // Prevent Extremely Large Delta Time
+            // ----------------------------------------------------
+
             if (m_DeltaTime > 0.1f)
                 m_DeltaTime = 0.1f;
 
@@ -239,6 +252,18 @@ namespace Arc
             // ----------------------------------------------------
 
             glfwPollEvents();
+
+
+            // ----------------------------------------------------
+            // DEBUG:
+            // Check Window Close Flag
+            // ----------------------------------------------------
+
+            if (glfwWindowShouldClose(m_Window))
+            {
+                std::cout
+                    << "CLOSE FLAG SET AFTER POLL EVENTS\n";
+            }
 
 
             // ----------------------------------------------------
@@ -272,6 +297,10 @@ namespace Arc
             }
 
 
+            // ----------------------------------------------------
+            // Finish ImGui Frame
+            // ----------------------------------------------------
+
             ImGui::Render();
 
 
@@ -298,7 +327,6 @@ namespace Arc
                 &displayHeight
             );
 
-
             glViewport(
                 0,
                 0,
@@ -322,6 +350,15 @@ namespace Arc
 
             glfwSwapBuffers(m_Window);
         }
+
+
+        // --------------------------------------------------------
+        // DEBUG:
+        // Main Application Loop Ended
+        // --------------------------------------------------------
+
+        std::cout
+            << "APPLICATION RUN LOOP ENDED\n";
     }
 
 

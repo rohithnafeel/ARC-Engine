@@ -53,6 +53,28 @@ namespace Arc
 
         std::cout
             << "Editor Framebuffer Created\n";
+
+        m_Scene = std::make_unique<Scene>();
+
+Entity& player =
+    m_Scene->CreateEntity("Player");
+
+player.GetTransform().Position =
+    { 0.0f, 0.0f, 0.0f };
+
+Entity& enemy =
+    m_Scene->CreateEntity("Enemy");
+
+enemy.GetTransform().Position =
+    { 3.0f, 1.0f, 0.0f };
+
+Entity& ground =
+    m_Scene->CreateEntity("Ground");
+
+ground.GetTransform().Position =
+    { 0.0f, -3.0f, 0.0f };
+
+std::cout << "Scene Created\n";
     }
 
 
@@ -157,26 +179,13 @@ namespace Arc
         // Create Quad Transform
         // --------------------------------------------------------
 
-        Transform quadTransform;
-
-        quadTransform.Position =
-            { 0.0f, 0.0f, 0.0f };
-
-        quadTransform.Rotation =
-            25.0f;
-
-        quadTransform.Scale =
-            { 2.0f, 2.0f, 1.0f };
-
-
-        // --------------------------------------------------------
-        // Draw Quad
-        // --------------------------------------------------------
-
-        Renderer2D::DrawQuad(
-            quadTransform,
-            { 1.0f, 0.3f, 0.2f, 1.0f }
-        );
+        for (auto& entity : m_Scene->GetEntities())
+{
+    Renderer2D::DrawQuad(
+        entity->GetTransform(),
+        { 1.0f, 0.3f, 0.2f, 1.0f }
+    );
+}
 
 
         // --------------------------------------------------------
@@ -279,9 +288,13 @@ namespace Arc
             *m_Framebuffer
         );
 
-        m_HierarchyPanel.Render();
+        m_HierarchyPanel.Render(
+    *m_Scene
+);
 
-        m_InspectorPanel.Render();
+        m_InspectorPanel.Render(
+    m_HierarchyPanel.GetSelectedEntity()
+);
 
         m_ConsolePanel.Render();
 

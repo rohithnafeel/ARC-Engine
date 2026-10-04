@@ -9,6 +9,7 @@
 
 #include "Arc/Renderer/Framebuffer.h"
 #include "Renderer/Camera/OrthographicCamera.h"
+#include "Arc/Scene/Scene.h"
 #include <memory>
 
 namespace Arc
@@ -24,6 +25,11 @@ namespace Arc
         void OnImGuiRender() override;
 
     private:
+    std::unique_ptr<Scene> m_Scene;
+
+    Entity* m_SelectedEntity = nullptr;
+
+    private:
         Dockspace m_Dockspace;
 
         ViewportPanel m_ViewportPanel;
@@ -34,5 +40,6 @@ namespace Arc
         std::unique_ptr<Framebuffer> m_Framebuffer;
 
         OrthographicCamera m_Camera;
+        
     };
 }
