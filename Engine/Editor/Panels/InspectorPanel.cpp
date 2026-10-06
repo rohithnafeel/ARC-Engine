@@ -19,10 +19,6 @@ namespace Arc
             return;
         }
 
-        // --------------------------------------------------------
-        // Sync name buffer when selection changes
-        // --------------------------------------------------------
-
         if (entity != m_LastEntity)
         {
             std::strncpy(
@@ -38,19 +34,11 @@ namespace Arc
             m_LastEntity = entity;
         }
 
-        // --------------------------------------------------------
-        // Entity Name
-        // --------------------------------------------------------
-
         ImGui::InputText(
             "Name",
             m_NameBuffer,
             sizeof(m_NameBuffer)
         );
-
-        // --------------------------------------------------------
-        // Prevent empty Entity names
-        // --------------------------------------------------------
 
         if (
             ImGui::IsItemDeactivatedAfterEdit()
@@ -75,10 +63,6 @@ namespace Arc
         }
 
         ImGui::Separator();
-
-        // --------------------------------------------------------
-        // Transform
-        // --------------------------------------------------------
 
         Transform& transform =
             entity->GetTransform();

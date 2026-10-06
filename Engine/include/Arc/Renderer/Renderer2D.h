@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Arc/Math/Transform.h"
+#include "Arc/Renderer/Texture2D.h"
 
 #include <glm/glm.hpp>
 
@@ -19,8 +20,14 @@ namespace Arc
         static void EndScene();
 
         static void DrawQuad(
-            const Transform& transform,
-            const glm::vec4& color
-        );
+    const Transform& transform,
+    const Texture2D& texture,
+    const glm::vec4& tint
+);
+
+static void DrawQuad(
+    const Transform& transform,
+    const glm::vec4& color
+);
     };
 }

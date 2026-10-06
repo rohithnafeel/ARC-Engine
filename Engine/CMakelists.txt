@@ -9,17 +9,18 @@ add_library(Engine STATIC
     src/Engine.cpp
 
     src/Math/Transform.cpp
-    src/Scene/Entity.cpp
+
     src/Scene/Entity.cpp
     src/Scene/Scene.cpp
 
     src/Renderer/Renderer.cpp
+    src/Renderer/Renderer2D.cpp
+    src/Renderer/Texture2D.cpp
     src/Renderer/VertexBuffer.cpp
     src/Renderer/VertexArray.cpp
     src/Renderer/Shader.cpp
     src/Renderer/Buffer.cpp
     src/Renderer/IndexBuffer.cpp
-    src/Renderer/Renderer2D.cpp
     src/Renderer/Framebuffer.cpp
 
     Renderer/Camera/OrthographicCamera.cpp
@@ -34,10 +35,9 @@ add_library(Engine STATIC
 )
 
 target_include_directories(Engine PUBLIC
-
     ${CMAKE_CURRENT_SOURCE_DIR}
-
     ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/Core
     ${CMAKE_CURRENT_SOURCE_DIR}/Editor
     ${CMAKE_CURRENT_SOURCE_DIR}/Editor/Panels
 
@@ -45,15 +45,16 @@ target_include_directories(Engine PUBLIC
     ../ThirdParty/GLFW/include
     ../ThirdParty/ImGui
     ../ThirdParty/GLM
+    ../ThirdParty/stb_image
 )
 
-target_link_directories(Engine PUBLIC
-
+target_link_directories(
+    Engine PUBLIC
     ../ThirdParty/GLFW/lib-mingw-w64
 )
 
-target_link_libraries(Engine PUBLIC
-
+target_link_libraries(
+    Engine PUBLIC
     glfw3
     opengl32
     ImGui

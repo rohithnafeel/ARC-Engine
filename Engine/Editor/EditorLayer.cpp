@@ -1,48 +1,35 @@
 #include "Arc/Editor/EditorLayer.h"
 
-#include "Arc/Renderer/Renderer.h"
-#include "Arc/Renderer/Renderer2D.h"
-#include "Arc/Math/Transform.h"
-
 #include "Core/Application.h"
 #include "Core/Input.h"
 
-#include <imgui.h>
+#include "Arc/Renderer/Renderer.h"
+#include "Arc/Renderer/Renderer2D.h"
 
 #include <GLFW/glfw3.h>
 
 #include <glm/glm.hpp>
 
-#include <iostream>
 #include <memory>
 
 namespace Arc
 {
-    // ============================================================
-    // Constructor
-    // ============================================================
-
     EditorLayer::EditorLayer()
         : Layer("EditorLayer"),
           m_Camera(
-              -10.0f,
-               10.0f,
-              -5.625f,
-               5.625f
+              -8.0f,
+               8.0f,
+              -4.5f,
+               4.5f
           )
     {
     }
 
-
-    // ============================================================
-    // On Attach
-    // ============================================================
-
     void EditorLayer::OnAttach()
     {
-        std::cout
-            << "EditorLayer Attached\n";
-
+        // --------------------------------------------------
+        // Framebuffer
+        // --------------------------------------------------
 
         m_Framebuffer =
             std::make_unique<Framebuffer>(
@@ -51,99 +38,142 @@ namespace Arc
             );
 
 
-        std::cout
-            << "Editor Framebuffer Created\n";
+        // --------------------------------------------------
+        // Scene
+        // --------------------------------------------------
 
-        m_Scene = std::make_unique<Scene>();
+        m_Scene =
+            std::make_unique<Scene>();
 
-Entity& player =
-    m_Scene->CreateEntity("Player");
 
-player.GetTransform().Position =
-    { 0.0f, 0.0f, 0.0f };
+        // --------------------------------------------------
+        // Player
+        // --------------------------------------------------
 
-Entity& enemy =
-    m_Scene->CreateEntity("Enemy");
+        Entity& player =
+            m_Scene->CreateEntity(
+                "Player"
+            );
 
-enemy.GetTransform().Position =
-    { 3.0f, 1.0f, 0.0f };
+        player.GetTransform().Position =
+        {
+            0.0f,
+            0.0f,
+            0.0f
+        };
 
-Entity& ground =
-    m_Scene->CreateEntity("Ground");
+        player.GetTransform().Scale =
+        {
+            2.0f,
+            2.0f,
+            1.0f
+        };
 
-ground.GetTransform().Position =
-    { 0.0f, -3.0f, 0.0f };
 
-std::cout << "Scene Created\n";
+        // --------------------------------------------------
+        // Player Sprite
+        // --------------------------------------------------
+
+        player.GetSpriteRenderer().Texture =
+            std::make_shared<Texture2D>(
+                "../Assets/player.jpg"
+            );
+
+
+        // --------------------------------------------------
+        // Enemy
+        // --------------------------------------------------
+
+        Entity& enemy =
+            m_Scene->CreateEntity(
+                "Enemy"
+            );
+
+        enemy.GetTransform().Position =
+        {
+            3.0f,
+            1.0f,
+            0.0f
+        };
+
+
+        // --------------------------------------------------
+        // Ground
+        // --------------------------------------------------
+
+        Entity& ground =
+            m_Scene->CreateEntity(
+                "Ground"
+            );
+
+        ground.GetTransform().Position =
+        {
+            0.0f,
+            -3.0f,
+            0.0f
+        };
+
+        ground.GetTransform().Scale =
+        {
+            6.0f,
+            1.0f,
+            1.0f
+        };
     }
 
 
-    // ============================================================
-    // On Detach
-    // ============================================================
-
     void EditorLayer::OnDetach()
     {
-        std::cout
-            << "EditorLayer Detached\n";
+        m_Scene.reset();
 
         m_Framebuffer.reset();
     }
 
 
-    // ============================================================
-    // On Update
-    // ============================================================
-
     void EditorLayer::OnUpdate()
     {
-        if (!m_Framebuffer)
-            return;
+        // --------------------------------------------------
+        // Camera Movement
+        // --------------------------------------------------
 
-
-        // --------------------------------------------------------
-        // Delta Time
-        // --------------------------------------------------------
+        float speed = 5.0f;
 
         float deltaTime =
             Application::GetDeltaTime();
-
-        float cameraSpeed = 5.0f;
-
-
-        // --------------------------------------------------------
-        // Camera Movement
-        // --------------------------------------------------------
 
         glm::vec3 cameraPosition =
             m_Camera.GetPosition();
 
 
-        if (Input::IsKeyPressed(GLFW_KEY_W))
+        if (Input::IsKeyPressed(
+                GLFW_KEY_W))
         {
             cameraPosition.y +=
-                cameraSpeed * deltaTime;
+                speed * deltaTime;
         }
 
 
-        if (Input::IsKeyPressed(GLFW_KEY_S))
+        if (Input::IsKeyPressed(
+                GLFW_KEY_S))
         {
             cameraPosition.y -=
-                cameraSpeed * deltaTime;
+                speed * deltaTime;
         }
 
 
-        if (Input::IsKeyPressed(GLFW_KEY_A))
+        if (Input::IsKeyPressed(
+                GLFW_KEY_A))
         {
             cameraPosition.x -=
-                cameraSpeed * deltaTime;
+                speed * deltaTime;
         }
 
 
-        if (Input::IsKeyPressed(GLFW_KEY_D))
+        if (Input::IsKeyPressed(
+                GLFW_KEY_D))
         {
             cameraPosition.x +=
-                cameraSpeed * deltaTime;
+                speed * deltaTime;
         }
 
 
@@ -152,156 +182,113 @@ std::cout << "Scene Created\n";
         );
 
 
-        // --------------------------------------------------------
-        // Bind Framebuffer
-        // --------------------------------------------------------
+        // --------------------------------------------------
+        // Begin Framebuffer
+        // --------------------------------------------------
 
         m_Framebuffer->Bind();
 
 
-        // --------------------------------------------------------
-        // Begin Frame
-        // --------------------------------------------------------
+        // --------------------------------------------------
+        // Begin Rendering
+        // --------------------------------------------------
 
         Renderer::BeginFrame();
 
 
-        // --------------------------------------------------------
+        // --------------------------------------------------
         // Begin 2D Scene
-        // --------------------------------------------------------
+        // --------------------------------------------------
 
         Renderer2D::BeginScene(
             m_Camera.GetViewProjectionMatrix()
         );
 
 
-        // --------------------------------------------------------
-        // Create Quad Transform
-        // --------------------------------------------------------
+        // --------------------------------------------------
+        // Render Entities
+        // --------------------------------------------------
 
-        for (auto& entity : m_Scene->GetEntities())
-{
-    Renderer2D::DrawQuad(
-        entity->GetTransform(),
-        { 1.0f, 0.3f, 0.2f, 1.0f }
-    );
-}
+        for (
+            auto& entity :
+            m_Scene->GetEntities()
+        )
+        {
+            SpriteRenderer& sprite =
+                entity->GetSpriteRenderer();
+
+            if (sprite.Texture)
+            {
+                Renderer2D::DrawQuad(
+    entity->GetTransform(),
+    *sprite.Texture,
+    sprite.Tint
+);
+            }
+        }
 
 
-        // --------------------------------------------------------
+        // --------------------------------------------------
         // End 2D Scene
-        // --------------------------------------------------------
+        // --------------------------------------------------
 
         Renderer2D::EndScene();
 
 
-        // --------------------------------------------------------
-        // Unbind Framebuffer
-        // --------------------------------------------------------
+        // --------------------------------------------------
+        // End Framebuffer
+        // --------------------------------------------------
 
         m_Framebuffer->Unbind();
     }
 
 
-    // ============================================================
-    // ImGui
-    // ============================================================
-
     void EditorLayer::OnImGuiRender()
     {
+        // --------------------------------------------------
+        // Begin Dockspace
+        // --------------------------------------------------
+
         m_Dockspace.Begin();
 
 
-        // --------------------------------------------------------
-        // Main Menu Bar
-        // --------------------------------------------------------
-
-        if (ImGui::BeginMainMenuBar())
-        {
-            // ----------------------------------------------------
-            // File
-            // ----------------------------------------------------
-
-            if (ImGui::BeginMenu("File"))
-            {
-                ImGui::MenuItem("New");
-                ImGui::MenuItem("Open");
-                ImGui::MenuItem("Save");
-
-                ImGui::Separator();
-
-                ImGui::MenuItem("Exit");
-
-                ImGui::EndMenu();
-            }
-
-
-            // ----------------------------------------------------
-            // Edit
-            // ----------------------------------------------------
-
-            if (ImGui::BeginMenu("Edit"))
-            {
-                ImGui::MenuItem("Undo");
-                ImGui::MenuItem("Redo");
-
-                ImGui::EndMenu();
-            }
-
-
-            // ----------------------------------------------------
-            // View
-            // ----------------------------------------------------
-
-            if (ImGui::BeginMenu("View"))
-            {
-                ImGui::MenuItem("Viewport");
-                ImGui::MenuItem("Hierarchy");
-                ImGui::MenuItem("Inspector");
-                ImGui::MenuItem("Console");
-
-                ImGui::EndMenu();
-            }
-
-
-            // ----------------------------------------------------
-            // Help
-            // ----------------------------------------------------
-
-            if (ImGui::BeginMenu("Help"))
-            {
-                ImGui::MenuItem("About");
-
-                ImGui::EndMenu();
-            }
-
-
-            ImGui::EndMainMenuBar();
-        }
-
-
-        // --------------------------------------------------------
-        // Panels
-        // --------------------------------------------------------
+        // --------------------------------------------------
+        // Viewport
+        // --------------------------------------------------
 
         m_ViewportPanel.Render(
             *m_Framebuffer
         );
 
+
+        // --------------------------------------------------
+        // Hierarchy
+        // --------------------------------------------------
+
         m_HierarchyPanel.Render(
-    *m_Scene
-);
+            *m_Scene
+        );
+
+
+        // --------------------------------------------------
+        // Inspector
+        // --------------------------------------------------
 
         m_InspectorPanel.Render(
-    m_HierarchyPanel.GetSelectedEntity()
-);
+            m_HierarchyPanel.GetSelectedEntity()
+        );
+
+
+        // --------------------------------------------------
+        // Console
+        // --------------------------------------------------
 
         m_ConsolePanel.Render();
 
 
-        // --------------------------------------------------------
+        // --------------------------------------------------
         // End Dockspace
-        // --------------------------------------------------------
+        // --------------------------------------------------
 
         m_Dockspace.End();
     }

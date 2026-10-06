@@ -2,54 +2,121 @@
 
 #include <glad/glad.h>
 
+#include <glm/gtc/type_ptr.hpp>
+
+#include <iostream>
+
 namespace Arc
 {
-    Shader::Shader(
-        const std::string& vertexSource,
-        const std::string& fragmentSource
+    static void CheckShaderCompile(
+        unsigned int shader,
+        const char* type
     )
     {
-        // -----------------------------
-        // Vertex Shader
-        // -----------------------------
+        int success = 0;
 
+        glGetShaderiv(
+            shader,
+            GL_COMPILE_STATUS,
+            &success
+        );
+
+        if (!success)
+        {
+            char infoLog[1024];
+
+            glGetShaderInfoLog(
+                shader,
+                1024,
+                nullptr,
+                infoLog
+            );
+
+            std::cerr
+                << "Shader compilation failed ("
+                << type
+                << "):\n"
+                << infoLog
+                << '\n';
+        }
+    }
+
+    static void CheckProgramLink(
+        unsigned int program
+    )
+    {
+        int success = 0;
+
+        glGetProgramiv(
+            program,
+            GL_LINK_STATUS,
+            &success
+        );
+
+        if (!success)
+        {
+            char infoLog[1024];
+
+            glGetProgramInfoLog(
+                program,
+                1024,
+                nullptr,
+                infoLog
+            );
+
+            std::cerr
+                << "Shader program linking failed:\n"
+                << infoLog
+                << '\n';
+        }
+    }
+
+    Shader::Shader(
+        const char* vertexSource,
+        const char* fragmentSource
+    )
+    {
         unsigned int vertexShader =
-            glCreateShader(GL_VERTEX_SHADER);
-
-        const char* vertexSourceCStr =
-            vertexSource.c_str();
+            glCreateShader(
+                GL_VERTEX_SHADER
+            );
 
         glShaderSource(
             vertexShader,
             1,
-            &vertexSourceCStr,
+            &vertexSource,
             nullptr
         );
 
-        glCompileShader(vertexShader);
+        glCompileShader(
+            vertexShader
+        );
 
-        // -----------------------------
-        // Fragment Shader
-        // -----------------------------
+        CheckShaderCompile(
+            vertexShader,
+            "Vertex"
+        );
 
         unsigned int fragmentShader =
-            glCreateShader(GL_FRAGMENT_SHADER);
-
-        const char* fragmentSourceCStr =
-            fragmentSource.c_str();
+            glCreateShader(
+                GL_FRAGMENT_SHADER
+            );
 
         glShaderSource(
             fragmentShader,
             1,
-            &fragmentSourceCStr,
+            &fragmentSource,
             nullptr
         );
 
-        glCompileShader(fragmentShader);
+        glCompileShader(
+            fragmentShader
+        );
 
-        // -----------------------------
-        // Shader Program
-        // -----------------------------
+        CheckShaderCompile(
+            fragmentShader,
+            "Fragment"
+        );
 
         m_RendererID =
             glCreateProgram();
@@ -68,17 +135,22 @@ namespace Arc
             m_RendererID
         );
 
-        // -----------------------------
-        // Cleanup
-        // -----------------------------
+        CheckProgramLink(
+            m_RendererID
+        );
 
-        glDeleteShader(vertexShader);
-        glDeleteShader(fragmentShader);
+        glDeleteShader(
+            vertexShader
+        );
+
+        glDeleteShader(
+            fragmentShader
+        );
     }
 
     Shader::~Shader()
     {
-        if (m_RendererID)
+        if (m_RendererID != 0)
         {
             glDeleteProgram(
                 m_RendererID
@@ -98,34 +170,81 @@ namespace Arc
         glUseProgram(0);
     }
 
+    void Shader::SetInt(
+        const std::string& name,
+        int value
+    )
+    {
+        GLint location =
+            glGetUniformLocation(
+                m_RendererID,
+                name.c_str()
+            );
+
+        glUniform1i(
+            location,
+            value
+        );
+    }
+
+    void Shader::SetFloat(
+        const std::string& name,
+        float value
+    )
+    {
+        GLint location =
+            glGetUniformLocation(
+                m_RendererID,
+                name.c_str()
+            );
+
+        glUniform1f(
+            location,
+            value
+        );
+    }
+
+    void Shader::SetFloat4(
+        const std::string& name,
+        const glm::vec4& value
+    )
+    {
+        GLint location =
+            glGetUniformLocation(
+                m_RendererID,
+                name.c_str()
+            );
+
+        glUniform4f(
+            location,
+            value.x,
+            value.y,
+            value.z,
+            value.w
+        );
+    }
+
     void Shader::SetMat4(
         const std::string& name,
         const glm::mat4& value
     )
     {
-        int location =
-            GetUniformLocation(name);
+        GLint location =
+            glGetUniformLocation(
+                m_RendererID,
+                name.c_str()
+            );
 
         glUniformMatrix4fv(
             location,
             1,
             GL_FALSE,
-            &value[0][0]
+            glm::value_ptr(value)
         );
     }
 
     unsigned int Shader::GetRendererID() const
     {
         return m_RendererID;
-    }
-
-    int Shader::GetUniformLocation(
-        const std::string& name
-    ) const
-    {
-        return glGetUniformLocation(
-            m_RendererID,
-            name.c_str()
-        );
     }
 }
